@@ -1,0 +1,13 @@
+{
+    "files.associations": {
+        "compare": "cpp",
+        "compass.h": "c",
+        "peripheral.h": "c",
+        "stm32f1xx_hal.h": "c",
+        "lis3mdl.h": "c",
+        "stm32f1xx_hal_conf.h": "c",
+        "typeinfo": "c",
+        "main.h": "c"
+    },
+    "C_Cpp.errorSquiggles": "disabled"
+}

@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Site BuildName="(empty)"
+	BuildStamp="20250322-2357-Experimental"
+	Name="(empty)"
+	Generator="ctest-3.28.1"
+	CompilerName=""
+	CompilerVersion=""
+	OSName="Windows"
+	Hostname="XessAMD"
+	OSRelease=" Personal"
+	OSVersion=" (Build 26100)"
+	OSPlatform="AMD64"
+	Is64Bits="1"
+	VendorString="AuthenticAMD"
+	VendorID="Advanced Micro Devices"
+	FamilyID="15"
+	ModelID="1"
+	ProcessorCacheSize="64"
+	NumberOfLogicalCPU="12"
+	NumberOfPhysicalCPU="6"
+	TotalVirtualMemory="41965"
+	TotalPhysicalMemory="32677"
+	LogicalProcessorsPerPhysical="2"
+	ProcessorClockFrequency="4200"
+	>
+	<Testing>
+		<StartDateTime>Mar 22 19:57 Eastern Daylight Time</StartDateTime>
+		<StartTestTime>1742687863</StartTestTime>
+		<TestList/>
+		<EndDateTime>Mar 22 19:57 Eastern Daylight Time</EndDateTime>
+		<EndTestTime>1742687863</EndTestTime>
+		<ElapsedMinutes>0</ElapsedMinutes>
+	</Testing>
+</Site>
