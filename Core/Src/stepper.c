@@ -240,11 +240,22 @@ inline uint8_t increment_tick(axes_e axis)
 
 inline void step_axis(axes_e axis)
 {
+    static uint8_t step_alt[AXES] = {1, 1, 1};
+
     if(get_stepper_state() == SLEEP)
         return;
-    
-    HAL_GPIO_TogglePin(stepper_state.stepper[axis].step_pin_port, stepper_state.stepper[axis].step_pin);
-    stepper_state.stepper[axis].position += stepper_state.stepper[axis].rate < 0 ? -1 : 1;
+    /* 
+     * HOMING State uses sensors to calibrate position otherwise 
+     * allow the stepper to move if it is not moving in the negative direction past 0
+     */
+    if(get_stepper_state() == HOMING 
+        || !(stepper_state.stepper[axis].position == 0 && stepper_state.stepper[axis].rate < 0))
+        HAL_GPIO_TogglePin(stepper_state.stepper[axis].step_pin_port, stepper_state.stepper[axis].step_pin);
+
+    if(step_alt[axis] % 2 == 0)
+        stepper_state.stepper[axis].position += stepper_state.stepper[axis].rate < 0 ? -1 : 1;
+
+    step_alt[axis]++;
 }
 
 inline uint8_t* get_stepper_flags(axes_e axis)

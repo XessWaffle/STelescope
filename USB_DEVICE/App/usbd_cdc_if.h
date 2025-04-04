@@ -52,7 +52,6 @@
 #define APP_RX_DATA_SIZE  1024
 #define APP_TX_DATA_SIZE  1024
 /* USER CODE BEGIN EXPORTED_DEFINES */
-
 /* USER CODE END EXPORTED_DEFINES */
 
 /**
@@ -66,6 +65,25 @@
 
 /* USER CODE BEGIN EXPORTED_TYPES */
 
+typedef enum {
+  CMD_R_PLUS, /* Move the rotation axis with a positive rate */
+  CMD_R_MINUS, /* Move the rotation axis with a negative rate */
+  CMD_R_STOP, /* Stop the rotation axis */
+  CMD_Y_PLUS, /* etc etc... */
+  CMD_Y_MINUS,
+  CMD_Y_STOP,
+  CMD_P_PLUS,
+  CMD_P_MINUS,
+  CMD_P_STOP,
+  CMD_HOME,
+  CMD_MICST_MODE, /* Change the microstep mode (mode given in info)*/
+  CMD_INVALID
+} telescope_command_e;
+
+typedef struct {
+  telescope_command_e cmd: 8;
+  uint32_t info:24;
+} telescope_command_s;
 /* USER CODE END EXPORTED_TYPES */
 
 /**
@@ -94,7 +112,6 @@
 extern USBD_CDC_ItfTypeDef USBD_Interface_fops_FS;
 
 /* USER CODE BEGIN EXPORTED_VARIABLES */
-
 /* USER CODE END EXPORTED_VARIABLES */
 
 /**
@@ -109,7 +126,7 @@ extern USBD_CDC_ItfTypeDef USBD_Interface_fops_FS;
 uint8_t CDC_Transmit_FS(uint8_t* Buf, uint16_t Len);
 
 /* USER CODE BEGIN EXPORTED_FUNCTIONS */
-
+telescope_command_s* get_next_command();
 /* USER CODE END EXPORTED_FUNCTIONS */
 
 /**

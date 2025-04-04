@@ -60,8 +60,11 @@ UART_HandleTypeDef huart1;
 
 /* USER CODE BEGIN PV */
 uint32_t tim2_tick_sec;
+
 uint8_t usbd_buff[USBD_CDC_BUFF_LEN];
 uint32_t usbd_buff_len;
+
+uint32_t rate;
 /* USER CODE END PV */
 
 /* Private function prototypes -----------------------------------------------*/
@@ -132,15 +135,19 @@ int main(void)
 
   // init_camera();
 
+  /*home(YAW);
   home(PITCH);
-  HAL_Delay(10000);
-  set_stepper_state(HOMING);
-  set_stepper_position(PITCH, 0);
-  set_stepper_rate(PITCH, 60000);
-  accelerometer_s *accel = get_accelerometer_data();
-  //home(YAW);
-  //home(PITCH);
-  //home(ROLL);
+  home(ROLL);*/
+
+  rate = 60000;
+
+  HAL_Delay(1000);
+  set_stepper_state(TRACKING);
+
+  usbd_buff_len = snprintf((char*) usbd_buff, USBD_CDC_BUFF_LEN, "Homing Complete, Ready to Track Objects\r\n");  
+  CDC_Transmit_FS(usbd_buff, usbd_buff_len);
+
+
   /* USER CODE END 2 */
 
   /* Infinite loop */
@@ -154,17 +161,66 @@ int main(void)
     /* USER CODE END WHILE */
   
     /* USER CODE BEGIN 3 */
-    dacq_accelerometer();
-    HAL_Delay(500);
+
+    /*dacq_accelerometer();
+    dacq_compass();
+    HAL_Delay(100);
 
     usbd_buff_len = snprintf(usbd_buff, USBD_CDC_BUFF_LEN, "%d|%d|%d|%lu\r\n", accel->out_x_a_raw, accel->out_y_a_raw, accel->out_z_a_raw, get_stepper_position(PITCH));  
     CDC_Transmit_FS(usbd_buff, usbd_buff_len);
 
-    if(accel->out_x_a_raw < 200)
-      set_stepper_rate(PITCH, 5000);
+    HAL_Delay(400);*/
+
+    telescope_command_s *t_cmd;
+    if((t_cmd = get_next_command()) == NULL)
+      continue;
+
+    switch (t_cmd->cmd) {
+      case CMD_R_PLUS: /* Move the rotation axis with a positive rate */
+        set_stepper_rate(ROLL, rate);
+        break;
+      case CMD_R_MINUS: /* Move the rotation axis with a negative rate */
+        set_stepper_rate(ROLL, -rate);
+        break;
+      case CMD_R_STOP: /* Stop the rotation axis */
+        set_stepper_rate(ROLL, 0);
+        break;
+      case CMD_Y_PLUS: /* etc etc... */
+        set_stepper_rate(YAW, rate);
+        break;
+      case CMD_Y_MINUS:
+        set_stepper_rate(YAW, -rate);
+        break;                   
+      case CMD_Y_STOP:
+        set_stepper_rate(YAW, 0);
+        break;    
+      case CMD_P_PLUS:
+        set_stepper_rate(PITCH, rate);
+        break;
+      case CMD_P_MINUS:
+        set_stepper_rate(PITCH, -rate);
+        break;    
+      case CMD_P_STOP:
+        set_stepper_rate(PITCH, 0);
+        break;
+      case CMD_HOME:
+        home(YAW);
+        home(PITCH);
+        home(ROLL);
+        break;
+      case CMD_MICST_MODE: /* Change the microstep mode (mode given in info)*/
+        set_microstep_mode(t_cmd->info);
+        break;
+      case CMD_INVALID:
+      default:
+        break;
+    }
     
-    if(accel->out_x_a_raw < 3)
-      set_stepper_rate(PITCH, 0);
+    /*usbd_buff_len = snprintf((char*) usbd_buff, USBD_CDC_BUFF_LEN, "Received CMD:%d, INFO:%d\r\n", t_cmd->cmd, t_cmd->info);  
+    CDC_Transmit_FS(usbd_buff, usbd_buff_len);*/
+
+    /* Delay 250 microseconds to allow command to take full effect */
+    HAL_Delay(250);
   }
 
   /* USER CODE END 3 */

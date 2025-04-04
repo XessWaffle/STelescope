@@ -62,6 +62,7 @@
   */
 
 /* USER CODE BEGIN PRIVATE_DEFINES */
+#define MAX_COMMANDS 10
 /* USER CODE END PRIVATE_DEFINES */
 
 /**
@@ -96,6 +97,12 @@ uint8_t UserTxBufferFS[APP_TX_DATA_SIZE];
 /* USER CODE BEGIN PRIVATE_VARIABLES */
 /* BAUD, #STOP BITS - 1, PARITY, #BITS*/
 USBD_CDC_LineCodingTypeDef LineCoding = {115200, 0x00, 0x00, 0x08};
+
+/* Track incoming commands */
+uint8_t cmds_idx = 0, last_processed_cmd = 0;
+uint8_t pending_cmds = 0;
+telescope_command_s commands[MAX_COMMANDS];
+
 /* USER CODE END PRIVATE_VARIABLES */
 
 /**
@@ -269,6 +276,15 @@ static int8_t CDC_Control_FS(uint8_t cmd, uint8_t* pbuf, uint16_t length)
 static int8_t CDC_Receive_FS(uint8_t* Buf, uint32_t *Len)
 {
   /* USER CODE BEGIN 6 */
+  if(*Len == sizeof(telescope_command_s) && pending_cmds < MAX_COMMANDS)
+  {
+    commands[cmds_idx].cmd = Buf[0];
+    commands[cmds_idx].info = Buf[1] << 16 | Buf[2] << 8 | Buf[3];
+    cmds_idx++;
+    cmds_idx = cmds_idx % MAX_COMMANDS;
+    pending_cmds++;
+  }
+
   USBD_CDC_SetRxBuffer(&hUsbDeviceFS, &Buf[0]);
   USBD_CDC_ReceivePacket(&hUsbDeviceFS);
   return (USBD_OK);
@@ -301,7 +317,21 @@ uint8_t CDC_Transmit_FS(uint8_t* Buf, uint16_t Len)
 }
 
 /* USER CODE BEGIN PRIVATE_FUNCTIONS_IMPLEMENTATION */
+telescope_command_s* get_next_command()
+{
+  if(pending_cmds > 0)
+  {
+    uint8_t last_processed_cmd_idx = last_processed_cmd;
+    last_processed_cmd++;
+    last_processed_cmd = last_processed_cmd % MAX_COMMANDS;
 
+    pending_cmds--;
+
+    return &(commands[last_processed_cmd_idx]);
+  }
+
+  return NULL;
+}
 /* USER CODE END PRIVATE_FUNCTIONS_IMPLEMENTATION */
 
 /**

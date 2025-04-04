@@ -245,34 +245,6 @@ void home(axes_e axis)
             set_stepper_position(axis, 0);
             break;
         }
-        /*{
-            uint8_t exit = FALSE;
-            const int16_t hysteresis = 4;
-            int32_t rate = 10000;
-            int32_t accel_min = 0;
-            int32_t accel_point = 0, prev_accel_point = 0;
-            accelerometer_s *accel = get_accelerometer_data();
-
-            set_microstep_mode(FULL);
-            set_stepper_rate(axis, rate);
-            
-            do
-            {
-                dacq_accelerometer();
-
-                HAL_Delay(100);
-
-                prev_accel_point = accel_point;
-                accel_point = accel->out_y_a_raw;
-
-                if(accel_point < accel_min)
-                    accel_min = accel_point;
-
-
-            } while (exit == FALSE);
-            
-            break;
-        }*/
         case ROLL:
             set_stepper_position(axis, 0);
             set_stepper_rate(axis, 0);
