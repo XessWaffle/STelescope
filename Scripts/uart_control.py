@@ -1,5 +1,4 @@
 import serial
-from pynput import keyboard
 
 import serial.tools.list_ports
 
@@ -28,7 +27,8 @@ def find_stm32_port():
     """Find the serial port associated with an STM32 device."""
     ports = serial.tools.list_ports.comports()
     for port in ports:
-        if "USB Serial Device" in port.description:
+        print(port.description)
+        if "USB Serial Device" in port.description or "STM32" in port.description:
             return port.device
     return None
 
