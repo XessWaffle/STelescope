@@ -51,6 +51,8 @@ extern "C" {
 #define NULL ((void *)0)
 /* USER CODE END EM */
 
+void HAL_TIM_MspPostInit(TIM_HandleTypeDef *htim);
+
 /* Exported functions prototypes ---------------------------------------------*/
 void Error_Handler(void);
 void MX_I2C1_Init(void);
@@ -78,12 +80,12 @@ void step();
 #define ST_DIR_Y_GPIO_Port GPIOA
 #define ST_STEP_Y_Pin GPIO_PIN_4
 #define ST_STEP_Y_GPIO_Port GPIOA
-#define M6D_INT1_Pin GPIO_PIN_0
-#define M6D_INT1_GPIO_Port GPIOB
+#define IND_CTRL_Pin GPIO_PIN_0
+#define IND_CTRL_GPIO_Port GPIOB
 #define CAM_CS_Pin GPIO_PIN_1
 #define CAM_CS_GPIO_Port GPIOB
-#define M6D_INT2_Pin GPIO_PIN_2
-#define M6D_INT2_GPIO_Port GPIOB
+#define RTC_1HZ_Pin GPIO_PIN_2
+#define RTC_1HZ_GPIO_Port GPIOB
 #define DISP_RST_Pin GPIO_PIN_12
 #define DISP_RST_GPIO_Port GPIOB
 #define DISP_DC_Pin GPIO_PIN_14

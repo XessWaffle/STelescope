@@ -24,7 +24,7 @@ void home(axes_e axis)
             uint8_t switch_dir = 0, num_switches = 0;
             uint8_t exit = FALSE;
             microstep_e mode = get_microstep_mode();
-            compass_s *compass_data = get_compass_data();
+            compass_s *compass_data = get_compass_data(ONBOARD);
             
 
             for(int i = 0; i < YAW_MA_LENGTH; i++)
@@ -42,7 +42,7 @@ void home(axes_e axis)
                 mode = get_microstep_mode();
                 
                 // Sample the compass data with 16 samples for averaging
-                dacq_compass();
+                dacq_compass(ONBOARD);
 
                 // Delay to allow for stable readings
                 HAL_Delay(100);
@@ -129,7 +129,7 @@ void home(axes_e axis)
 
             const int16_t hysteresis = 2;
             const uint8_t switch_dir_crit = 3;
-            int32_t rate = 50000;
+            int32_t rate = -50000;
             int32_t accel_point = 0, prev_accel_point = 0;
             uint8_t loops = 0;
             uint8_t idx = 0;
@@ -165,7 +165,7 @@ void home(axes_e axis)
                 
                 if(accel_data->out_x_a_raw < 0)
                 {
-                    set_stepper_rate(axis, -50000);
+                    set_stepper_rate(axis, -1 * rate);
                     num_switches = 1;
                     HAL_Delay(10000);
                 }

@@ -241,6 +241,6 @@ static const struct sensor_reg_s qvga_init[] = {
 */
 extern camera_s camera;
 
-void init_camera();
+uint8_t init_camera();
 
 #endif /* INC_CAMERA_H_ */

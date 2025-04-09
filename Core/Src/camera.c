@@ -46,7 +46,7 @@ void set_camera_i2c_read(uint8_t read, uint16_t rx_buffer_length, uint16_t tx_bu
 }
 
 
-void init_camera()
+uint8_t init_camera()
 {
     /*
      * Initialize SPI
@@ -101,8 +101,8 @@ void init_camera()
     /*
      * Validate that I2C communication is established
      */
-    /*populate_camera_tx_buff(TRUE, OV2640_REG_SENSOR_RESET);
-    uint16_t length = populate_camera_tx_buff(FALSE, 0x01);
+    populate_camera_tx_buff(TRUE, OV2640_REG_SENSOR_RESET);
+    length = populate_camera_tx_buff(FALSE, 0x01);
     set_camera_i2c_read(FALSE, 0, length);
     while(rtx_i2c(&(camera.cam_i2c)) == HAL_BUSY);
     HAL_Delay(100);
@@ -111,12 +111,14 @@ void init_camera()
     length = populate_camera_tx_buff(TRUE, OV2640_REG_PIDH);
     set_camera_i2c_read(TRUE, 1, length);
     while(rtx_i2c(&(camera.cam_i2c)) == HAL_BUSY);
-    HAL_Delay(100);*/
+    HAL_Delay(100);
 
     /*
      * Expected response
      */
-    /*
+    
     if(camera_rx_buff[0] != 0x26 && camera_rx_buff[1] != 0x42)
-        Error_Handler();*/
+        Error_Handler();
+
+    return TRUE;
 }
