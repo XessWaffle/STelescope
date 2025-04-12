@@ -8,6 +8,8 @@
 #include "main.h"
 #include "display.h"
 
+#define MSB2LSB(b) (((b)&1?128:0)|((b)&2?64:0)|((b)&4?32:0)|((b)&8?16:0)|((b)&16?8:0)|((b)&32?4:0)|((b)&64?2:0)|((b)&128?1:0))
+
 display_s display;
 
 uint8_t display_tx_buff[DISPLAY_BUFFER_LENGTH];
@@ -77,7 +79,7 @@ void write_data16(uint16_t data)
 	rtx_spi(&(display.disp_spi), TRUE);
 }
 
-void draw_post_init()
+void prep_display()
 {
 	// Set column address (240x240 resolution)
 	write_command(GC9A01A_CASET);
@@ -91,14 +93,31 @@ void draw_post_init()
 
 	// Start writing to RAM
 	write_command(GC9A01A_RAMWR);
+}
+
+void command_mode()
+{
+	HAL_GPIO_WritePin(display.dc_port, display.dc, GPIO_PIN_RESET);  // Command mode
+}
+
+void data_mode()
+{
+	HAL_GPIO_WritePin(display.dc_port, display.dc, GPIO_PIN_SET);  // Data mode
+}
+
+void draw_post_init()
+{
+	prep_display();
 
 	// Write color data for all pixels (240 * 240 = 57600 pixels)
-	HAL_GPIO_WritePin(display.dc_port, display.dc, GPIO_PIN_SET);  // Data mode
+	data_mode();  // Data mode
 
 	// Optimize by keeping CS low for the entire transfer
 	for(uint32_t it = 0; it < 240; it++)
 	{
 		for (uint32_t i = 0; i < 240; i++) {
+			if (i != 120)
+				continue;
 			display_tx_buff[2*i] = (it * 240 + i) >> 8;
 			display_tx_buff[2*i + 1] = (it * 240 + i) & 0xFF;
 		}
@@ -107,15 +126,33 @@ void draw_post_init()
 		rtx_spi(&(display.disp_spi), TRUE);
 	}
 
-	HAL_Delay(100);
+	command_mode();  // Command mode
 
+	HAL_Delay(100);
 }
 
+void on_write_row_cmplt()
+{
+	// Callback for when row write is complete
+	display.disp_spi.data.tx_buff = display_tx_buff; // Reset to default buffer
+	command_mode();  // Command mode
+}
+
+void write_display_row(uint8_t* buff, uint16_t buff_length)
+{
+	data_mode();  // Data mode
+
+	display.disp_spi.data.tx_buff = buff;
+	display.disp_spi.spi_cb = on_write_row_cmplt;
+	set_display_read(FALSE, buff_length);
+	rtx_spi(&(display.disp_spi), FALSE);
+}
 
 uint8_t init_display()
 {
 	display.disp_spi.cs = DISP_CS1_Pin;
 	display.disp_spi.port = DISP_CS1_GPIO_Port;
+	display.disp_spi.cs_ext_handle = FALSE;
 
 	display.dc = DISP_DC_Pin;
 	display.dc_port = DISP_DC_GPIO_Port;

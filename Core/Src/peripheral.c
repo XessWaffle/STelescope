@@ -56,18 +56,25 @@ HAL_StatusTypeDef rtx_spi(spi_per_s *spi_peripheral, uint8_t blocking)
 		return HAL_ERROR;
 
 	HAL_StatusTypeDef status;
+	
+	/*
+	 * Enqueue ongoing transaction
+	 */
+	spi_peripheral->data.ready = FALSE;
+	transactions[spi_peripheral->data.handle].spi = spi_peripheral;
 
-	HAL_GPIO_WritePin(spi_peripheral->port, spi_peripheral->cs, GPIO_PIN_RESET);
+	if(spi_peripheral->cs_ext_handle == FALSE)
+		HAL_GPIO_WritePin(spi_peripheral->port, spi_peripheral->cs, GPIO_PIN_RESET);
 
 	if(blocking == FALSE)
 	{
 		if(spi_peripheral->data.read == TRUE)
-			status = HAL_SPI_TransmitReceive_IT(handle,
+			status = HAL_SPI_TransmitReceive_DMA(handle,
 					spi_peripheral->data.tx_buff,
 					spi_peripheral->data.rx_buff,
 					spi_peripheral->data.tx_buff_length);
 		else
-			status = HAL_SPI_Transmit_IT(handle,
+			status = HAL_SPI_Transmit_DMA(handle,
 					spi_peripheral->data.tx_buff,
 					spi_peripheral->data.tx_buff_length);
 	}
@@ -86,12 +93,6 @@ HAL_StatusTypeDef rtx_spi(spi_per_s *spi_peripheral, uint8_t blocking)
 					HAL_MAX_DELAY);
 	}
 
-	/*
-	 * Enqueue ongoing transaction
-	 */
-	spi_peripheral->data.ready = FALSE;
-	transactions[spi_peripheral->data.handle].spi = spi_peripheral;
-
 
 	if(blocking == TRUE)
 		rtx_spi_cb(spi_peripheral->data.handle);
@@ -104,11 +105,11 @@ HAL_StatusTypeDef rtx_spi(spi_per_s *spi_peripheral, uint8_t blocking)
  */
 HAL_StatusTypeDef rtx_spi_cb(handle_e spi_handle)
 {
-
 	if(spi_handle != SPI_1 && spi_handle != SPI_2)
 		return HAL_ERROR;
 
-	HAL_GPIO_WritePin(transactions[spi_handle].spi->port, transactions[spi_handle].spi->cs, GPIO_PIN_SET);
+	if(transactions[spi_handle].spi->cs_ext_handle == FALSE)
+		HAL_GPIO_WritePin(transactions[spi_handle].spi->port, transactions[spi_handle].spi->cs, GPIO_PIN_SET);
 
 	// Assume transaction completed successfully and dequeue
 	if(transactions[spi_handle].spi->spi_cb != NULL)
@@ -117,7 +118,6 @@ HAL_StatusTypeDef rtx_spi_cb(handle_e spi_handle)
 
 	transactions[spi_handle].spi->data.ready = TRUE;
 	transactions[spi_handle].spi = NULL;
-
 
 	return HAL_OK;
 }
@@ -141,17 +141,17 @@ HAL_StatusTypeDef rtx_i2c(i2c_per_s *i2c_peripheral)
 	if(handle == NULL)
 		return HAL_ERROR;
 
-	HAL_StatusTypeDef status;
- 	status = HAL_I2C_Master_Transmit_IT(handle,
-			i2c_peripheral->address << 1,
-			i2c_peripheral->data.tx_buff,
-			i2c_peripheral->data.tx_buff_length);
-
 	/*
 	 * Enqueue ongoing transaction
 	 */
 	i2c_peripheral->data.ready = FALSE;
 	transactions[i2c_peripheral->data.handle].i2c = i2c_peripheral;
+
+	HAL_StatusTypeDef status;
+ 	status = HAL_I2C_Master_Transmit_IT(handle,
+			i2c_peripheral->address << 1,
+			i2c_peripheral->data.tx_buff,
+			i2c_peripheral->data.tx_buff_length);
 
 	return status;
 }

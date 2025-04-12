@@ -91,6 +91,8 @@ extern stepper_state_s stepper_state;
  */
 uint8_t init_stepper();
 
+uint8_t is_stopped();
+
 microstep_e get_microstep_mode();
 stepper_op_mode_e get_stepper_state();
 uint32_t get_stepper_position(axes_e axis);

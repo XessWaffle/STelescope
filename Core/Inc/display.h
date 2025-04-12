@@ -90,4 +90,10 @@ extern display_s display;
 
 uint8_t init_display();
 
+void command_mode();
+void data_mode();
+
+void prep_display();
+void write_display_row(uint8_t* buff, uint16_t buff_length);
+
 #endif /* INC_DISPLAY_H_ */

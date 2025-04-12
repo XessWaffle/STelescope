@@ -51,18 +51,23 @@ extern "C" {
 #define NULL ((void *)0)
 /* USER CODE END EM */
 
-void HAL_TIM_MspPostInit(TIM_HandleTypeDef *htim);
-
 /* Exported functions prototypes ---------------------------------------------*/
 void Error_Handler(void);
 void MX_I2C1_Init(void);
 void MX_I2C2_Init(void);
 void MX_SPI1_Init(void);
 void MX_SPI2_Init(void);
-void MX_RTC_Init(void);
 
 /* USER CODE BEGIN EFP */
 void step();
+void led_update();
+void sensor_update();
+void camera_update();
+
+void step_isr();
+void led_update_isr();
+void sensor_update_isr();
+void camera_update_isr();
 /* USER CODE END EFP */
 
 /* Private defines -----------------------------------------------------------*/
@@ -86,6 +91,7 @@ void step();
 #define CAM_CS_GPIO_Port GPIOB
 #define RTC_1HZ_Pin GPIO_PIN_2
 #define RTC_1HZ_GPIO_Port GPIOB
+#define RTC_1HZ_EXTI_IRQn EXTI2_IRQn
 #define DISP_RST_Pin GPIO_PIN_12
 #define DISP_RST_GPIO_Port GPIOB
 #define DISP_DC_Pin GPIO_PIN_14
