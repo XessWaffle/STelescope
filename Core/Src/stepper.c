@@ -58,6 +58,16 @@ uint8_t init_stepper()
     return TRUE;
 }
 
+uint8_t is_stopped()
+{
+    for(int i = 0; i < AXES; i++)
+    {
+        if(stepper_state.stepper[i].rate != 0)
+            return FALSE;
+    }
+    return TRUE;
+}
+
 inline microstep_e get_microstep_mode()
 {
     return stepper_state.step_mode;

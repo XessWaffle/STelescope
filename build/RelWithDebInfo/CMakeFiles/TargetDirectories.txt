@@ -1,0 +1,7 @@
+E:/Programming/ST/STelescope/build/RelWithDebInfo/CMakeFiles/STelescope.dir
+E:/Programming/ST/STelescope/build/RelWithDebInfo/CMakeFiles/edit_cache.dir
+E:/Programming/ST/STelescope/build/RelWithDebInfo/CMakeFiles/rebuild_cache.dir
+E:/Programming/ST/STelescope/build/RelWithDebInfo/cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir
+E:/Programming/ST/STelescope/build/RelWithDebInfo/cmake/stm32cubemx/CMakeFiles/USB_Device_Library.dir
+E:/Programming/ST/STelescope/build/RelWithDebInfo/cmake/stm32cubemx/CMakeFiles/edit_cache.dir
+E:/Programming/ST/STelescope/build/RelWithDebInfo/cmake/stm32cubemx/CMakeFiles/rebuild_cache.dir

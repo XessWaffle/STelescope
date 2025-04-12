@@ -41,12 +41,11 @@
 #define ARDUCAM_SPI_READ_REG(a)    0x7F & a // Read from a register (generic SPI command)
 
 
-#define ARDUCAM_SPI_FIFO_CLEAR     0x04  // Clear FIFO buffer
-#define ARDUCAM_SPI_FIFO_START     0x01  // Start capture to FIFO
-#define ARDUCAM_SPI_FIFO_READ      0x03  // Read FIFO data
+#define ARDUCAM_SPI_FIFO_CLEAR     0x01  // Clear FIFO buffer
+#define ARDUCAM_SPI_FIFO_START     0x02  // Start capture to FIFO
+#define ARDUCAM_SPI_SINGLE_READ    0x3D  // Read FIFO data
 #define ARDUCAM_SPI_BURST_READ     0x3C  // Burst read from FIFO
 #define ARDUCAM_SPI_SET_FIFO_SIZE  0x07  // Set FIFO size
-#define ARDUCAM_SPI_SINGLE_READ    0x0B  // Single byte read from FIFO
 
 // Arducam Register Addresses (accessed via SPI)
 #define ARDUCAM_REG_FIFO_CTRL      0x04  // FIFO control register
@@ -56,5 +55,10 @@
 #define ARDUCAM_REG_FIFO_SIZE2     0x43  // FIFO size byte 2
 #define ARDUCAM_REG_FIFO_SIZE3     0x44  // FIFO size byte 3
 #define ARDUCHIP_TEST1 			   0x00 // Test register 1
+
+#define ARDUCHIP_TRIG      		   0x41  //Trigger source
+#define VSYNC_MASK         		   0x01
+#define SHUTTER_MASK       		   0x02
+#define CAP_DONE_MASK      		   0x08
 
 #endif /* INC_OV2640_H_ */

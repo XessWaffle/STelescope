@@ -56,6 +56,7 @@ typedef struct
 typedef struct
 {
 	uint16_t cs;
+	uint8_t cs_ext_handle;
 	GPIO_TypeDef *port;
 	transaction_s data;
 	void (*spi_cb)();

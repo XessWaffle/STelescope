@@ -8,7 +8,7 @@
 
 // Soft and hard iron calibration parameters
 const int16_t soft_cal_num[COMPASS_DIMENSIONS][COMPASS_DIMENSIONS] = {{15175, -17615, 0}, {18142, 19281, 0}, {0, 0, 1}};
-const int16_t soft_cal_den[COMPASS_DIMENSIONS][COMPASS_DIMENSIONS] = {{19652, 28186, 0}, {26077, 22430, 0}, {0, 0, 1}};
+const int16_t soft_cal_den[COMPASS_DIMENSIONS][COMPASS_DIMENSIONS] = {{19652, 28186, 1}, {26077, 22430, 1}, {1, 1, 1}};
 const int16_t hard_cal[COMPASS_DIMENSIONS] = {746, 673, -3661};
 
 compass_s compass[NUM_COMPASSES];

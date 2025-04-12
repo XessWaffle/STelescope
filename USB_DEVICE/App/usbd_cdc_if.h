@@ -52,6 +52,12 @@
 #define APP_RX_DATA_SIZE  1024
 #define APP_TX_DATA_SIZE  1024
 /* USER CODE BEGIN EXPORTED_DEFINES */
+#define ORIENTATION_PACKET_SIZE 56
+#define ORIENTATION_PACKET_ID 0xDEAD
+
+#define CAMERA_PACKET_SIZE 8 
+#define CAMERA_PACKET_ID 0xBEEF
+#define CAMERA_PIPE_BUFFER_LENGTH 640
 /* USER CODE END EXPORTED_DEFINES */
 
 /**
@@ -65,7 +71,8 @@
 
 /* USER CODE BEGIN EXPORTED_TYPES */
 
-typedef enum {
+typedef enum
+{
   CMD_R_PLUS, /* Move the rotation axis with a positive rate */
   CMD_R_MINUS, /* Move the rotation axis with a negative rate */
   CMD_R_STOP, /* Stop the rotation axis */
@@ -77,13 +84,69 @@ typedef enum {
   CMD_P_STOP,
   CMD_HOME,
   CMD_MICST_MODE, /* Change the microstep mode (mode given in info)*/
+  CMD_CAPTURE,
   CMD_INVALID
 } telescope_command_e;
 
-typedef struct {
+typedef struct
+{
   telescope_command_e cmd: 8;
   uint32_t info:24;
 } telescope_command_s;
+
+typedef struct
+{
+  union
+  {
+    struct
+    {
+      /* Packet ID */
+      uint16_t packet_id;
+      uint16_t _res1;
+
+      /* Packed Accelerometer Data */
+      int16_t out_x_g_raw;
+      int16_t out_y_g_raw;
+      int16_t out_z_g_raw;
+      int16_t out_x_a_raw;
+      int16_t out_y_a_raw;
+      int16_t out_z_a_raw;
+
+      /* Packed Compass Data*/
+      int16_t out_x_raw_offboard;
+      int16_t out_y_raw_offboard;
+      int16_t out_z_raw_offboard;
+      int16_t out_x_raw_onboard;
+      int16_t out_y_raw_onboard;
+      int16_t out_z_raw_onboard;
+      uint32_t _res2;
+
+      /* Packed stepper data */
+      uint32_t yaw_position;
+      uint32_t roll_position;
+      uint32_t pitch_position;
+      int32_t yaw_rate;
+      int32_t roll_rate;
+      int32_t pitch_rate;
+    };
+    uint8_t raw_data[ORIENTATION_PACKET_SIZE];
+  };
+} orientation_packet_s;
+
+typedef struct
+{
+  union
+  {
+    struct
+    {
+      uint16_t packet_id;
+      uint16_t last_packet;
+      uint32_t size;
+      uint8_t buff[CAMERA_PIPE_BUFFER_LENGTH];
+    };
+    uint8_t raw_data[CAMERA_PACKET_SIZE + CAMERA_PIPE_BUFFER_LENGTH];
+  };
+} camera_data_packet_s;
 /* USER CODE END EXPORTED_TYPES */
 
 /**
