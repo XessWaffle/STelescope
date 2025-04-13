@@ -314,45 +314,68 @@ def draw_ui(screen, font, active_keys, last_cmd):
 
     # Display orientation packet information if available
     if orientation_packet:
-        orientation_text = (
-            f"Yaw: {orientation_packet.yaw_position}, "
-            f"Roll: {orientation_packet.roll_position}, "
-            f"Pitch: {orientation_packet.pitch_position}, "
-            f"Yaw Rate: {orientation_packet.yaw_rate}, "
-            f"Roll Rate: {orientation_packet.roll_rate}, "
-            f"Pitch Rate: {orientation_packet.pitch_rate}"
-        )
-        orientation_surface = font.render(orientation_text, True, (255, 255, 255))
-        screen.blit(orientation_surface, (10, 90))
+        # Draw a labeled bar graph for orientation angles
+        bar_width = 200
+        bar_height = 20
+        base_x = 10
+        base_y = 90
+        max_angle = 360  # Assuming angles are in degrees
+        spacing = 40  # Spacing between elements
 
-        # Display compass (gyroscope) data
-        compass_text = (
-            f"Gyro: {orientation_packet.out_x_g_raw}, {orientation_packet.out_y_g_raw}, {orientation_packet.out_z_g_raw}"
-        )
-        compass_surface = font.render(compass_text, True, (255, 255, 255))
-        screen.blit(compass_surface, (10, 130))
+        # Yaw
+        yaw_width = int((orientation_packet.yaw_position / max_angle) * bar_width)
+        pygame.draw.rect(screen, (255, 0, 0), (base_x, base_y, yaw_width, bar_height))
+        yaw_text = font.render(f"Yaw: {orientation_packet.yaw_position}", True, (255, 255, 255))
+        screen.blit(yaw_text, (base_x + bar_width + 10, base_y))
 
-        # Display accelerometer data
-        accelerometer_text = (
-            f"Accel: {orientation_packet.out_x_a_raw}, {orientation_packet.out_y_a_raw}, {orientation_packet.out_z_a_raw}"
-        )
-        accelerometer_surface = font.render(accelerometer_text, True, (255, 255, 255))
-        screen.blit(accelerometer_surface, (10, 170))
+        # Roll
+        roll_width = int((orientation_packet.roll_position / max_angle) * bar_width)
+        pygame.draw.rect(screen, (0, 255, 0), (base_x, base_y + spacing, roll_width, bar_height))
+        roll_text = font.render(f"Roll: {orientation_packet.roll_position}", True, (255, 255, 255))
+        screen.blit(roll_text, (base_x + bar_width + 10, base_y + spacing))
 
-        # Display offboard raw data
-        offboard_text = (
-            f"Offboard Compass: {orientation_packet.out_x_raw_offboard}, {orientation_packet.out_y_raw_offboard}, {orientation_packet.out_z_raw_offboard}"
-        )
-        offboard_surface = font.render(offboard_text, True, (255, 255, 255))
-        screen.blit(offboard_surface, (10, 210))
+        # Pitch
+        pitch_width = int((orientation_packet.pitch_position / max_angle) * bar_width)
+        pygame.draw.rect(screen, (0, 0, 255), (base_x, base_y + 2 * spacing, pitch_width, bar_height))
+        pitch_text = font.render(f"Pitch: {orientation_packet.pitch_position}", True, (255, 255, 255))
+        screen.blit(pitch_text, (base_x + bar_width + 10, base_y + 2 * spacing))
 
-        # Display onboard raw data
-        onboard_text = (
-            f"Onboard Compass: {orientation_packet.out_x_raw_onboard}, {orientation_packet.out_y_raw_onboard}, {orientation_packet.out_z_raw_onboard}"
-        )
-        onboard_surface = font.render(onboard_text, True, (255, 255, 255))
-        screen.blit(onboard_surface, (10, 250))
+        # Display gyroscope data as a radar-like visualization
+        center_x, center_y = 150, 400
+        radius = 100
+        pygame.draw.circle(screen, (255, 255, 255), (center_x, center_y), radius, 1)
+        pygame.draw.line(screen, (255, 0, 0), (center_x, center_y),
+                         (center_x + int(orientation_packet.out_x_g_raw / 32768 * radius),
+                          center_y - int(orientation_packet.out_y_g_raw / 32768 * radius)), 2)
+        gyro_text = font.render("Gyro", True, (255, 255, 255))
+        screen.blit(gyro_text, (center_x - 20, center_y + radius + 10))
 
+        # Display accelerometer data as a radar-like visualization
+        accel_center_y = center_y + 2 * radius + 50  # Adjusted to avoid overlap
+        pygame.draw.circle(screen, (255, 255, 255), (center_x, accel_center_y), radius, 1)
+        pygame.draw.line(screen, (0, 255, 0), (center_x, accel_center_y),
+                         (center_x + int(orientation_packet.out_x_a_raw / 32768 * radius),
+                          accel_center_y - int(orientation_packet.out_y_a_raw / 32768 * radius)), 2)
+        accel_text = font.render("Accel", True, (255, 255, 255))
+        screen.blit(accel_text, (center_x - 20, accel_center_y + radius + 10))
+
+        # Display onboard magnetometer data as a radar-like visualization
+        onboard_center_x = center_x + 300
+        pygame.draw.circle(screen, (255, 255, 255), (onboard_center_x, center_y), radius, 1)
+        pygame.draw.line(screen, (0, 0, 255), (onboard_center_x, center_y),
+                         (onboard_center_x + int(orientation_packet.out_x_raw_onboard / 5000 * radius),
+                          center_y - int(orientation_packet.out_y_raw_onboard / 5000 * radius)), 2)
+        onboard_text = font.render("Onboard Mag", True, (255, 255, 255))
+        screen.blit(onboard_text, (onboard_center_x - 20, center_y + radius + 10))
+
+        # Display offboard magnetometer data as a radar-like visualization
+        offboard_center_y = accel_center_y  # Align with accelerometer visualization
+        pygame.draw.circle(screen, (255, 255, 255), (onboard_center_x, offboard_center_y), radius, 1)
+        pygame.draw.line(screen, (255, 255, 0), (onboard_center_x, offboard_center_y),
+                         (onboard_center_x + int(orientation_packet.out_x_raw_offboard / 5000 * radius),
+                          offboard_center_y - int(orientation_packet.out_y_raw_offboard / 5000 * radius)), 2)
+        offboard_text = font.render("Offboard Mag", True, (255, 255, 255))
+        screen.blit(offboard_text, (onboard_center_x - 20, offboard_center_y + radius + 10))
 
     # Convert the image data to a pygame surface and draw it
     image_data = camera_data()
@@ -364,8 +387,10 @@ def draw_ui(screen, font, active_keys, last_cmd):
             )
             # Scale the image to fit the screen
             scaled_image = pygame.transform.scale(image_surface, (640, 480))
-            # Blit the image onto the screen
-            screen.blit(scaled_image, (10, 290))
+            # Rotate the image 90 degrees
+            rotated_image = pygame.transform.rotate(scaled_image, -90)
+            # Blit the image onto the screen at a new position to avoid overlap
+            screen.blit(rotated_image, (700, 50))
         except Exception as e:
             print(f"Error rendering image: {e}")
 
@@ -399,7 +424,8 @@ def main():
 
     # Start listening to keyboard events
     pygame.init()
-    screen = pygame.display.set_mode((900, 900))
+    screen_width, screen_height = 900, 900
+    screen = pygame.display.set_mode((screen_width, screen_height), pygame.RESIZABLE)
     pygame.display.set_caption("UART Control")
     font = pygame.font.Font(None, 36)
 
