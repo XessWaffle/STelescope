@@ -1605,7 +1605,7 @@ LOAD D:/ST/STM32CubeCLT_1.18.0/GNU-tools-for-STM32/bin/../lib/gcc/arm-none-eabi/
                 0x08000000                g_pfnVectors
                 0x0800010c                        . = ALIGN (0x4)
 
-.text           0x0800010c     0x8fb8
+.text           0x0800010c     0x8fcc
                 0x0800010c                        . = ALIGN (0x4)
  *(.text)
  .text          0x0800010c       0x40 D:/ST/STM32CubeCLT_1.18.0/GNU-tools-for-STM32/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7-m/nofp/crtbegin.o
@@ -2246,440 +2246,440 @@ LOAD D:/ST/STM32CubeCLT_1.18.0/GNU-tools-for-STM32/bin/../lib/gcc/arm-none-eabi/
                 0x0800642c       0x14 CMakeFiles/STelescope.dir/Core/Src/main.c.obj
                 0x0800642c                HAL_SPI_TxRxCpltCallback
  .text.camera_update
-                0x08006440       0x64 CMakeFiles/STelescope.dir/Core/Src/main.c.obj
+                0x08006440       0x5c CMakeFiles/STelescope.dir/Core/Src/main.c.obj
                 0x08006440                camera_update
  .text.step_isr
-                0x080064a4       0x20 CMakeFiles/STelescope.dir/Core/Src/main.c.obj
-                0x080064a4                step_isr
+                0x0800649c       0x20 CMakeFiles/STelescope.dir/Core/Src/main.c.obj
+                0x0800649c                step_isr
  .text.led_update_isr
-                0x080064c4       0x78 CMakeFiles/STelescope.dir/Core/Src/main.c.obj
-                0x080064c4                led_update_isr
+                0x080064bc       0x78 CMakeFiles/STelescope.dir/Core/Src/main.c.obj
+                0x080064bc                led_update_isr
  .text.sensor_update_isr
-                0x0800653c        0xc CMakeFiles/STelescope.dir/Core/Src/main.c.obj
-                0x0800653c                sensor_update_isr
+                0x08006534        0xc CMakeFiles/STelescope.dir/Core/Src/main.c.obj
+                0x08006534                sensor_update_isr
  .text.camera_update_isr
-                0x08006548        0xc CMakeFiles/STelescope.dir/Core/Src/main.c.obj
-                0x08006548                camera_update_isr
+                0x08006540        0xc CMakeFiles/STelescope.dir/Core/Src/main.c.obj
+                0x08006540                camera_update_isr
  .text.populate_orientation_packet
-                0x08006554       0x80 CMakeFiles/STelescope.dir/Core/Src/main.c.obj
-                0x08006554                populate_orientation_packet
+                0x0800654c       0x80 CMakeFiles/STelescope.dir/Core/Src/main.c.obj
+                0x0800654c                populate_orientation_packet
  .text.startup.main
-                0x080065d4      0x4e0 CMakeFiles/STelescope.dir/Core/Src/main.c.obj
-                0x080065d4                main
+                0x080065cc      0x4e0 CMakeFiles/STelescope.dir/Core/Src/main.c.obj
+                0x080065cc                main
  .text.Error_Handler
-                0x08006ab4        0x4 CMakeFiles/STelescope.dir/Core/Src/main.c.obj
-                0x08006ab4                Error_Handler
+                0x08006aac        0x4 CMakeFiles/STelescope.dir/Core/Src/main.c.obj
+                0x08006aac                Error_Handler
  .text.NMI_Handler
-                0x08006ab8        0x4 CMakeFiles/STelescope.dir/Core/Src/stm32f1xx_it.c.obj
-                0x08006ab8                NMI_Handler
+                0x08006ab0        0x4 CMakeFiles/STelescope.dir/Core/Src/stm32f1xx_it.c.obj
+                0x08006ab0                NMI_Handler
  .text.HardFault_Handler
-                0x08006abc        0x4 CMakeFiles/STelescope.dir/Core/Src/stm32f1xx_it.c.obj
-                0x08006abc                HardFault_Handler
+                0x08006ab4        0x4 CMakeFiles/STelescope.dir/Core/Src/stm32f1xx_it.c.obj
+                0x08006ab4                HardFault_Handler
  .text.MemManage_Handler
-                0x08006ac0        0x4 CMakeFiles/STelescope.dir/Core/Src/stm32f1xx_it.c.obj
-                0x08006ac0                MemManage_Handler
+                0x08006ab8        0x4 CMakeFiles/STelescope.dir/Core/Src/stm32f1xx_it.c.obj
+                0x08006ab8                MemManage_Handler
  .text.BusFault_Handler
-                0x08006ac4        0x4 CMakeFiles/STelescope.dir/Core/Src/stm32f1xx_it.c.obj
-                0x08006ac4                BusFault_Handler
+                0x08006abc        0x4 CMakeFiles/STelescope.dir/Core/Src/stm32f1xx_it.c.obj
+                0x08006abc                BusFault_Handler
  .text.UsageFault_Handler
-                0x08006ac8        0x4 CMakeFiles/STelescope.dir/Core/Src/stm32f1xx_it.c.obj
-                0x08006ac8                UsageFault_Handler
+                0x08006ac0        0x4 CMakeFiles/STelescope.dir/Core/Src/stm32f1xx_it.c.obj
+                0x08006ac0                UsageFault_Handler
  .text.SVC_Handler
-                0x08006acc        0x4 CMakeFiles/STelescope.dir/Core/Src/stm32f1xx_it.c.obj
-                0x08006acc                SVC_Handler
+                0x08006ac4        0x4 CMakeFiles/STelescope.dir/Core/Src/stm32f1xx_it.c.obj
+                0x08006ac4                SVC_Handler
  .text.DebugMon_Handler
-                0x08006ad0        0x4 CMakeFiles/STelescope.dir/Core/Src/stm32f1xx_it.c.obj
-                0x08006ad0                DebugMon_Handler
+                0x08006ac8        0x4 CMakeFiles/STelescope.dir/Core/Src/stm32f1xx_it.c.obj
+                0x08006ac8                DebugMon_Handler
  .text.PendSV_Handler
-                0x08006ad4        0x4 CMakeFiles/STelescope.dir/Core/Src/stm32f1xx_it.c.obj
-                0x08006ad4                PendSV_Handler
+                0x08006acc        0x4 CMakeFiles/STelescope.dir/Core/Src/stm32f1xx_it.c.obj
+                0x08006acc                PendSV_Handler
  .text.SysTick_Handler
-                0x08006ad8        0x4 CMakeFiles/STelescope.dir/Core/Src/stm32f1xx_it.c.obj
-                0x08006ad8                SysTick_Handler
+                0x08006ad0        0x4 CMakeFiles/STelescope.dir/Core/Src/stm32f1xx_it.c.obj
+                0x08006ad0                SysTick_Handler
  .text.EXTI2_IRQHandler
-                0x08006adc       0x1c CMakeFiles/STelescope.dir/Core/Src/stm32f1xx_it.c.obj
-                0x08006adc                EXTI2_IRQHandler
+                0x08006ad4       0x1c CMakeFiles/STelescope.dir/Core/Src/stm32f1xx_it.c.obj
+                0x08006ad4                EXTI2_IRQHandler
  .text.DMA1_Channel2_IRQHandler
-                0x08006af8        0xc CMakeFiles/STelescope.dir/Core/Src/stm32f1xx_it.c.obj
-                0x08006af8                DMA1_Channel2_IRQHandler
+                0x08006af0        0xc CMakeFiles/STelescope.dir/Core/Src/stm32f1xx_it.c.obj
+                0x08006af0                DMA1_Channel2_IRQHandler
  .text.DMA1_Channel3_IRQHandler
-                0x08006b04        0xc CMakeFiles/STelescope.dir/Core/Src/stm32f1xx_it.c.obj
-                0x08006b04                DMA1_Channel3_IRQHandler
+                0x08006afc        0xc CMakeFiles/STelescope.dir/Core/Src/stm32f1xx_it.c.obj
+                0x08006afc                DMA1_Channel3_IRQHandler
  .text.DMA1_Channel5_IRQHandler
-                0x08006b10        0xc CMakeFiles/STelescope.dir/Core/Src/stm32f1xx_it.c.obj
-                0x08006b10                DMA1_Channel5_IRQHandler
+                0x08006b08        0xc CMakeFiles/STelescope.dir/Core/Src/stm32f1xx_it.c.obj
+                0x08006b08                DMA1_Channel5_IRQHandler
  .text.USB_LP_CAN1_RX0_IRQHandler
-                0x08006b1c        0xc CMakeFiles/STelescope.dir/Core/Src/stm32f1xx_it.c.obj
-                0x08006b1c                USB_LP_CAN1_RX0_IRQHandler
+                0x08006b14        0xc CMakeFiles/STelescope.dir/Core/Src/stm32f1xx_it.c.obj
+                0x08006b14                USB_LP_CAN1_RX0_IRQHandler
  .text.TIM2_IRQHandler
-                0x08006b28       0x14 CMakeFiles/STelescope.dir/Core/Src/stm32f1xx_it.c.obj
-                0x08006b28                TIM2_IRQHandler
+                0x08006b20       0x14 CMakeFiles/STelescope.dir/Core/Src/stm32f1xx_it.c.obj
+                0x08006b20                TIM2_IRQHandler
  .text.TIM3_IRQHandler
-                0x08006b3c       0x14 CMakeFiles/STelescope.dir/Core/Src/stm32f1xx_it.c.obj
-                0x08006b3c                TIM3_IRQHandler
+                0x08006b34       0x14 CMakeFiles/STelescope.dir/Core/Src/stm32f1xx_it.c.obj
+                0x08006b34                TIM3_IRQHandler
  .text.TIM4_IRQHandler
-                0x08006b50       0x14 CMakeFiles/STelescope.dir/Core/Src/stm32f1xx_it.c.obj
-                0x08006b50                TIM4_IRQHandler
+                0x08006b48       0x14 CMakeFiles/STelescope.dir/Core/Src/stm32f1xx_it.c.obj
+                0x08006b48                TIM4_IRQHandler
  .text.I2C1_EV_IRQHandler
-                0x08006b64        0xc CMakeFiles/STelescope.dir/Core/Src/stm32f1xx_it.c.obj
-                0x08006b64                I2C1_EV_IRQHandler
+                0x08006b5c        0xc CMakeFiles/STelescope.dir/Core/Src/stm32f1xx_it.c.obj
+                0x08006b5c                I2C1_EV_IRQHandler
  .text.I2C1_ER_IRQHandler
-                0x08006b70        0xc CMakeFiles/STelescope.dir/Core/Src/stm32f1xx_it.c.obj
-                0x08006b70                I2C1_ER_IRQHandler
+                0x08006b68        0xc CMakeFiles/STelescope.dir/Core/Src/stm32f1xx_it.c.obj
+                0x08006b68                I2C1_ER_IRQHandler
  .text.I2C2_EV_IRQHandler
-                0x08006b7c        0xc CMakeFiles/STelescope.dir/Core/Src/stm32f1xx_it.c.obj
-                0x08006b7c                I2C2_EV_IRQHandler
+                0x08006b74        0xc CMakeFiles/STelescope.dir/Core/Src/stm32f1xx_it.c.obj
+                0x08006b74                I2C2_EV_IRQHandler
  .text.I2C2_ER_IRQHandler
-                0x08006b88        0xc CMakeFiles/STelescope.dir/Core/Src/stm32f1xx_it.c.obj
-                0x08006b88                I2C2_ER_IRQHandler
+                0x08006b80        0xc CMakeFiles/STelescope.dir/Core/Src/stm32f1xx_it.c.obj
+                0x08006b80                I2C2_ER_IRQHandler
  .text.SPI1_IRQHandler
-                0x08006b94        0xc CMakeFiles/STelescope.dir/Core/Src/stm32f1xx_it.c.obj
-                0x08006b94                SPI1_IRQHandler
+                0x08006b8c        0xc CMakeFiles/STelescope.dir/Core/Src/stm32f1xx_it.c.obj
+                0x08006b8c                SPI1_IRQHandler
  .text.SPI2_IRQHandler
-                0x08006ba0        0xc CMakeFiles/STelescope.dir/Core/Src/stm32f1xx_it.c.obj
-                0x08006ba0                SPI2_IRQHandler
+                0x08006b98        0xc CMakeFiles/STelescope.dir/Core/Src/stm32f1xx_it.c.obj
+                0x08006b98                SPI2_IRQHandler
  .text.HAL_MspInit
-                0x08006bac       0x44 CMakeFiles/STelescope.dir/Core/Src/stm32f1xx_hal_msp.c.obj
-                0x08006bac                HAL_MspInit
+                0x08006ba4       0x44 CMakeFiles/STelescope.dir/Core/Src/stm32f1xx_hal_msp.c.obj
+                0x08006ba4                HAL_MspInit
  .text.HAL_I2C_MspInit
-                0x08006bf0       0xf0 CMakeFiles/STelescope.dir/Core/Src/stm32f1xx_hal_msp.c.obj
-                0x08006bf0                HAL_I2C_MspInit
+                0x08006be8       0xf0 CMakeFiles/STelescope.dir/Core/Src/stm32f1xx_hal_msp.c.obj
+                0x08006be8                HAL_I2C_MspInit
  .text.HAL_SPI_MspInit
-                0x08006ce0      0x180 CMakeFiles/STelescope.dir/Core/Src/stm32f1xx_hal_msp.c.obj
-                0x08006ce0                HAL_SPI_MspInit
+                0x08006cd8      0x180 CMakeFiles/STelescope.dir/Core/Src/stm32f1xx_hal_msp.c.obj
+                0x08006cd8                HAL_SPI_MspInit
  .text.HAL_TIM_Base_MspInit
-                0x08006e60       0xa8 CMakeFiles/STelescope.dir/Core/Src/stm32f1xx_hal_msp.c.obj
-                0x08006e60                HAL_TIM_Base_MspInit
+                0x08006e58       0xa8 CMakeFiles/STelescope.dir/Core/Src/stm32f1xx_hal_msp.c.obj
+                0x08006e58                HAL_TIM_Base_MspInit
  .text.HAL_UART_MspInit
-                0x08006f08       0x78 CMakeFiles/STelescope.dir/Core/Src/stm32f1xx_hal_msp.c.obj
-                0x08006f08                HAL_UART_MspInit
- .text._sbrk    0x08006f80       0x48 CMakeFiles/STelescope.dir/Core/Src/sysmem.c.obj
-                0x08006f80                _sbrk
- .text._read    0x08006fc8       0x1c CMakeFiles/STelescope.dir/Core/Src/syscalls.c.obj
-                0x08006fc8                _read
- .text._write   0x08006fe4       0x1c CMakeFiles/STelescope.dir/Core/Src/syscalls.c.obj
-                0x08006fe4                _write
- .text._close   0x08007000        0x8 CMakeFiles/STelescope.dir/Core/Src/syscalls.c.obj
-                0x08007000                _close
- .text._fstat   0x08007008        0xc CMakeFiles/STelescope.dir/Core/Src/syscalls.c.obj
-                0x08007008                _fstat
- .text._isatty  0x08007014        0x4 CMakeFiles/STelescope.dir/Core/Src/syscalls.c.obj
-                0x08007014                _isatty
- .text._lseek   0x08007018        0x4 CMakeFiles/STelescope.dir/Core/Src/syscalls.c.obj
-                0x08007018                _lseek
+                0x08006f00       0x78 CMakeFiles/STelescope.dir/Core/Src/stm32f1xx_hal_msp.c.obj
+                0x08006f00                HAL_UART_MspInit
+ .text._sbrk    0x08006f78       0x48 CMakeFiles/STelescope.dir/Core/Src/sysmem.c.obj
+                0x08006f78                _sbrk
+ .text._read    0x08006fc0       0x1c CMakeFiles/STelescope.dir/Core/Src/syscalls.c.obj
+                0x08006fc0                _read
+ .text._write   0x08006fdc       0x1c CMakeFiles/STelescope.dir/Core/Src/syscalls.c.obj
+                0x08006fdc                _write
+ .text._close   0x08006ff8        0x8 CMakeFiles/STelescope.dir/Core/Src/syscalls.c.obj
+                0x08006ff8                _close
+ .text._fstat   0x08007000        0xc CMakeFiles/STelescope.dir/Core/Src/syscalls.c.obj
+                0x08007000                _fstat
+ .text._isatty  0x0800700c        0x4 CMakeFiles/STelescope.dir/Core/Src/syscalls.c.obj
+                0x0800700c                _isatty
+ .text._lseek   0x08007010        0x4 CMakeFiles/STelescope.dir/Core/Src/syscalls.c.obj
+                0x08007010                _lseek
  .text.Reset_Handler
-                0x0800701c       0x48 CMakeFiles/STelescope.dir/startup_stm32f103xb.s.obj
-                0x0800701c                Reset_Handler
+                0x08007014       0x48 CMakeFiles/STelescope.dir/startup_stm32f103xb.s.obj
+                0x08007014                Reset_Handler
  .text.Default_Handler
-                0x08007064        0x2 CMakeFiles/STelescope.dir/startup_stm32f103xb.s.obj
-                0x08007064                RTC_Alarm_IRQHandler
-                0x08007064                TIM1_CC_IRQHandler
-                0x08007064                PVD_IRQHandler
-                0x08007064                EXTI3_IRQHandler
-                0x08007064                EXTI0_IRQHandler
-                0x08007064                ADC1_2_IRQHandler
-                0x08007064                TAMPER_IRQHandler
-                0x08007064                DMA1_Channel4_IRQHandler
-                0x08007064                USART3_IRQHandler
-                0x08007064                RTC_IRQHandler
-                0x08007064                DMA1_Channel7_IRQHandler
-                0x08007064                CAN1_RX1_IRQHandler
-                0x08007064                DMA1_Channel6_IRQHandler
-                0x08007064                RCC_IRQHandler
-                0x08007064                TIM1_TRG_COM_IRQHandler
-                0x08007064                DMA1_Channel1_IRQHandler
-                0x08007064                Default_Handler
-                0x08007064                EXTI15_10_IRQHandler
-                0x08007064                EXTI9_5_IRQHandler
-                0x08007064                EXTI4_IRQHandler
-                0x08007064                USB_HP_CAN1_TX_IRQHandler
-                0x08007064                TIM1_UP_IRQHandler
-                0x08007064                WWDG_IRQHandler
-                0x08007064                TIM1_BRK_IRQHandler
-                0x08007064                EXTI1_IRQHandler
-                0x08007064                USART2_IRQHandler
-                0x08007064                CAN1_SCE_IRQHandler
-                0x08007064                FLASH_IRQHandler
-                0x08007064                USART1_IRQHandler
-                0x08007064                USBWakeUp_IRQHandler
- *fill*         0x08007066        0x2 
+                0x0800705c        0x2 CMakeFiles/STelescope.dir/startup_stm32f103xb.s.obj
+                0x0800705c                RTC_Alarm_IRQHandler
+                0x0800705c                TIM1_CC_IRQHandler
+                0x0800705c                PVD_IRQHandler
+                0x0800705c                EXTI3_IRQHandler
+                0x0800705c                EXTI0_IRQHandler
+                0x0800705c                ADC1_2_IRQHandler
+                0x0800705c                TAMPER_IRQHandler
+                0x0800705c                DMA1_Channel4_IRQHandler
+                0x0800705c                USART3_IRQHandler
+                0x0800705c                RTC_IRQHandler
+                0x0800705c                DMA1_Channel7_IRQHandler
+                0x0800705c                CAN1_RX1_IRQHandler
+                0x0800705c                DMA1_Channel6_IRQHandler
+                0x0800705c                RCC_IRQHandler
+                0x0800705c                TIM1_TRG_COM_IRQHandler
+                0x0800705c                DMA1_Channel1_IRQHandler
+                0x0800705c                Default_Handler
+                0x0800705c                EXTI15_10_IRQHandler
+                0x0800705c                EXTI9_5_IRQHandler
+                0x0800705c                EXTI4_IRQHandler
+                0x0800705c                USB_HP_CAN1_TX_IRQHandler
+                0x0800705c                TIM1_UP_IRQHandler
+                0x0800705c                WWDG_IRQHandler
+                0x0800705c                TIM1_BRK_IRQHandler
+                0x0800705c                EXTI1_IRQHandler
+                0x0800705c                USART2_IRQHandler
+                0x0800705c                CAN1_SCE_IRQHandler
+                0x0800705c                FLASH_IRQHandler
+                0x0800705c                USART1_IRQHandler
+                0x0800705c                USBWakeUp_IRQHandler
+ *fill*         0x0800705e        0x2 
  .text.drdy_accelerometer_cb
-                0x08007068       0x1c CMakeFiles/STelescope.dir/Core/Src/accelerometer.c.obj
-                0x08007068                drdy_accelerometer_cb
+                0x08007060       0x1c CMakeFiles/STelescope.dir/Core/Src/accelerometer.c.obj
+                0x08007060                drdy_accelerometer_cb
  .text.init_accelerometer
-                0x08007084       0x84 CMakeFiles/STelescope.dir/Core/Src/accelerometer.c.obj
-                0x08007084                init_accelerometer
+                0x0800707c       0x84 CMakeFiles/STelescope.dir/Core/Src/accelerometer.c.obj
+                0x0800707c                init_accelerometer
  .text.dacq_accelerometer
-                0x08007108       0x34 CMakeFiles/STelescope.dir/Core/Src/accelerometer.c.obj
-                0x08007108                dacq_accelerometer
+                0x08007100       0x34 CMakeFiles/STelescope.dir/Core/Src/accelerometer.c.obj
+                0x08007100                dacq_accelerometer
  .text.get_accelerometer_data
-                0x0800713c        0x8 CMakeFiles/STelescope.dir/Core/Src/accelerometer.c.obj
-                0x0800713c                get_accelerometer_data
+                0x08007134        0x8 CMakeFiles/STelescope.dir/Core/Src/accelerometer.c.obj
+                0x08007134                get_accelerometer_data
  .text.drdy_offboard_compass_cb
-                0x08007144       0xb4 CMakeFiles/STelescope.dir/Core/Src/compass.c.obj
-                0x08007144                drdy_offboard_compass_cb
+                0x0800713c       0xb4 CMakeFiles/STelescope.dir/Core/Src/compass.c.obj
+                0x0800713c                drdy_offboard_compass_cb
  .text.drdy_onboard_compass_cb
-                0x080071f8       0xc0 CMakeFiles/STelescope.dir/Core/Src/compass.c.obj
-                0x080071f8                drdy_onboard_compass_cb
+                0x080071f0       0xc0 CMakeFiles/STelescope.dir/Core/Src/compass.c.obj
+                0x080071f0                drdy_onboard_compass_cb
  .text.init_compass
-                0x080072b8      0x104 CMakeFiles/STelescope.dir/Core/Src/compass.c.obj
-                0x080072b8                init_compass
+                0x080072b0      0x104 CMakeFiles/STelescope.dir/Core/Src/compass.c.obj
+                0x080072b0                init_compass
  .text.dacq_compass
-                0x080073bc       0x50 CMakeFiles/STelescope.dir/Core/Src/compass.c.obj
-                0x080073bc                dacq_compass
+                0x080073b4       0x50 CMakeFiles/STelescope.dir/Core/Src/compass.c.obj
+                0x080073b4                dacq_compass
  .text.get_compass_data
-                0x0800740c       0x10 CMakeFiles/STelescope.dir/Core/Src/compass.c.obj
-                0x0800740c                get_compass_data
+                0x08007404       0x10 CMakeFiles/STelescope.dir/Core/Src/compass.c.obj
+                0x08007404                get_compass_data
  .text.reset_display
-                0x0800741c       0x3c CMakeFiles/STelescope.dir/Core/Src/display.c.obj
-                0x0800741c                reset_display
+                0x08007414       0x3c CMakeFiles/STelescope.dir/Core/Src/display.c.obj
+                0x08007414                reset_display
  .text.prep_display
-                0x08007458      0x110 CMakeFiles/STelescope.dir/Core/Src/display.c.obj
-                0x08007458                prep_display
+                0x08007450      0x110 CMakeFiles/STelescope.dir/Core/Src/display.c.obj
+                0x08007450                prep_display
  .text.draw_post_init
-                0x08007568      0x1a4 CMakeFiles/STelescope.dir/Core/Src/display.c.obj
-                0x08007568                draw_post_init
+                0x08007560      0x1a4 CMakeFiles/STelescope.dir/Core/Src/display.c.obj
+                0x08007560                draw_post_init
  .text.init_display
-                0x0800770c      0x12c CMakeFiles/STelescope.dir/Core/Src/display.c.obj
-                0x0800770c                init_display
+                0x08007704      0x12c CMakeFiles/STelescope.dir/Core/Src/display.c.obj
+                0x08007704                init_display
  .text.rtx_spi_cb
-                0x08007838       0x48 CMakeFiles/STelescope.dir/Core/Src/peripheral.c.obj
-                0x08007838                rtx_spi_cb
- .text.rtx_spi  0x08007880       0xbc CMakeFiles/STelescope.dir/Core/Src/peripheral.c.obj
-                0x08007880                rtx_spi
- .text.rtx_i2c  0x0800793c       0x54 CMakeFiles/STelescope.dir/Core/Src/peripheral.c.obj
-                0x0800793c                rtx_i2c
+                0x08007830       0x48 CMakeFiles/STelescope.dir/Core/Src/peripheral.c.obj
+                0x08007830                rtx_spi_cb
+ .text.rtx_spi  0x08007878       0xbc CMakeFiles/STelescope.dir/Core/Src/peripheral.c.obj
+                0x08007878                rtx_spi
+ .text.rtx_i2c  0x08007934       0x54 CMakeFiles/STelescope.dir/Core/Src/peripheral.c.obj
+                0x08007934                rtx_i2c
  .text.rtx_i2c_cb
-                0x08007990       0x58 CMakeFiles/STelescope.dir/Core/Src/peripheral.c.obj
-                0x08007990                rtx_i2c_cb
+                0x08007988       0x58 CMakeFiles/STelescope.dir/Core/Src/peripheral.c.obj
+                0x08007988                rtx_i2c_cb
  .text.read_fifo_length
-                0x080079e8       0x8c CMakeFiles/STelescope.dir/Core/Src/camera.c.obj
-                0x080079e8                read_fifo_length
+                0x080079e0       0x8c CMakeFiles/STelescope.dir/Core/Src/camera.c.obj
+                0x080079e0                read_fifo_length
  .text.set_fifo_burst_read
-                0x08007a74       0x58 CMakeFiles/STelescope.dir/Core/Src/camera.c.obj
-                0x08007a74                set_fifo_burst_read
+                0x08007a6c       0x58 CMakeFiles/STelescope.dir/Core/Src/camera.c.obj
+                0x08007a6c                set_fifo_burst_read
  .text.pipe_fifo
-                0x08007acc       0x90 CMakeFiles/STelescope.dir/Core/Src/camera.c.obj
-                0x08007acc                pipe_fifo
+                0x08007ac4       0x90 CMakeFiles/STelescope.dir/Core/Src/camera.c.obj
+                0x08007ac4                pipe_fifo
  .text.init_camera
-                0x08007b5c      0x1ac CMakeFiles/STelescope.dir/Core/Src/camera.c.obj
-                0x08007b5c                init_camera
+                0x08007b54      0x1ac CMakeFiles/STelescope.dir/Core/Src/camera.c.obj
+                0x08007b54                init_camera
  .text.capture_and_pipe
-                0x08007d08      0x124 CMakeFiles/STelescope.dir/Core/Src/camera.c.obj
-                0x08007d08                capture_and_pipe
+                0x08007d00      0x124 CMakeFiles/STelescope.dir/Core/Src/camera.c.obj
+                0x08007d00                capture_and_pipe
  .text.init_stepper
-                0x08007e2c      0x14c CMakeFiles/STelescope.dir/Core/Src/stepper.c.obj
-                0x08007e2c                init_stepper
+                0x08007e24      0x160 CMakeFiles/STelescope.dir/Core/Src/stepper.c.obj
+                0x08007e24                init_stepper
  .text.get_microstep_mode
-                0x08007f78        0xc CMakeFiles/STelescope.dir/Core/Src/stepper.c.obj
-                0x08007f78                get_microstep_mode
+                0x08007f84        0xc CMakeFiles/STelescope.dir/Core/Src/stepper.c.obj
+                0x08007f84                get_microstep_mode
  .text.get_stepper_position
-                0x08007f84       0x14 CMakeFiles/STelescope.dir/Core/Src/stepper.c.obj
-                0x08007f84                get_stepper_position
+                0x08007f90       0x10 CMakeFiles/STelescope.dir/Core/Src/stepper.c.obj
+                0x08007f90                get_stepper_position
  .text.get_stepper_rate
-                0x08007f98       0x14 CMakeFiles/STelescope.dir/Core/Src/stepper.c.obj
-                0x08007f98                get_stepper_rate
+                0x08007fa0       0x10 CMakeFiles/STelescope.dir/Core/Src/stepper.c.obj
+                0x08007fa0                get_stepper_rate
  .text.set_microstep_mode
-                0x08007fac       0x94 CMakeFiles/STelescope.dir/Core/Src/stepper.c.obj
-                0x08007fac                set_microstep_mode
+                0x08007fb0       0xe4 CMakeFiles/STelescope.dir/Core/Src/stepper.c.obj
+                0x08007fb0                set_microstep_mode
  .text.set_stepper_state
-                0x08008040        0xc CMakeFiles/STelescope.dir/Core/Src/stepper.c.obj
-                0x08008040                set_stepper_state
+                0x08008094        0xc CMakeFiles/STelescope.dir/Core/Src/stepper.c.obj
+                0x08008094                set_stepper_state
  .text.set_stepper_position
-                0x0800804c       0x14 CMakeFiles/STelescope.dir/Core/Src/stepper.c.obj
-                0x0800804c                set_stepper_position
+                0x080080a0       0x10 CMakeFiles/STelescope.dir/Core/Src/stepper.c.obj
+                0x080080a0                set_stepper_position
  .text.set_stepper_rate
-                0x08008060      0x134 CMakeFiles/STelescope.dir/Core/Src/stepper.c.obj
-                0x08008060                set_stepper_rate
+                0x080080b0      0x11c CMakeFiles/STelescope.dir/Core/Src/stepper.c.obj
+                0x080080b0                set_stepper_rate
  .text.increment_tick
-                0x08008194       0xc0 CMakeFiles/STelescope.dir/Core/Src/stepper.c.obj
-                0x08008194                increment_tick
+                0x080081cc       0xb8 CMakeFiles/STelescope.dir/Core/Src/stepper.c.obj
+                0x080081cc                increment_tick
  .text.step_axis
-                0x08008254       0x78 CMakeFiles/STelescope.dir/Core/Src/stepper.c.obj
-                0x08008254                step_axis
- .text.home     0x080082cc      0x374 CMakeFiles/STelescope.dir/Core/Src/mobility.c.obj
-                0x080082cc                home
+                0x08008284       0x5c CMakeFiles/STelescope.dir/Core/Src/stepper.c.obj
+                0x08008284                step_axis
+ .text.home     0x080082e0      0x374 CMakeFiles/STelescope.dir/Core/Src/mobility.c.obj
+                0x080082e0                home
  .text.get_next_pulse_cc.part.0
-                0x08008640       0x7c CMakeFiles/STelescope.dir/Core/Src/status.c.obj
+                0x08008654       0x7c CMakeFiles/STelescope.dir/Core/Src/status.c.obj
  .text.init_status_leds
-                0x080086bc       0x48 CMakeFiles/STelescope.dir/Core/Src/status.c.obj
-                0x080086bc                init_status_leds
+                0x080086d0       0x48 CMakeFiles/STelescope.dir/Core/Src/status.c.obj
+                0x080086d0                init_status_leds
  .text.set_status_led
-                0x08008704       0x18 CMakeFiles/STelescope.dir/Core/Src/status.c.obj
-                0x08008704                set_status_led
+                0x08008718       0x18 CMakeFiles/STelescope.dir/Core/Src/status.c.obj
+                0x08008718                set_status_led
  .text.get_next_pulse_cc
-                0x0800871c       0x3c CMakeFiles/STelescope.dir/Core/Src/status.c.obj
-                0x0800871c                get_next_pulse_cc
+                0x08008730       0x3c CMakeFiles/STelescope.dir/Core/Src/status.c.obj
+                0x08008730                get_next_pulse_cc
  .text.update_leds
-                0x08008758       0x14 CMakeFiles/STelescope.dir/Core/Src/status.c.obj
-                0x08008758                update_leds
+                0x0800876c       0x14 CMakeFiles/STelescope.dir/Core/Src/status.c.obj
+                0x0800876c                update_leds
  .text.drdy_rtc_cb
-                0x0800876c       0x38 CMakeFiles/STelescope.dir/Core/Src/rtc.c.obj
-                0x0800876c                drdy_rtc_cb
+                0x08008780       0x38 CMakeFiles/STelescope.dir/Core/Src/rtc.c.obj
+                0x08008780                drdy_rtc_cb
  .text.init_rtc
-                0x080087a4       0x74 CMakeFiles/STelescope.dir/Core/Src/rtc.c.obj
-                0x080087a4                init_rtc
- .text.printf   0x08008818       0x24 D:/ST/STM32CubeCLT_1.18.0/GNU-tools-for-STM32/bin/../lib/gcc/arm-none-eabi/13.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg_nano.a(libc_a-printf.o)
-                0x08008818                iprintf
-                0x08008818                printf
- .text.putchar  0x0800883c       0x10 D:/ST/STM32CubeCLT_1.18.0/GNU-tools-for-STM32/bin/../lib/gcc/arm-none-eabi/13.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg_nano.a(libc_a-putchar.o)
-                0x0800883c                putchar
- .text.__errno  0x0800884c        0xc D:/ST/STM32CubeCLT_1.18.0/GNU-tools-for-STM32/bin/../lib/gcc/arm-none-eabi/13.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg_nano.a(libc_a-errno.o)
-                0x0800884c                __errno
+                0x080087b8       0x74 CMakeFiles/STelescope.dir/Core/Src/rtc.c.obj
+                0x080087b8                init_rtc
+ .text.printf   0x0800882c       0x24 D:/ST/STM32CubeCLT_1.18.0/GNU-tools-for-STM32/bin/../lib/gcc/arm-none-eabi/13.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg_nano.a(libc_a-printf.o)
+                0x0800882c                iprintf
+                0x0800882c                printf
+ .text.putchar  0x08008850       0x10 D:/ST/STM32CubeCLT_1.18.0/GNU-tools-for-STM32/bin/../lib/gcc/arm-none-eabi/13.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg_nano.a(libc_a-putchar.o)
+                0x08008850                putchar
+ .text.__errno  0x08008860        0xc D:/ST/STM32CubeCLT_1.18.0/GNU-tools-for-STM32/bin/../lib/gcc/arm-none-eabi/13.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg_nano.a(libc_a-errno.o)
+                0x08008860                __errno
  .text.__sfputc_r
-                0x08008858       0x2a D:/ST/STM32CubeCLT_1.18.0/GNU-tools-for-STM32/bin/../lib/gcc/arm-none-eabi/13.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg_nano.a(libc_a-nano-vfprintf.o)
+                0x0800886c       0x2a D:/ST/STM32CubeCLT_1.18.0/GNU-tools-for-STM32/bin/../lib/gcc/arm-none-eabi/13.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg_nano.a(libc_a-nano-vfprintf.o)
  .text.__sfputs_r
-                0x08008882       0x24 D:/ST/STM32CubeCLT_1.18.0/GNU-tools-for-STM32/bin/../lib/gcc/arm-none-eabi/13.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg_nano.a(libc_a-nano-vfprintf.o)
-                0x08008882                __sfputs_r
- *fill*         0x080088a6        0x2 
+                0x08008896       0x24 D:/ST/STM32CubeCLT_1.18.0/GNU-tools-for-STM32/bin/../lib/gcc/arm-none-eabi/13.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg_nano.a(libc_a-nano-vfprintf.o)
+                0x08008896                __sfputs_r
+ *fill*         0x080088ba        0x2 
  .text._vfprintf_r
-                0x080088a8      0x230 D:/ST/STM32CubeCLT_1.18.0/GNU-tools-for-STM32/bin/../lib/gcc/arm-none-eabi/13.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg_nano.a(libc_a-nano-vfprintf.o)
-                0x080088a8                _vfprintf_r
-                0x080088a8                _vfiprintf_r
+                0x080088bc      0x230 D:/ST/STM32CubeCLT_1.18.0/GNU-tools-for-STM32/bin/../lib/gcc/arm-none-eabi/13.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg_nano.a(libc_a-nano-vfprintf.o)
+                0x080088bc                _vfprintf_r
+                0x080088bc                _vfiprintf_r
  .text._printf_common
-                0x08008ad8       0xe4 D:/ST/STM32CubeCLT_1.18.0/GNU-tools-for-STM32/bin/../lib/gcc/arm-none-eabi/13.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg_nano.a(libc_a-nano-vfprintf_i.o)
-                0x08008ad8                _printf_common
+                0x08008aec       0xe4 D:/ST/STM32CubeCLT_1.18.0/GNU-tools-for-STM32/bin/../lib/gcc/arm-none-eabi/13.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg_nano.a(libc_a-nano-vfprintf_i.o)
+                0x08008aec                _printf_common
  .text._printf_i
-                0x08008bbc      0x23c D:/ST/STM32CubeCLT_1.18.0/GNU-tools-for-STM32/bin/../lib/gcc/arm-none-eabi/13.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg_nano.a(libc_a-nano-vfprintf_i.o)
-                0x08008bbc                _printf_i
- .text._putc_r  0x08008df8       0x68 D:/ST/STM32CubeCLT_1.18.0/GNU-tools-for-STM32/bin/../lib/gcc/arm-none-eabi/13.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg_nano.a(libc_a-putc.o)
-                0x08008df8                _putc_r
+                0x08008bd0      0x23c D:/ST/STM32CubeCLT_1.18.0/GNU-tools-for-STM32/bin/../lib/gcc/arm-none-eabi/13.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg_nano.a(libc_a-nano-vfprintf_i.o)
+                0x08008bd0                _printf_i
+ .text._putc_r  0x08008e0c       0x68 D:/ST/STM32CubeCLT_1.18.0/GNU-tools-for-STM32/bin/../lib/gcc/arm-none-eabi/13.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg_nano.a(libc_a-putc.o)
+                0x08008e0c                _putc_r
  .text.__swbuf_r
-                0x08008e60       0x7c D:/ST/STM32CubeCLT_1.18.0/GNU-tools-for-STM32/bin/../lib/gcc/arm-none-eabi/13.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg_nano.a(libc_a-wbuf.o)
-                0x08008e60                __swbuf_r
+                0x08008e74       0x7c D:/ST/STM32CubeCLT_1.18.0/GNU-tools-for-STM32/bin/../lib/gcc/arm-none-eabi/13.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg_nano.a(libc_a-wbuf.o)
+                0x08008e74                __swbuf_r
  .text.__swsetup_r
-                0x08008edc       0xac D:/ST/STM32CubeCLT_1.18.0/GNU-tools-for-STM32/bin/../lib/gcc/arm-none-eabi/13.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg_nano.a(libc_a-wsetup.o)
-                0x08008edc                __swsetup_r
- .text.memchr   0x08008f88       0x1c D:/ST/STM32CubeCLT_1.18.0/GNU-tools-for-STM32/bin/../lib/gcc/arm-none-eabi/13.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg_nano.a(libc_a-memchr-stub.o)
-                0x08008f88                memchr
+                0x08008ef0       0xac D:/ST/STM32CubeCLT_1.18.0/GNU-tools-for-STM32/bin/../lib/gcc/arm-none-eabi/13.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg_nano.a(libc_a-wsetup.o)
+                0x08008ef0                __swsetup_r
+ .text.memchr   0x08008f9c       0x1c D:/ST/STM32CubeCLT_1.18.0/GNU-tools-for-STM32/bin/../lib/gcc/arm-none-eabi/13.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg_nano.a(libc_a-memchr-stub.o)
+                0x08008f9c                memchr
  .text.__swhatbuf_r
-                0x08008fa4       0x4a D:/ST/STM32CubeCLT_1.18.0/GNU-tools-for-STM32/bin/../lib/gcc/arm-none-eabi/13.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg_nano.a(libc_a-makebuf.o)
-                0x08008fa4                __swhatbuf_r
+                0x08008fb8       0x4a D:/ST/STM32CubeCLT_1.18.0/GNU-tools-for-STM32/bin/../lib/gcc/arm-none-eabi/13.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg_nano.a(libc_a-makebuf.o)
+                0x08008fb8                __swhatbuf_r
  .text.__smakebuf_r
-                0x08008fee       0x78 D:/ST/STM32CubeCLT_1.18.0/GNU-tools-for-STM32/bin/../lib/gcc/arm-none-eabi/13.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg_nano.a(libc_a-makebuf.o)
-                0x08008fee                __smakebuf_r
- *fill*         0x08009066        0x2 
+                0x08009002       0x78 D:/ST/STM32CubeCLT_1.18.0/GNU-tools-for-STM32/bin/../lib/gcc/arm-none-eabi/13.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg_nano.a(libc_a-makebuf.o)
+                0x08009002                __smakebuf_r
+ *fill*         0x0800907a        0x2 
  .text._fstat_r
-                0x08009068       0x24 D:/ST/STM32CubeCLT_1.18.0/GNU-tools-for-STM32/bin/../lib/gcc/arm-none-eabi/13.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg_nano.a(libc_a-fstatr.o)
-                0x08009068                _fstat_r
+                0x0800907c       0x24 D:/ST/STM32CubeCLT_1.18.0/GNU-tools-for-STM32/bin/../lib/gcc/arm-none-eabi/13.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg_nano.a(libc_a-fstatr.o)
+                0x0800907c                _fstat_r
  .text._isatty_r
-                0x0800908c       0x20 D:/ST/STM32CubeCLT_1.18.0/GNU-tools-for-STM32/bin/../lib/gcc/arm-none-eabi/13.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg_nano.a(libc_a-isattyr.o)
-                0x0800908c                _isatty_r
+                0x080090a0       0x20 D:/ST/STM32CubeCLT_1.18.0/GNU-tools-for-STM32/bin/../lib/gcc/arm-none-eabi/13.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg_nano.a(libc_a-isattyr.o)
+                0x080090a0                _isatty_r
  *(.glue_7)
- .glue_7        0x080090ac        0x0 linker stubs
+ .glue_7        0x080090c0        0x0 linker stubs
  *(.glue_7t)
- .glue_7t       0x080090ac        0x0 linker stubs
+ .glue_7t       0x080090c0        0x0 linker stubs
  *(.eh_frame)
- .eh_frame      0x080090ac        0x0 D:/ST/STM32CubeCLT_1.18.0/GNU-tools-for-STM32/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7-m/nofp/crtbegin.o
+ .eh_frame      0x080090c0        0x0 D:/ST/STM32CubeCLT_1.18.0/GNU-tools-for-STM32/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7-m/nofp/crtbegin.o
  *(.init)
- .init          0x080090ac        0x4 D:/ST/STM32CubeCLT_1.18.0/GNU-tools-for-STM32/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7-m/nofp/crti.o
-                0x080090ac                _init
- .init          0x080090b0        0x8 D:/ST/STM32CubeCLT_1.18.0/GNU-tools-for-STM32/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7-m/nofp/crtn.o
+ .init          0x080090c0        0x4 D:/ST/STM32CubeCLT_1.18.0/GNU-tools-for-STM32/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7-m/nofp/crti.o
+                0x080090c0                _init
+ .init          0x080090c4        0x8 D:/ST/STM32CubeCLT_1.18.0/GNU-tools-for-STM32/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7-m/nofp/crtn.o
  *(.fini)
- .fini          0x080090b8        0x4 D:/ST/STM32CubeCLT_1.18.0/GNU-tools-for-STM32/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7-m/nofp/crti.o
-                0x080090b8                _fini
- .fini          0x080090bc        0x8 D:/ST/STM32CubeCLT_1.18.0/GNU-tools-for-STM32/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7-m/nofp/crtn.o
-                0x080090c4                        . = ALIGN (0x4)
-                0x080090c4                        _etext = .
+ .fini          0x080090cc        0x4 D:/ST/STM32CubeCLT_1.18.0/GNU-tools-for-STM32/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7-m/nofp/crti.o
+                0x080090cc                _fini
+ .fini          0x080090d0        0x8 D:/ST/STM32CubeCLT_1.18.0/GNU-tools-for-STM32/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7-m/nofp/crtn.o
+                0x080090d8                        . = ALIGN (0x4)
+                0x080090d8                        _etext = .
 
-.vfp11_veneer   0x080090c4        0x0
- .vfp11_veneer  0x080090c4        0x0 linker stubs
+.vfp11_veneer   0x080090d8        0x0
+ .vfp11_veneer  0x080090d8        0x0 linker stubs
 
-.v4_bx          0x080090c4        0x0
- .v4_bx         0x080090c4        0x0 linker stubs
+.v4_bx          0x080090d8        0x0
+ .v4_bx         0x080090d8        0x0 linker stubs
 
-.iplt           0x080090c4        0x0
- .iplt          0x080090c4        0x0 D:/ST/STM32CubeCLT_1.18.0/GNU-tools-for-STM32/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7-m/nofp/crtbegin.o
+.iplt           0x080090d8        0x0
+ .iplt          0x080090d8        0x0 D:/ST/STM32CubeCLT_1.18.0/GNU-tools-for-STM32/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7-m/nofp/crtbegin.o
 
-.rodata         0x080090c4      0x460
-                0x080090c4                        . = ALIGN (0x4)
+.rodata         0x080090d8      0x460
+                0x080090d8                        . = ALIGN (0x4)
  *(.rodata)
  *(.rodata*)
  .rodata.APBPrescTable
-                0x080090c4        0x8 cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Core/Src/system_stm32f1xx.c.obj
-                0x080090c4                APBPrescTable
+                0x080090d8        0x8 cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Core/Src/system_stm32f1xx.c.obj
+                0x080090d8                APBPrescTable
  .rodata.AHBPrescTable
-                0x080090cc       0x10 cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Core/Src/system_stm32f1xx.c.obj
-                0x080090cc                AHBPrescTable
+                0x080090e0       0x10 cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Core/Src/system_stm32f1xx.c.obj
+                0x080090e0                AHBPrescTable
  .rodata.aPredivFactorTable.0
-                0x080090dc        0x2 cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc.c.obj
- *fill*         0x080090de        0x2 
+                0x080090f0        0x2 cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc.c.obj
+ *fill*         0x080090f2        0x2 
  .rodata.aPLLMULFactorTable.1
-                0x080090e0       0x10 cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc.c.obj
+                0x080090f4       0x10 cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc.c.obj
  .rodata.USBD_Init.str1.4
-                0x080090f0       0xaa cmake/stm32cubemx/CMakeFiles/USB_Device_Library.dir/__/__/Middlewares/ST/STM32_USB_Device_Library/Core/Src/usbd_core.c.obj
+                0x08009104       0xaa cmake/stm32cubemx/CMakeFiles/USB_Device_Library.dir/__/__/Middlewares/ST/STM32_USB_Device_Library/Core/Src/usbd_core.c.obj
                                  0x1e (size before relaxing)
  .rodata.USBD_RegisterClass.str1.4
-                0x0800919a       0x15 cmake/stm32cubemx/CMakeFiles/USB_Device_Library.dir/__/__/Middlewares/ST/STM32_USB_Device_Library/Core/Src/usbd_core.c.obj
+                0x080091ae       0x15 cmake/stm32cubemx/CMakeFiles/USB_Device_Library.dir/__/__/Middlewares/ST/STM32_USB_Device_Library/Core/Src/usbd_core.c.obj
  .rodata.USBD_FS_ManufacturerStrDescriptor.str1.4
-                0x0800919a       0x13 CMakeFiles/STelescope.dir/USB_DEVICE/App/usbd_desc.c.obj
+                0x080091ae       0x13 CMakeFiles/STelescope.dir/USB_DEVICE/App/usbd_desc.c.obj
  .rodata.USBD_FS_ProductStrDescriptor.str1.4
-                0x0800919a       0x16 CMakeFiles/STelescope.dir/USB_DEVICE/App/usbd_desc.c.obj
+                0x080091ae       0x16 CMakeFiles/STelescope.dir/USB_DEVICE/App/usbd_desc.c.obj
  .rodata.USBD_FS_ConfigStrDescriptor.str1.4
-                0x0800919a        0xb CMakeFiles/STelescope.dir/USB_DEVICE/App/usbd_desc.c.obj
+                0x080091ae        0xb CMakeFiles/STelescope.dir/USB_DEVICE/App/usbd_desc.c.obj
  .rodata.USBD_FS_InterfaceStrDescriptor.str1.4
-                0x0800919a        0xe CMakeFiles/STelescope.dir/USB_DEVICE/App/usbd_desc.c.obj
+                0x080091ae        0xe CMakeFiles/STelescope.dir/USB_DEVICE/App/usbd_desc.c.obj
  .rodata.main.str1.4
-                0x0800919a       0x2a CMakeFiles/STelescope.dir/Core/Src/main.c.obj
- *fill*         0x0800919a        0x2 
+                0x080091ae       0x2a CMakeFiles/STelescope.dir/Core/Src/main.c.obj
+ *fill*         0x080091ae        0x2 
  .rodata.initcmd
-                0x0800919c       0xe0 CMakeFiles/STelescope.dir/Core/Src/display.c.obj
+                0x080091b0       0xe0 CMakeFiles/STelescope.dir/Core/Src/display.c.obj
  .rodata.CSWTCH.2
-                0x0800927c       0x10 CMakeFiles/STelescope.dir/Core/Src/peripheral.c.obj
+                0x08009290       0x10 CMakeFiles/STelescope.dir/Core/Src/peripheral.c.obj
  .rodata.qvga_init
-                0x0800928c      0x264 CMakeFiles/STelescope.dir/Core/Src/camera.c.obj
-                0x0800928c                qvga_init
+                0x080092a0      0x264 CMakeFiles/STelescope.dir/Core/Src/camera.c.obj
+                0x080092a0                qvga_init
  .rodata._vfprintf_r.str1.1
-                0x080094f0       0x33 D:/ST/STM32CubeCLT_1.18.0/GNU-tools-for-STM32/bin/../lib/gcc/arm-none-eabi/13.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg_nano.a(libc_a-nano-vfprintf.o)
+                0x08009504       0x33 D:/ST/STM32CubeCLT_1.18.0/GNU-tools-for-STM32/bin/../lib/gcc/arm-none-eabi/13.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg_nano.a(libc_a-nano-vfprintf.o)
                                  0x11 (size before relaxing)
  .rodata._printf_i.str1.1
-                0x08009523       0x22 D:/ST/STM32CubeCLT_1.18.0/GNU-tools-for-STM32/bin/../lib/gcc/arm-none-eabi/13.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg_nano.a(libc_a-nano-vfprintf_i.o)
-                0x08009548                        . = ALIGN (0x4)
- *fill*         0x08009523        0x1 
+                0x08009537       0x22 D:/ST/STM32CubeCLT_1.18.0/GNU-tools-for-STM32/bin/../lib/gcc/arm-none-eabi/13.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg_nano.a(libc_a-nano-vfprintf_i.o)
+                0x0800955c                        . = ALIGN (0x4)
+ *fill*         0x08009537        0x1 
 
-.ARM.extab      0x08009524        0x0
-                0x08009524                        . = ALIGN (0x4)
+.ARM.extab      0x08009538        0x0
+                0x08009538                        . = ALIGN (0x4)
  *(.ARM.extab* .gnu.linkonce.armextab.*)
-                0x08009524                        . = ALIGN (0x4)
+                0x08009538                        . = ALIGN (0x4)
 
-.ARM            0x08009524        0x8
-                0x08009524                        . = ALIGN (0x4)
-                0x08009524                        __exidx_start = .
+.ARM            0x08009538        0x8
+                0x08009538                        . = ALIGN (0x4)
+                0x08009538                        __exidx_start = .
  *(.ARM.exidx*)
- .ARM.exidx     0x08009524        0x8 D:/ST/STM32CubeCLT_1.18.0/GNU-tools-for-STM32/bin/../lib/gcc/arm-none-eabi/13.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg_nano.a(libc_a-strlen.o)
-                0x0800952c                        __exidx_end = .
-                0x0800952c                        . = ALIGN (0x4)
+ .ARM.exidx     0x08009538        0x8 D:/ST/STM32CubeCLT_1.18.0/GNU-tools-for-STM32/bin/../lib/gcc/arm-none-eabi/13.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg_nano.a(libc_a-strlen.o)
+                0x08009540                        __exidx_end = .
+                0x08009540                        . = ALIGN (0x4)
 
-.preinit_array  0x0800952c        0x0
-                0x0800952c                        . = ALIGN (0x4)
-                0x0800952c                        PROVIDE (__preinit_array_start = .)
+.preinit_array  0x08009540        0x0
+                0x08009540                        . = ALIGN (0x4)
+                0x08009540                        PROVIDE (__preinit_array_start = .)
  *(.preinit_array*)
-                0x0800952c                        PROVIDE (__preinit_array_end = .)
-                0x0800952c                        . = ALIGN (0x4)
+                0x08009540                        PROVIDE (__preinit_array_end = .)
+                0x08009540                        . = ALIGN (0x4)
 
-.init_array     0x0800952c        0x4
-                0x0800952c                        . = ALIGN (0x4)
-                0x0800952c                        PROVIDE (__init_array_start = .)
+.init_array     0x08009540        0x4
+                0x08009540                        . = ALIGN (0x4)
+                0x08009540                        PROVIDE (__init_array_start = .)
  *(SORT_BY_NAME(.init_array.*))
  *(.init_array*)
- .init_array    0x0800952c        0x4 D:/ST/STM32CubeCLT_1.18.0/GNU-tools-for-STM32/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7-m/nofp/crtbegin.o
-                0x08009530                        PROVIDE (__init_array_end = .)
-                0x08009530                        . = ALIGN (0x4)
+ .init_array    0x08009540        0x4 D:/ST/STM32CubeCLT_1.18.0/GNU-tools-for-STM32/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7-m/nofp/crtbegin.o
+                0x08009544                        PROVIDE (__init_array_end = .)
+                0x08009544                        . = ALIGN (0x4)
 
-.fini_array     0x08009530        0x4
-                0x08009530                        . = ALIGN (0x4)
+.fini_array     0x08009544        0x4
+                0x08009544                        . = ALIGN (0x4)
                 [!provide]                        PROVIDE (__fini_array_start = .)
  *(SORT_BY_NAME(.fini_array.*))
  *(.fini_array*)
- .fini_array    0x08009530        0x4 D:/ST/STM32CubeCLT_1.18.0/GNU-tools-for-STM32/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7-m/nofp/crtbegin.o
+ .fini_array    0x08009544        0x4 D:/ST/STM32CubeCLT_1.18.0/GNU-tools-for-STM32/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7-m/nofp/crtbegin.o
                 [!provide]                        PROVIDE (__fini_array_end = .)
-                0x08009534                        . = ALIGN (0x4)
-                0x08009534                        _sidata = LOADADDR (.data)
+                0x08009548                        . = ALIGN (0x4)
+                0x08009548                        _sidata = LOADADDR (.data)
 
-.rel.dyn        0x08009534        0x0
- .rel.iplt      0x08009534        0x0 D:/ST/STM32CubeCLT_1.18.0/GNU-tools-for-STM32/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7-m/nofp/crtbegin.o
+.rel.dyn        0x08009548        0x0
+ .rel.iplt      0x08009548        0x0 D:/ST/STM32CubeCLT_1.18.0/GNU-tools-for-STM32/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7-m/nofp/crtbegin.o
 
-.data           0x20000000      0x1e4 load address 0x08009534
+.data           0x20000000      0x1e4 load address 0x08009548
                 0x20000000                        . = ALIGN (0x4)
                 0x20000000                        _sdata = .
  *(.data)
@@ -2739,7 +2739,7 @@ LOAD D:/ST/STM32CubeCLT_1.18.0/GNU-tools-for-STM32/bin/../lib/gcc/arm-none-eabi/
  .data.LineCoding
                 0x200001d8        0x8 CMakeFiles/STelescope.dir/USB_DEVICE/App/usbd_cdc_if.c.obj
                 0x200001d8                LineCoding
- .data.step_alt.0
+ .data.step_alt.1
                 0x200001e0        0x3 CMakeFiles/STelescope.dir/Core/Src/stepper.c.obj
  *(.RamFunc)
  *(.RamFunc*)
@@ -2747,11 +2747,11 @@ LOAD D:/ST/STM32CubeCLT_1.18.0/GNU-tools-for-STM32/bin/../lib/gcc/arm-none-eabi/
  *fill*         0x200001e3        0x1 
                 0x200001e4                        _edata = .
 
-.igot.plt       0x200001e4        0x0 load address 0x08009718
+.igot.plt       0x200001e4        0x0 load address 0x0800972c
  .igot.plt      0x200001e4        0x0 D:/ST/STM32CubeCLT_1.18.0/GNU-tools-for-STM32/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7-m/nofp/crtbegin.o
                 0x200001e4                        . = ALIGN (0x4)
 
-.bss            0x200001e8     0x3190 load address 0x08009718
+.bss            0x200001e8     0x3198 load address 0x0800972c
                 0x200001e8                        _sbss = .
                 0x200001e8                        __bss_start__ = _sbss
  *(.bss)
@@ -2917,43 +2917,45 @@ LOAD D:/ST/STM32CubeCLT_1.18.0/GNU-tools-for-STM32/bin/../lib/gcc/arm-none-eabi/
  *fill*         0x200031c4        0x4 
  .bss.camera    0x200031c8       0x4c CMakeFiles/STelescope.dir/Core/Src/camera.c.obj
                 0x200031c8                camera
- .bss.prev_rate_axis.1
-                0x20003214        0xc CMakeFiles/STelescope.dir/Core/Src/stepper.c.obj
+ .bss.step_direction.0
+                0x20003214        0x3 CMakeFiles/STelescope.dir/Core/Src/stepper.c.obj
+ *fill*         0x20003217        0x1 
  .bss.stepper_state
-                0x20003220       0x98 CMakeFiles/STelescope.dir/Core/Src/stepper.c.obj
-                0x20003220                stepper_state
- .bss.buff.0    0x200032b8       0x60 CMakeFiles/STelescope.dir/Core/Src/status.c.obj
+                0x20003218       0xa4 CMakeFiles/STelescope.dir/Core/Src/stepper.c.obj
+                0x20003218                stepper_state
+ .bss.buff.0    0x200032bc       0x60 CMakeFiles/STelescope.dir/Core/Src/status.c.obj
  .bss.buff_pos.1
-                0x20003318        0x2 CMakeFiles/STelescope.dir/Core/Src/status.c.obj
- *fill*         0x2000331a        0x2 
+                0x2000331c        0x2 CMakeFiles/STelescope.dir/Core/Src/status.c.obj
+ *fill*         0x2000331e        0x2 
  .bss.status_leds
-                0x2000331c       0x20 CMakeFiles/STelescope.dir/Core/Src/status.c.obj
-                0x2000331c                status_leds
+                0x20003320       0x20 CMakeFiles/STelescope.dir/Core/Src/status.c.obj
+                0x20003320                status_leds
  .bss.buff_pos.0
-                0x2000333c        0x4 CMakeFiles/STelescope.dir/Core/Src/rtc.c.obj
+                0x20003340        0x4 CMakeFiles/STelescope.dir/Core/Src/rtc.c.obj
  .bss.rtc_tx_buff
-                0x20003340        0x8 CMakeFiles/STelescope.dir/Core/Src/rtc.c.obj
-                0x20003340                rtc_tx_buff
+                0x20003344        0x8 CMakeFiles/STelescope.dir/Core/Src/rtc.c.obj
+                0x20003344                rtc_tx_buff
  .bss.rtc_rx_buff
-                0x20003348        0x8 CMakeFiles/STelescope.dir/Core/Src/rtc.c.obj
-                0x20003348                rtc_rx_buff
- .bss.rtc       0x20003350       0x28 CMakeFiles/STelescope.dir/Core/Src/rtc.c.obj
-                0x20003350                rtc
+                0x2000334c        0x8 CMakeFiles/STelescope.dir/Core/Src/rtc.c.obj
+                0x2000334c                rtc_rx_buff
+ *fill*         0x20003354        0x4 
+ .bss.rtc       0x20003358       0x28 CMakeFiles/STelescope.dir/Core/Src/rtc.c.obj
+                0x20003358                rtc
  *(COMMON)
-                0x20003378                        . = ALIGN (0x4)
-                0x20003378                        _ebss = .
-                0x20003378                        __bss_end__ = _ebss
+                0x20003380                        . = ALIGN (0x4)
+                0x20003380                        _ebss = .
+                0x20003380                        __bss_end__ = _ebss
 
 ._user_heap_stack
-                0x20003378      0x600 load address 0x08009718
-                0x20003378                        . = ALIGN (0x8)
+                0x20003380      0x600 load address 0x0800972c
+                0x20003380                        . = ALIGN (0x8)
                 [!provide]                        PROVIDE (end = .)
-                0x20003378                        PROVIDE (_end = .)
-                0x20003578                        . = (. + _Min_Heap_Size)
- *fill*         0x20003378      0x200 
-                0x20003978                        . = (. + _Min_Stack_Size)
- *fill*         0x20003578      0x400 
-                0x20003978                        . = ALIGN (0x8)
+                0x20003380                        PROVIDE (_end = .)
+                0x20003580                        . = (. + _Min_Heap_Size)
+ *fill*         0x20003380      0x200 
+                0x20003980                        . = (. + _Min_Stack_Size)
+ *fill*         0x20003580      0x400 
+                0x20003980                        . = ALIGN (0x8)
 
 /DISCARD/
  libc.a(*)
@@ -3229,7 +3231,7 @@ LOAD D:/ST/STM32CubeCLT_1.18.0/GNU-tools-for-STM32/bin/../lib/gcc/arm-none-eabi/
  .debug_frame   0x00005118       0x2c D:/ST/STM32CubeCLT_1.18.0/GNU-tools-for-STM32/bin/../lib/gcc/arm-none-eabi/13.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg_nano.a(libc_a-fstatr.o)
  .debug_frame   0x00005144       0x2c D:/ST/STM32CubeCLT_1.18.0/GNU-tools-for-STM32/bin/../lib/gcc/arm-none-eabi/13.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg_nano.a(libc_a-isattyr.o)
 
-.debug_info     0x00000000    0x339a1
+.debug_info     0x00000000    0x33a3a
  .debug_info    0x00000000      0x3f8 cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Core/Src/system_stm32f1xx.c.obj
  .debug_info    0x000003f8     0x1ee2 cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_pcd.c.obj
  .debug_info    0x000022da      0x6c4 cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_pcd_ex.c.obj
@@ -3264,25 +3266,25 @@ LOAD D:/ST/STM32CubeCLT_1.18.0/GNU-tools-for-STM32/bin/../lib/gcc/arm-none-eabi/
  .debug_info    0x00025a60     0x18aa CMakeFiles/STelescope.dir/Core/Src/display.c.obj
  .debug_info    0x0002730a      0xe29 CMakeFiles/STelescope.dir/Core/Src/peripheral.c.obj
  .debug_info    0x00028133     0x2c30 CMakeFiles/STelescope.dir/Core/Src/camera.c.obj
- .debug_info    0x0002ad63      0xbda CMakeFiles/STelescope.dir/Core/Src/stepper.c.obj
- .debug_info    0x0002b93d      0xac8 CMakeFiles/STelescope.dir/Core/Src/mobility.c.obj
- .debug_info    0x0002c405      0x443 CMakeFiles/STelescope.dir/Core/Src/status.c.obj
- .debug_info    0x0002c848      0x5a1 CMakeFiles/STelescope.dir/Core/Src/rtc.c.obj
- .debug_info    0x0002cde9      0x841 D:/ST/STM32CubeCLT_1.18.0/GNU-tools-for-STM32/bin/../lib/gcc/arm-none-eabi/13.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg_nano.a(libc_a-printf.o)
- .debug_info    0x0002d62a      0x7c9 D:/ST/STM32CubeCLT_1.18.0/GNU-tools-for-STM32/bin/../lib/gcc/arm-none-eabi/13.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg_nano.a(libc_a-putchar.o)
- .debug_info    0x0002ddf3      0x6fb D:/ST/STM32CubeCLT_1.18.0/GNU-tools-for-STM32/bin/../lib/gcc/arm-none-eabi/13.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg_nano.a(libc_a-errno.o)
- .debug_info    0x0002e4ee       0x31 D:/ST/STM32CubeCLT_1.18.0/GNU-tools-for-STM32/bin/../lib/gcc/arm-none-eabi/13.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg_nano.a(libc_a-strlen.o)
- .debug_info    0x0002e51f     0x1094 D:/ST/STM32CubeCLT_1.18.0/GNU-tools-for-STM32/bin/../lib/gcc/arm-none-eabi/13.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg_nano.a(libc_a-nano-vfprintf.o)
- .debug_info    0x0002f5b3      0xde2 D:/ST/STM32CubeCLT_1.18.0/GNU-tools-for-STM32/bin/../lib/gcc/arm-none-eabi/13.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg_nano.a(libc_a-nano-vfprintf_i.o)
- .debug_info    0x00030395      0x8d5 D:/ST/STM32CubeCLT_1.18.0/GNU-tools-for-STM32/bin/../lib/gcc/arm-none-eabi/13.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg_nano.a(libc_a-putc.o)
- .debug_info    0x00030c6a      0x874 D:/ST/STM32CubeCLT_1.18.0/GNU-tools-for-STM32/bin/../lib/gcc/arm-none-eabi/13.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg_nano.a(libc_a-wbuf.o)
- .debug_info    0x000314de      0x7bb D:/ST/STM32CubeCLT_1.18.0/GNU-tools-for-STM32/bin/../lib/gcc/arm-none-eabi/13.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg_nano.a(libc_a-wsetup.o)
- .debug_info    0x00031c99      0x110 D:/ST/STM32CubeCLT_1.18.0/GNU-tools-for-STM32/bin/../lib/gcc/arm-none-eabi/13.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg_nano.a(libc_a-memchr-stub.o)
- .debug_info    0x00031da9      0xb1a D:/ST/STM32CubeCLT_1.18.0/GNU-tools-for-STM32/bin/../lib/gcc/arm-none-eabi/13.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg_nano.a(libc_a-makebuf.o)
- .debug_info    0x000328c3      0x981 D:/ST/STM32CubeCLT_1.18.0/GNU-tools-for-STM32/bin/../lib/gcc/arm-none-eabi/13.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg_nano.a(libc_a-fstatr.o)
- .debug_info    0x00033244      0x75d D:/ST/STM32CubeCLT_1.18.0/GNU-tools-for-STM32/bin/../lib/gcc/arm-none-eabi/13.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg_nano.a(libc_a-isattyr.o)
+ .debug_info    0x0002ad63      0xc73 CMakeFiles/STelescope.dir/Core/Src/stepper.c.obj
+ .debug_info    0x0002b9d6      0xac8 CMakeFiles/STelescope.dir/Core/Src/mobility.c.obj
+ .debug_info    0x0002c49e      0x443 CMakeFiles/STelescope.dir/Core/Src/status.c.obj
+ .debug_info    0x0002c8e1      0x5a1 CMakeFiles/STelescope.dir/Core/Src/rtc.c.obj
+ .debug_info    0x0002ce82      0x841 D:/ST/STM32CubeCLT_1.18.0/GNU-tools-for-STM32/bin/../lib/gcc/arm-none-eabi/13.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg_nano.a(libc_a-printf.o)
+ .debug_info    0x0002d6c3      0x7c9 D:/ST/STM32CubeCLT_1.18.0/GNU-tools-for-STM32/bin/../lib/gcc/arm-none-eabi/13.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg_nano.a(libc_a-putchar.o)
+ .debug_info    0x0002de8c      0x6fb D:/ST/STM32CubeCLT_1.18.0/GNU-tools-for-STM32/bin/../lib/gcc/arm-none-eabi/13.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg_nano.a(libc_a-errno.o)
+ .debug_info    0x0002e587       0x31 D:/ST/STM32CubeCLT_1.18.0/GNU-tools-for-STM32/bin/../lib/gcc/arm-none-eabi/13.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg_nano.a(libc_a-strlen.o)
+ .debug_info    0x0002e5b8     0x1094 D:/ST/STM32CubeCLT_1.18.0/GNU-tools-for-STM32/bin/../lib/gcc/arm-none-eabi/13.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg_nano.a(libc_a-nano-vfprintf.o)
+ .debug_info    0x0002f64c      0xde2 D:/ST/STM32CubeCLT_1.18.0/GNU-tools-for-STM32/bin/../lib/gcc/arm-none-eabi/13.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg_nano.a(libc_a-nano-vfprintf_i.o)
+ .debug_info    0x0003042e      0x8d5 D:/ST/STM32CubeCLT_1.18.0/GNU-tools-for-STM32/bin/../lib/gcc/arm-none-eabi/13.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg_nano.a(libc_a-putc.o)
+ .debug_info    0x00030d03      0x874 D:/ST/STM32CubeCLT_1.18.0/GNU-tools-for-STM32/bin/../lib/gcc/arm-none-eabi/13.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg_nano.a(libc_a-wbuf.o)
+ .debug_info    0x00031577      0x7bb D:/ST/STM32CubeCLT_1.18.0/GNU-tools-for-STM32/bin/../lib/gcc/arm-none-eabi/13.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg_nano.a(libc_a-wsetup.o)
+ .debug_info    0x00031d32      0x110 D:/ST/STM32CubeCLT_1.18.0/GNU-tools-for-STM32/bin/../lib/gcc/arm-none-eabi/13.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg_nano.a(libc_a-memchr-stub.o)
+ .debug_info    0x00031e42      0xb1a D:/ST/STM32CubeCLT_1.18.0/GNU-tools-for-STM32/bin/../lib/gcc/arm-none-eabi/13.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg_nano.a(libc_a-makebuf.o)
+ .debug_info    0x0003295c      0x981 D:/ST/STM32CubeCLT_1.18.0/GNU-tools-for-STM32/bin/../lib/gcc/arm-none-eabi/13.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg_nano.a(libc_a-fstatr.o)
+ .debug_info    0x000332dd      0x75d D:/ST/STM32CubeCLT_1.18.0/GNU-tools-for-STM32/bin/../lib/gcc/arm-none-eabi/13.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg_nano.a(libc_a-isattyr.o)
 
-.debug_abbrev   0x00000000     0x82f5
+.debug_abbrev   0x00000000     0x8330
  .debug_abbrev  0x00000000      0x141 cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Core/Src/system_stm32f1xx.c.obj
  .debug_abbrev  0x00000141      0x421 cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_pcd.c.obj
  .debug_abbrev  0x00000562      0x1d1 cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_pcd_ex.c.obj
@@ -3317,26 +3319,26 @@ LOAD D:/ST/STM32CubeCLT_1.18.0/GNU-tools-for-STM32/bin/../lib/gcc/arm-none-eabi/
  .debug_abbrev  0x0000553d      0x3b1 CMakeFiles/STelescope.dir/Core/Src/display.c.obj
  .debug_abbrev  0x000058ee      0x31a CMakeFiles/STelescope.dir/Core/Src/peripheral.c.obj
  .debug_abbrev  0x00005c08      0x4cc CMakeFiles/STelescope.dir/Core/Src/camera.c.obj
- .debug_abbrev  0x000060d4      0x36c CMakeFiles/STelescope.dir/Core/Src/stepper.c.obj
- .debug_abbrev  0x00006440      0x1e9 CMakeFiles/STelescope.dir/Core/Src/mobility.c.obj
- .debug_abbrev  0x00006629      0x27e CMakeFiles/STelescope.dir/Core/Src/status.c.obj
- .debug_abbrev  0x000068a7      0x220 CMakeFiles/STelescope.dir/Core/Src/rtc.c.obj
- .debug_abbrev  0x00006ac7      0x21a D:/ST/STM32CubeCLT_1.18.0/GNU-tools-for-STM32/bin/../lib/gcc/arm-none-eabi/13.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg_nano.a(libc_a-printf.o)
- .debug_abbrev  0x00006ce1      0x1d0 D:/ST/STM32CubeCLT_1.18.0/GNU-tools-for-STM32/bin/../lib/gcc/arm-none-eabi/13.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg_nano.a(libc_a-putchar.o)
- .debug_abbrev  0x00006eb1      0x15e D:/ST/STM32CubeCLT_1.18.0/GNU-tools-for-STM32/bin/../lib/gcc/arm-none-eabi/13.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg_nano.a(libc_a-errno.o)
- .debug_abbrev  0x0000700f       0x28 D:/ST/STM32CubeCLT_1.18.0/GNU-tools-for-STM32/bin/../lib/gcc/arm-none-eabi/13.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg_nano.a(libc_a-strlen.o)
- .debug_abbrev  0x00007037      0x316 D:/ST/STM32CubeCLT_1.18.0/GNU-tools-for-STM32/bin/../lib/gcc/arm-none-eabi/13.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg_nano.a(libc_a-nano-vfprintf.o)
- .debug_abbrev  0x0000734d      0x28e D:/ST/STM32CubeCLT_1.18.0/GNU-tools-for-STM32/bin/../lib/gcc/arm-none-eabi/13.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg_nano.a(libc_a-nano-vfprintf_i.o)
- .debug_abbrev  0x000075db      0x259 D:/ST/STM32CubeCLT_1.18.0/GNU-tools-for-STM32/bin/../lib/gcc/arm-none-eabi/13.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg_nano.a(libc_a-putc.o)
- .debug_abbrev  0x00007834      0x22d D:/ST/STM32CubeCLT_1.18.0/GNU-tools-for-STM32/bin/../lib/gcc/arm-none-eabi/13.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg_nano.a(libc_a-wbuf.o)
- .debug_abbrev  0x00007a61      0x1e2 D:/ST/STM32CubeCLT_1.18.0/GNU-tools-for-STM32/bin/../lib/gcc/arm-none-eabi/13.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg_nano.a(libc_a-wsetup.o)
- .debug_abbrev  0x00007c43       0xb1 D:/ST/STM32CubeCLT_1.18.0/GNU-tools-for-STM32/bin/../lib/gcc/arm-none-eabi/13.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg_nano.a(libc_a-memchr-stub.o)
- .debug_abbrev  0x00007cf4      0x28e D:/ST/STM32CubeCLT_1.18.0/GNU-tools-for-STM32/bin/../lib/gcc/arm-none-eabi/13.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg_nano.a(libc_a-makebuf.o)
- .debug_abbrev  0x00007f82      0x1c3 D:/ST/STM32CubeCLT_1.18.0/GNU-tools-for-STM32/bin/../lib/gcc/arm-none-eabi/13.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg_nano.a(libc_a-fstatr.o)
- .debug_abbrev  0x00008145      0x1b0 D:/ST/STM32CubeCLT_1.18.0/GNU-tools-for-STM32/bin/../lib/gcc/arm-none-eabi/13.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg_nano.a(libc_a-isattyr.o)
+ .debug_abbrev  0x000060d4      0x3a7 CMakeFiles/STelescope.dir/Core/Src/stepper.c.obj
+ .debug_abbrev  0x0000647b      0x1e9 CMakeFiles/STelescope.dir/Core/Src/mobility.c.obj
+ .debug_abbrev  0x00006664      0x27e CMakeFiles/STelescope.dir/Core/Src/status.c.obj
+ .debug_abbrev  0x000068e2      0x220 CMakeFiles/STelescope.dir/Core/Src/rtc.c.obj
+ .debug_abbrev  0x00006b02      0x21a D:/ST/STM32CubeCLT_1.18.0/GNU-tools-for-STM32/bin/../lib/gcc/arm-none-eabi/13.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg_nano.a(libc_a-printf.o)
+ .debug_abbrev  0x00006d1c      0x1d0 D:/ST/STM32CubeCLT_1.18.0/GNU-tools-for-STM32/bin/../lib/gcc/arm-none-eabi/13.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg_nano.a(libc_a-putchar.o)
+ .debug_abbrev  0x00006eec      0x15e D:/ST/STM32CubeCLT_1.18.0/GNU-tools-for-STM32/bin/../lib/gcc/arm-none-eabi/13.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg_nano.a(libc_a-errno.o)
+ .debug_abbrev  0x0000704a       0x28 D:/ST/STM32CubeCLT_1.18.0/GNU-tools-for-STM32/bin/../lib/gcc/arm-none-eabi/13.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg_nano.a(libc_a-strlen.o)
+ .debug_abbrev  0x00007072      0x316 D:/ST/STM32CubeCLT_1.18.0/GNU-tools-for-STM32/bin/../lib/gcc/arm-none-eabi/13.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg_nano.a(libc_a-nano-vfprintf.o)
+ .debug_abbrev  0x00007388      0x28e D:/ST/STM32CubeCLT_1.18.0/GNU-tools-for-STM32/bin/../lib/gcc/arm-none-eabi/13.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg_nano.a(libc_a-nano-vfprintf_i.o)
+ .debug_abbrev  0x00007616      0x259 D:/ST/STM32CubeCLT_1.18.0/GNU-tools-for-STM32/bin/../lib/gcc/arm-none-eabi/13.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg_nano.a(libc_a-putc.o)
+ .debug_abbrev  0x0000786f      0x22d D:/ST/STM32CubeCLT_1.18.0/GNU-tools-for-STM32/bin/../lib/gcc/arm-none-eabi/13.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg_nano.a(libc_a-wbuf.o)
+ .debug_abbrev  0x00007a9c      0x1e2 D:/ST/STM32CubeCLT_1.18.0/GNU-tools-for-STM32/bin/../lib/gcc/arm-none-eabi/13.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg_nano.a(libc_a-wsetup.o)
+ .debug_abbrev  0x00007c7e       0xb1 D:/ST/STM32CubeCLT_1.18.0/GNU-tools-for-STM32/bin/../lib/gcc/arm-none-eabi/13.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg_nano.a(libc_a-memchr-stub.o)
+ .debug_abbrev  0x00007d2f      0x28e D:/ST/STM32CubeCLT_1.18.0/GNU-tools-for-STM32/bin/../lib/gcc/arm-none-eabi/13.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg_nano.a(libc_a-makebuf.o)
+ .debug_abbrev  0x00007fbd      0x1c3 D:/ST/STM32CubeCLT_1.18.0/GNU-tools-for-STM32/bin/../lib/gcc/arm-none-eabi/13.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg_nano.a(libc_a-fstatr.o)
+ .debug_abbrev  0x00008180      0x1b0 D:/ST/STM32CubeCLT_1.18.0/GNU-tools-for-STM32/bin/../lib/gcc/arm-none-eabi/13.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg_nano.a(libc_a-isattyr.o)
 
 .debug_loclists
-                0x00000000    0x16f3c
+                0x00000000    0x17139
  .debug_loclists
                 0x00000000       0xab cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Core/Src/system_stm32f1xx.c.obj
  .debug_loclists
@@ -3400,35 +3402,35 @@ LOAD D:/ST/STM32CubeCLT_1.18.0/GNU-tools-for-STM32/bin/../lib/gcc/arm-none-eabi/
  .debug_loclists
                 0x00013c15      0xf00 CMakeFiles/STelescope.dir/Core/Src/camera.c.obj
  .debug_loclists
-                0x00014b15      0x7a3 CMakeFiles/STelescope.dir/Core/Src/stepper.c.obj
+                0x00014b15      0x9a0 CMakeFiles/STelescope.dir/Core/Src/stepper.c.obj
  .debug_loclists
-                0x000152b8      0xb1e CMakeFiles/STelescope.dir/Core/Src/mobility.c.obj
+                0x000154b5      0xb1e CMakeFiles/STelescope.dir/Core/Src/mobility.c.obj
  .debug_loclists
-                0x00015dd6      0x19f CMakeFiles/STelescope.dir/Core/Src/status.c.obj
+                0x00015fd3      0x19f CMakeFiles/STelescope.dir/Core/Src/status.c.obj
  .debug_loclists
-                0x00015f75      0x126 CMakeFiles/STelescope.dir/Core/Src/rtc.c.obj
+                0x00016172      0x126 CMakeFiles/STelescope.dir/Core/Src/rtc.c.obj
  .debug_loclists
-                0x0001609b       0x4a D:/ST/STM32CubeCLT_1.18.0/GNU-tools-for-STM32/bin/../lib/gcc/arm-none-eabi/13.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg_nano.a(libc_a-printf.o)
+                0x00016298       0x4a D:/ST/STM32CubeCLT_1.18.0/GNU-tools-for-STM32/bin/../lib/gcc/arm-none-eabi/13.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg_nano.a(libc_a-printf.o)
  .debug_loclists
-                0x000160e5       0x75 D:/ST/STM32CubeCLT_1.18.0/GNU-tools-for-STM32/bin/../lib/gcc/arm-none-eabi/13.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg_nano.a(libc_a-putchar.o)
+                0x000162e2       0x75 D:/ST/STM32CubeCLT_1.18.0/GNU-tools-for-STM32/bin/../lib/gcc/arm-none-eabi/13.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg_nano.a(libc_a-putchar.o)
  .debug_loclists
-                0x0001615a      0x446 D:/ST/STM32CubeCLT_1.18.0/GNU-tools-for-STM32/bin/../lib/gcc/arm-none-eabi/13.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg_nano.a(libc_a-nano-vfprintf.o)
+                0x00016357      0x446 D:/ST/STM32CubeCLT_1.18.0/GNU-tools-for-STM32/bin/../lib/gcc/arm-none-eabi/13.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg_nano.a(libc_a-nano-vfprintf.o)
  .debug_loclists
-                0x000165a0      0x44a D:/ST/STM32CubeCLT_1.18.0/GNU-tools-for-STM32/bin/../lib/gcc/arm-none-eabi/13.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg_nano.a(libc_a-nano-vfprintf_i.o)
+                0x0001679d      0x44a D:/ST/STM32CubeCLT_1.18.0/GNU-tools-for-STM32/bin/../lib/gcc/arm-none-eabi/13.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg_nano.a(libc_a-nano-vfprintf_i.o)
  .debug_loclists
-                0x000169ea      0x122 D:/ST/STM32CubeCLT_1.18.0/GNU-tools-for-STM32/bin/../lib/gcc/arm-none-eabi/13.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg_nano.a(libc_a-putc.o)
+                0x00016be7      0x122 D:/ST/STM32CubeCLT_1.18.0/GNU-tools-for-STM32/bin/../lib/gcc/arm-none-eabi/13.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg_nano.a(libc_a-putc.o)
  .debug_loclists
-                0x00016b0c       0xf5 D:/ST/STM32CubeCLT_1.18.0/GNU-tools-for-STM32/bin/../lib/gcc/arm-none-eabi/13.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg_nano.a(libc_a-wbuf.o)
+                0x00016d09       0xf5 D:/ST/STM32CubeCLT_1.18.0/GNU-tools-for-STM32/bin/../lib/gcc/arm-none-eabi/13.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg_nano.a(libc_a-wbuf.o)
  .debug_loclists
-                0x00016c01       0x41 D:/ST/STM32CubeCLT_1.18.0/GNU-tools-for-STM32/bin/../lib/gcc/arm-none-eabi/13.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg_nano.a(libc_a-wsetup.o)
+                0x00016dfe       0x41 D:/ST/STM32CubeCLT_1.18.0/GNU-tools-for-STM32/bin/../lib/gcc/arm-none-eabi/13.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg_nano.a(libc_a-wsetup.o)
  .debug_loclists
-                0x00016c42       0xf7 D:/ST/STM32CubeCLT_1.18.0/GNU-tools-for-STM32/bin/../lib/gcc/arm-none-eabi/13.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg_nano.a(libc_a-memchr-stub.o)
+                0x00016e3f       0xf7 D:/ST/STM32CubeCLT_1.18.0/GNU-tools-for-STM32/bin/../lib/gcc/arm-none-eabi/13.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg_nano.a(libc_a-memchr-stub.o)
  .debug_loclists
-                0x00016d39      0x12f D:/ST/STM32CubeCLT_1.18.0/GNU-tools-for-STM32/bin/../lib/gcc/arm-none-eabi/13.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg_nano.a(libc_a-makebuf.o)
+                0x00016f36      0x12f D:/ST/STM32CubeCLT_1.18.0/GNU-tools-for-STM32/bin/../lib/gcc/arm-none-eabi/13.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg_nano.a(libc_a-makebuf.o)
  .debug_loclists
-                0x00016e68       0x7c D:/ST/STM32CubeCLT_1.18.0/GNU-tools-for-STM32/bin/../lib/gcc/arm-none-eabi/13.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg_nano.a(libc_a-fstatr.o)
+                0x00017065       0x7c D:/ST/STM32CubeCLT_1.18.0/GNU-tools-for-STM32/bin/../lib/gcc/arm-none-eabi/13.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg_nano.a(libc_a-fstatr.o)
  .debug_loclists
-                0x00016ee4       0x58 D:/ST/STM32CubeCLT_1.18.0/GNU-tools-for-STM32/bin/../lib/gcc/arm-none-eabi/13.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg_nano.a(libc_a-isattyr.o)
+                0x000170e1       0x58 D:/ST/STM32CubeCLT_1.18.0/GNU-tools-for-STM32/bin/../lib/gcc/arm-none-eabi/13.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg_nano.a(libc_a-isattyr.o)
 
 .debug_aranges  0x00000000     0x1c00
  .debug_aranges
@@ -3535,7 +3537,7 @@ LOAD D:/ST/STM32CubeCLT_1.18.0/GNU-tools-for-STM32/bin/../lib/gcc/arm-none-eabi/
                 0x00001be0       0x20 D:/ST/STM32CubeCLT_1.18.0/GNU-tools-for-STM32/bin/../lib/gcc/arm-none-eabi/13.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg_nano.a(libc_a-isattyr.o)
 
 .debug_rnglists
-                0x00000000     0x328a
+                0x00000000     0x3304
  .debug_rnglists
                 0x00000000       0x19 cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Core/Src/system_stm32f1xx.c.obj
  .debug_rnglists
@@ -3605,39 +3607,39 @@ LOAD D:/ST/STM32CubeCLT_1.18.0/GNU-tools-for-STM32/bin/../lib/gcc/arm-none-eabi/
  .debug_rnglists
                 0x00002642      0x772 CMakeFiles/STelescope.dir/Core/Src/camera.c.obj
  .debug_rnglists
-                0x00002db4       0xfb CMakeFiles/STelescope.dir/Core/Src/stepper.c.obj
+                0x00002db4      0x175 CMakeFiles/STelescope.dir/Core/Src/stepper.c.obj
  .debug_rnglists
-                0x00002eaf       0xe0 CMakeFiles/STelescope.dir/Core/Src/mobility.c.obj
+                0x00002f29       0xe0 CMakeFiles/STelescope.dir/Core/Src/mobility.c.obj
  .debug_rnglists
-                0x00002f8f       0x97 CMakeFiles/STelescope.dir/Core/Src/status.c.obj
+                0x00003009       0x97 CMakeFiles/STelescope.dir/Core/Src/status.c.obj
  .debug_rnglists
-                0x00003026       0xa9 CMakeFiles/STelescope.dir/Core/Src/rtc.c.obj
+                0x000030a0       0xa9 CMakeFiles/STelescope.dir/Core/Src/rtc.c.obj
  .debug_rnglists
-                0x000030cf       0x19 D:/ST/STM32CubeCLT_1.18.0/GNU-tools-for-STM32/bin/../lib/gcc/arm-none-eabi/13.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg_nano.a(libc_a-printf.o)
+                0x00003149       0x19 D:/ST/STM32CubeCLT_1.18.0/GNU-tools-for-STM32/bin/../lib/gcc/arm-none-eabi/13.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg_nano.a(libc_a-printf.o)
  .debug_rnglists
-                0x000030e8       0x19 D:/ST/STM32CubeCLT_1.18.0/GNU-tools-for-STM32/bin/../lib/gcc/arm-none-eabi/13.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg_nano.a(libc_a-putchar.o)
+                0x00003162       0x19 D:/ST/STM32CubeCLT_1.18.0/GNU-tools-for-STM32/bin/../lib/gcc/arm-none-eabi/13.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg_nano.a(libc_a-putchar.o)
  .debug_rnglists
-                0x00003101       0x13 D:/ST/STM32CubeCLT_1.18.0/GNU-tools-for-STM32/bin/../lib/gcc/arm-none-eabi/13.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg_nano.a(libc_a-errno.o)
+                0x0000317b       0x13 D:/ST/STM32CubeCLT_1.18.0/GNU-tools-for-STM32/bin/../lib/gcc/arm-none-eabi/13.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg_nano.a(libc_a-errno.o)
  .debug_rnglists
-                0x00003114       0x3b D:/ST/STM32CubeCLT_1.18.0/GNU-tools-for-STM32/bin/../lib/gcc/arm-none-eabi/13.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg_nano.a(libc_a-nano-vfprintf.o)
+                0x0000318e       0x3b D:/ST/STM32CubeCLT_1.18.0/GNU-tools-for-STM32/bin/../lib/gcc/arm-none-eabi/13.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg_nano.a(libc_a-nano-vfprintf.o)
  .debug_rnglists
-                0x0000314f       0x6d D:/ST/STM32CubeCLT_1.18.0/GNU-tools-for-STM32/bin/../lib/gcc/arm-none-eabi/13.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg_nano.a(libc_a-nano-vfprintf_i.o)
+                0x000031c9       0x6d D:/ST/STM32CubeCLT_1.18.0/GNU-tools-for-STM32/bin/../lib/gcc/arm-none-eabi/13.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg_nano.a(libc_a-nano-vfprintf_i.o)
  .debug_rnglists
-                0x000031bc       0x31 D:/ST/STM32CubeCLT_1.18.0/GNU-tools-for-STM32/bin/../lib/gcc/arm-none-eabi/13.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg_nano.a(libc_a-putc.o)
+                0x00003236       0x31 D:/ST/STM32CubeCLT_1.18.0/GNU-tools-for-STM32/bin/../lib/gcc/arm-none-eabi/13.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg_nano.a(libc_a-putc.o)
  .debug_rnglists
-                0x000031ed       0x25 D:/ST/STM32CubeCLT_1.18.0/GNU-tools-for-STM32/bin/../lib/gcc/arm-none-eabi/13.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg_nano.a(libc_a-wbuf.o)
+                0x00003267       0x25 D:/ST/STM32CubeCLT_1.18.0/GNU-tools-for-STM32/bin/../lib/gcc/arm-none-eabi/13.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg_nano.a(libc_a-wbuf.o)
  .debug_rnglists
-                0x00003212       0x26 D:/ST/STM32CubeCLT_1.18.0/GNU-tools-for-STM32/bin/../lib/gcc/arm-none-eabi/13.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg_nano.a(libc_a-wsetup.o)
+                0x0000328c       0x26 D:/ST/STM32CubeCLT_1.18.0/GNU-tools-for-STM32/bin/../lib/gcc/arm-none-eabi/13.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg_nano.a(libc_a-wsetup.o)
  .debug_rnglists
-                0x00003238       0x13 D:/ST/STM32CubeCLT_1.18.0/GNU-tools-for-STM32/bin/../lib/gcc/arm-none-eabi/13.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg_nano.a(libc_a-memchr-stub.o)
+                0x000032b2       0x13 D:/ST/STM32CubeCLT_1.18.0/GNU-tools-for-STM32/bin/../lib/gcc/arm-none-eabi/13.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg_nano.a(libc_a-memchr-stub.o)
  .debug_rnglists
-                0x0000324b       0x19 D:/ST/STM32CubeCLT_1.18.0/GNU-tools-for-STM32/bin/../lib/gcc/arm-none-eabi/13.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg_nano.a(libc_a-makebuf.o)
+                0x000032c5       0x19 D:/ST/STM32CubeCLT_1.18.0/GNU-tools-for-STM32/bin/../lib/gcc/arm-none-eabi/13.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg_nano.a(libc_a-makebuf.o)
  .debug_rnglists
-                0x00003264       0x13 D:/ST/STM32CubeCLT_1.18.0/GNU-tools-for-STM32/bin/../lib/gcc/arm-none-eabi/13.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg_nano.a(libc_a-fstatr.o)
+                0x000032de       0x13 D:/ST/STM32CubeCLT_1.18.0/GNU-tools-for-STM32/bin/../lib/gcc/arm-none-eabi/13.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg_nano.a(libc_a-fstatr.o)
  .debug_rnglists
-                0x00003277       0x13 D:/ST/STM32CubeCLT_1.18.0/GNU-tools-for-STM32/bin/../lib/gcc/arm-none-eabi/13.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg_nano.a(libc_a-isattyr.o)
+                0x000032f1       0x13 D:/ST/STM32CubeCLT_1.18.0/GNU-tools-for-STM32/bin/../lib/gcc/arm-none-eabi/13.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg_nano.a(libc_a-isattyr.o)
 
-.debug_line     0x00000000    0x268a8
+.debug_line     0x00000000    0x269db
  .debug_line    0x00000000      0x2ed cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Core/Src/system_stm32f1xx.c.obj
  .debug_line    0x000002ed     0x19de cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_pcd.c.obj
  .debug_line    0x00001ccb      0x316 cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_pcd_ex.c.obj
@@ -3661,88 +3663,88 @@ LOAD D:/ST/STM32CubeCLT_1.18.0/GNU-tools-for-STM32/bin/../lib/gcc/arm-none-eabi/
  .debug_line    0x0001b803      0x324 CMakeFiles/STelescope.dir/USB_DEVICE/App/usb_device.c.obj
  .debug_line    0x0001bb27      0x3ec CMakeFiles/STelescope.dir/USB_DEVICE/App/usbd_desc.c.obj
  .debug_line    0x0001bf13      0x44e CMakeFiles/STelescope.dir/USB_DEVICE/App/usbd_cdc_if.c.obj
- .debug_line    0x0001c361     0x139c CMakeFiles/STelescope.dir/Core/Src/main.c.obj
- .debug_line    0x0001d6fd      0x52a CMakeFiles/STelescope.dir/Core/Src/stm32f1xx_it.c.obj
- .debug_line    0x0001dc27      0x85e CMakeFiles/STelescope.dir/Core/Src/stm32f1xx_hal_msp.c.obj
- .debug_line    0x0001e485      0x260 CMakeFiles/STelescope.dir/Core/Src/sysmem.c.obj
- .debug_line    0x0001e6e5      0x4df CMakeFiles/STelescope.dir/Core/Src/syscalls.c.obj
- .debug_line    0x0001ebc4       0x78 CMakeFiles/STelescope.dir/startup_stm32f103xb.s.obj
- .debug_line    0x0001ec3c      0x4e5 CMakeFiles/STelescope.dir/Core/Src/accelerometer.c.obj
- .debug_line    0x0001f121      0x8d7 CMakeFiles/STelescope.dir/Core/Src/compass.c.obj
- .debug_line    0x0001f9f8      0xe2a CMakeFiles/STelescope.dir/Core/Src/display.c.obj
- .debug_line    0x00020822      0x572 CMakeFiles/STelescope.dir/Core/Src/peripheral.c.obj
- .debug_line    0x00020d94     0x1b18 CMakeFiles/STelescope.dir/Core/Src/camera.c.obj
- .debug_line    0x000228ac      0x9e1 CMakeFiles/STelescope.dir/Core/Src/stepper.c.obj
- .debug_line    0x0002328d      0x65b CMakeFiles/STelescope.dir/Core/Src/mobility.c.obj
- .debug_line    0x000238e8      0x428 CMakeFiles/STelescope.dir/Core/Src/status.c.obj
- .debug_line    0x00023d10      0x48b CMakeFiles/STelescope.dir/Core/Src/rtc.c.obj
- .debug_line    0x0002419b      0x254 D:/ST/STM32CubeCLT_1.18.0/GNU-tools-for-STM32/bin/../lib/gcc/arm-none-eabi/13.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg_nano.a(libc_a-printf.o)
- .debug_line    0x000243ef      0x207 D:/ST/STM32CubeCLT_1.18.0/GNU-tools-for-STM32/bin/../lib/gcc/arm-none-eabi/13.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg_nano.a(libc_a-putchar.o)
- .debug_line    0x000245f6      0x185 D:/ST/STM32CubeCLT_1.18.0/GNU-tools-for-STM32/bin/../lib/gcc/arm-none-eabi/13.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg_nano.a(libc_a-errno.o)
- .debug_line    0x0002477b       0x4f D:/ST/STM32CubeCLT_1.18.0/GNU-tools-for-STM32/bin/../lib/gcc/arm-none-eabi/13.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg_nano.a(libc_a-strlen.o)
- .debug_line    0x000247ca      0x6e5 D:/ST/STM32CubeCLT_1.18.0/GNU-tools-for-STM32/bin/../lib/gcc/arm-none-eabi/13.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg_nano.a(libc_a-nano-vfprintf.o)
- .debug_line    0x00024eaf      0x722 D:/ST/STM32CubeCLT_1.18.0/GNU-tools-for-STM32/bin/../lib/gcc/arm-none-eabi/13.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg_nano.a(libc_a-nano-vfprintf_i.o)
- .debug_line    0x000255d1      0x296 D:/ST/STM32CubeCLT_1.18.0/GNU-tools-for-STM32/bin/../lib/gcc/arm-none-eabi/13.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg_nano.a(libc_a-putc.o)
- .debug_line    0x00025867      0x2cf D:/ST/STM32CubeCLT_1.18.0/GNU-tools-for-STM32/bin/../lib/gcc/arm-none-eabi/13.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg_nano.a(libc_a-wbuf.o)
- .debug_line    0x00025b36      0x2e9 D:/ST/STM32CubeCLT_1.18.0/GNU-tools-for-STM32/bin/../lib/gcc/arm-none-eabi/13.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg_nano.a(libc_a-wsetup.o)
- .debug_line    0x00025e1f      0x1fe D:/ST/STM32CubeCLT_1.18.0/GNU-tools-for-STM32/bin/../lib/gcc/arm-none-eabi/13.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg_nano.a(libc_a-memchr-stub.o)
- .debug_line    0x0002601d      0x3b8 D:/ST/STM32CubeCLT_1.18.0/GNU-tools-for-STM32/bin/../lib/gcc/arm-none-eabi/13.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg_nano.a(libc_a-makebuf.o)
- .debug_line    0x000263d5      0x2b3 D:/ST/STM32CubeCLT_1.18.0/GNU-tools-for-STM32/bin/../lib/gcc/arm-none-eabi/13.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg_nano.a(libc_a-fstatr.o)
- .debug_line    0x00026688      0x220 D:/ST/STM32CubeCLT_1.18.0/GNU-tools-for-STM32/bin/../lib/gcc/arm-none-eabi/13.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg_nano.a(libc_a-isattyr.o)
+ .debug_line    0x0001c361     0x1386 CMakeFiles/STelescope.dir/Core/Src/main.c.obj
+ .debug_line    0x0001d6e7      0x52a CMakeFiles/STelescope.dir/Core/Src/stm32f1xx_it.c.obj
+ .debug_line    0x0001dc11      0x85e CMakeFiles/STelescope.dir/Core/Src/stm32f1xx_hal_msp.c.obj
+ .debug_line    0x0001e46f      0x260 CMakeFiles/STelescope.dir/Core/Src/sysmem.c.obj
+ .debug_line    0x0001e6cf      0x4df CMakeFiles/STelescope.dir/Core/Src/syscalls.c.obj
+ .debug_line    0x0001ebae       0x78 CMakeFiles/STelescope.dir/startup_stm32f103xb.s.obj
+ .debug_line    0x0001ec26      0x4e5 CMakeFiles/STelescope.dir/Core/Src/accelerometer.c.obj
+ .debug_line    0x0001f10b      0x8d7 CMakeFiles/STelescope.dir/Core/Src/compass.c.obj
+ .debug_line    0x0001f9e2      0xe2a CMakeFiles/STelescope.dir/Core/Src/display.c.obj
+ .debug_line    0x0002080c      0x572 CMakeFiles/STelescope.dir/Core/Src/peripheral.c.obj
+ .debug_line    0x00020d7e     0x1b18 CMakeFiles/STelescope.dir/Core/Src/camera.c.obj
+ .debug_line    0x00022896      0xb2a CMakeFiles/STelescope.dir/Core/Src/stepper.c.obj
+ .debug_line    0x000233c0      0x65b CMakeFiles/STelescope.dir/Core/Src/mobility.c.obj
+ .debug_line    0x00023a1b      0x428 CMakeFiles/STelescope.dir/Core/Src/status.c.obj
+ .debug_line    0x00023e43      0x48b CMakeFiles/STelescope.dir/Core/Src/rtc.c.obj
+ .debug_line    0x000242ce      0x254 D:/ST/STM32CubeCLT_1.18.0/GNU-tools-for-STM32/bin/../lib/gcc/arm-none-eabi/13.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg_nano.a(libc_a-printf.o)
+ .debug_line    0x00024522      0x207 D:/ST/STM32CubeCLT_1.18.0/GNU-tools-for-STM32/bin/../lib/gcc/arm-none-eabi/13.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg_nano.a(libc_a-putchar.o)
+ .debug_line    0x00024729      0x185 D:/ST/STM32CubeCLT_1.18.0/GNU-tools-for-STM32/bin/../lib/gcc/arm-none-eabi/13.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg_nano.a(libc_a-errno.o)
+ .debug_line    0x000248ae       0x4f D:/ST/STM32CubeCLT_1.18.0/GNU-tools-for-STM32/bin/../lib/gcc/arm-none-eabi/13.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg_nano.a(libc_a-strlen.o)
+ .debug_line    0x000248fd      0x6e5 D:/ST/STM32CubeCLT_1.18.0/GNU-tools-for-STM32/bin/../lib/gcc/arm-none-eabi/13.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg_nano.a(libc_a-nano-vfprintf.o)
+ .debug_line    0x00024fe2      0x722 D:/ST/STM32CubeCLT_1.18.0/GNU-tools-for-STM32/bin/../lib/gcc/arm-none-eabi/13.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg_nano.a(libc_a-nano-vfprintf_i.o)
+ .debug_line    0x00025704      0x296 D:/ST/STM32CubeCLT_1.18.0/GNU-tools-for-STM32/bin/../lib/gcc/arm-none-eabi/13.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg_nano.a(libc_a-putc.o)
+ .debug_line    0x0002599a      0x2cf D:/ST/STM32CubeCLT_1.18.0/GNU-tools-for-STM32/bin/../lib/gcc/arm-none-eabi/13.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg_nano.a(libc_a-wbuf.o)
+ .debug_line    0x00025c69      0x2e9 D:/ST/STM32CubeCLT_1.18.0/GNU-tools-for-STM32/bin/../lib/gcc/arm-none-eabi/13.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg_nano.a(libc_a-wsetup.o)
+ .debug_line    0x00025f52      0x1fe D:/ST/STM32CubeCLT_1.18.0/GNU-tools-for-STM32/bin/../lib/gcc/arm-none-eabi/13.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg_nano.a(libc_a-memchr-stub.o)
+ .debug_line    0x00026150      0x3b8 D:/ST/STM32CubeCLT_1.18.0/GNU-tools-for-STM32/bin/../lib/gcc/arm-none-eabi/13.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg_nano.a(libc_a-makebuf.o)
+ .debug_line    0x00026508      0x2b3 D:/ST/STM32CubeCLT_1.18.0/GNU-tools-for-STM32/bin/../lib/gcc/arm-none-eabi/13.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg_nano.a(libc_a-fstatr.o)
+ .debug_line    0x000267bb      0x220 D:/ST/STM32CubeCLT_1.18.0/GNU-tools-for-STM32/bin/../lib/gcc/arm-none-eabi/13.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg_nano.a(libc_a-isattyr.o)
 
-.debug_str      0x00000000     0x85c2
- .debug_str     0x00000000     0x85c2 cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Core/Src/system_stm32f1xx.c.obj
+.debug_str      0x00000000     0x85c3
+ .debug_str     0x00000000     0x85c3 cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Core/Src/system_stm32f1xx.c.obj
                                 0x2a9 (size before relaxing)
- .debug_str     0x000085c2      0xb1a cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_pcd.c.obj
- .debug_str     0x000085c2      0x6ca cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_pcd_ex.c.obj
- .debug_str     0x000085c2      0x71c cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_ll_usb.c.obj
- .debug_str     0x000085c2      0x825 cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal.c.obj
- .debug_str     0x000085c2      0x622 cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc.c.obj
- .debug_str     0x000085c2      0x3ca cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc_ex.c.obj
- .debug_str     0x000085c2      0x3f7 cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio.c.obj
- .debug_str     0x000085c2      0x5f4 cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_dma.c.obj
- .debug_str     0x000085c2      0x8ca cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_cortex.c.obj
- .debug_str     0x000085c2      0xfbc cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_i2c.c.obj
- .debug_str     0x000085c2      0xb58 cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_spi.c.obj
- .debug_str     0x000085c2     0x167c cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim.c.obj
- .debug_str     0x000085c2      0xe88 cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim_ex.c.obj
- .debug_str     0x000085c2      0xceb cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_uart.c.obj
- .debug_str     0x000085c2      0x849 cmake/stm32cubemx/CMakeFiles/USB_Device_Library.dir/__/__/Middlewares/ST/STM32_USB_Device_Library/Core/Src/usbd_core.c.obj
- .debug_str     0x000085c2      0x75a cmake/stm32cubemx/CMakeFiles/USB_Device_Library.dir/__/__/Middlewares/ST/STM32_USB_Device_Library/Core/Src/usbd_ctlreq.c.obj
- .debug_str     0x000085c2      0x66f cmake/stm32cubemx/CMakeFiles/USB_Device_Library.dir/__/__/Middlewares/ST/STM32_USB_Device_Library/Core/Src/usbd_ioreq.c.obj
- .debug_str     0x000085c2      0xc1b cmake/stm32cubemx/CMakeFiles/USB_Device_Library.dir/__/__/Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Src/usbd_cdc.c.obj
- .debug_str     0x000085c2     0x11a8 CMakeFiles/STelescope.dir/USB_DEVICE/Target/usbd_conf.c.obj
- .debug_str     0x000085c2      0x650 CMakeFiles/STelescope.dir/USB_DEVICE/App/usb_device.c.obj
- .debug_str     0x000085c2      0x448 CMakeFiles/STelescope.dir/USB_DEVICE/App/usbd_desc.c.obj
- .debug_str     0x000085c2      0x86a CMakeFiles/STelescope.dir/USB_DEVICE/App/usbd_cdc_if.c.obj
- .debug_str     0x000085c2     0x1d22 CMakeFiles/STelescope.dir/Core/Src/main.c.obj
- .debug_str     0x000085c2     0x1096 CMakeFiles/STelescope.dir/Core/Src/stm32f1xx_it.c.obj
- .debug_str     0x000085c2     0x1195 CMakeFiles/STelescope.dir/Core/Src/stm32f1xx_hal_msp.c.obj
- .debug_str     0x000085c2      0x20f CMakeFiles/STelescope.dir/Core/Src/sysmem.c.obj
- .debug_str     0x000085c2      0x3e3 CMakeFiles/STelescope.dir/Core/Src/syscalls.c.obj
- .debug_str     0x000085c2       0x81 CMakeFiles/STelescope.dir/startup_stm32f103xb.s.obj
- .debug_str     0x000085c2      0x3ef CMakeFiles/STelescope.dir/Core/Src/accelerometer.c.obj
- .debug_str     0x000085c2      0x4de CMakeFiles/STelescope.dir/Core/Src/compass.c.obj
- .debug_str     0x000085c2      0x435 CMakeFiles/STelescope.dir/Core/Src/display.c.obj
- .debug_str     0x000085c2      0xa5e CMakeFiles/STelescope.dir/Core/Src/peripheral.c.obj
- .debug_str     0x000085c2      0x673 CMakeFiles/STelescope.dir/Core/Src/camera.c.obj
- .debug_str     0x000085c2      0x527 CMakeFiles/STelescope.dir/Core/Src/stepper.c.obj
- .debug_str     0x000085c2      0x577 CMakeFiles/STelescope.dir/Core/Src/mobility.c.obj
- .debug_str     0x000085c2      0x2a7 CMakeFiles/STelescope.dir/Core/Src/status.c.obj
- .debug_str     0x000085c2      0x348 CMakeFiles/STelescope.dir/Core/Src/rtc.c.obj
- .debug_str     0x000085c2      0x564 D:/ST/STM32CubeCLT_1.18.0/GNU-tools-for-STM32/bin/../lib/gcc/arm-none-eabi/13.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg_nano.a(libc_a-printf.o)
- .debug_str     0x000085c2      0x543 D:/ST/STM32CubeCLT_1.18.0/GNU-tools-for-STM32/bin/../lib/gcc/arm-none-eabi/13.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg_nano.a(libc_a-putchar.o)
- .debug_str     0x000085c2      0x523 D:/ST/STM32CubeCLT_1.18.0/GNU-tools-for-STM32/bin/../lib/gcc/arm-none-eabi/13.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg_nano.a(libc_a-errno.o)
- .debug_str     0x000085c2       0xef D:/ST/STM32CubeCLT_1.18.0/GNU-tools-for-STM32/bin/../lib/gcc/arm-none-eabi/13.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg_nano.a(libc_a-strlen.o)
- .debug_str     0x000085c2      0x8da D:/ST/STM32CubeCLT_1.18.0/GNU-tools-for-STM32/bin/../lib/gcc/arm-none-eabi/13.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg_nano.a(libc_a-nano-vfprintf.o)
- .debug_str     0x000085c2      0x808 D:/ST/STM32CubeCLT_1.18.0/GNU-tools-for-STM32/bin/../lib/gcc/arm-none-eabi/13.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg_nano.a(libc_a-nano-vfprintf_i.o)
- .debug_str     0x000085c2      0x5a8 D:/ST/STM32CubeCLT_1.18.0/GNU-tools-for-STM32/bin/../lib/gcc/arm-none-eabi/13.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg_nano.a(libc_a-putc.o)
- .debug_str     0x000085c2      0x55f D:/ST/STM32CubeCLT_1.18.0/GNU-tools-for-STM32/bin/../lib/gcc/arm-none-eabi/13.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg_nano.a(libc_a-wbuf.o)
- .debug_str     0x000085c2      0x55a D:/ST/STM32CubeCLT_1.18.0/GNU-tools-for-STM32/bin/../lib/gcc/arm-none-eabi/13.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg_nano.a(libc_a-wsetup.o)
- .debug_str     0x000085c2      0x223 D:/ST/STM32CubeCLT_1.18.0/GNU-tools-for-STM32/bin/../lib/gcc/arm-none-eabi/13.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg_nano.a(libc_a-memchr-stub.o)
- .debug_str     0x000085c2      0x6bc D:/ST/STM32CubeCLT_1.18.0/GNU-tools-for-STM32/bin/../lib/gcc/arm-none-eabi/13.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg_nano.a(libc_a-makebuf.o)
- .debug_str     0x000085c2      0x671 D:/ST/STM32CubeCLT_1.18.0/GNU-tools-for-STM32/bin/../lib/gcc/arm-none-eabi/13.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg_nano.a(libc_a-fstatr.o)
- .debug_str     0x000085c2      0x529 D:/ST/STM32CubeCLT_1.18.0/GNU-tools-for-STM32/bin/../lib/gcc/arm-none-eabi/13.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg_nano.a(libc_a-isattyr.o)
+ .debug_str     0x000085c3      0xb1a cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_pcd.c.obj
+ .debug_str     0x000085c3      0x6ca cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_pcd_ex.c.obj
+ .debug_str     0x000085c3      0x71c cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_ll_usb.c.obj
+ .debug_str     0x000085c3      0x825 cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal.c.obj
+ .debug_str     0x000085c3      0x622 cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc.c.obj
+ .debug_str     0x000085c3      0x3ca cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc_ex.c.obj
+ .debug_str     0x000085c3      0x3f7 cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio.c.obj
+ .debug_str     0x000085c3      0x5f4 cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_dma.c.obj
+ .debug_str     0x000085c3      0x8ca cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_cortex.c.obj
+ .debug_str     0x000085c3      0xfbc cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_i2c.c.obj
+ .debug_str     0x000085c3      0xb58 cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_spi.c.obj
+ .debug_str     0x000085c3     0x167c cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim.c.obj
+ .debug_str     0x000085c3      0xe88 cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim_ex.c.obj
+ .debug_str     0x000085c3      0xceb cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_uart.c.obj
+ .debug_str     0x000085c3      0x849 cmake/stm32cubemx/CMakeFiles/USB_Device_Library.dir/__/__/Middlewares/ST/STM32_USB_Device_Library/Core/Src/usbd_core.c.obj
+ .debug_str     0x000085c3      0x75a cmake/stm32cubemx/CMakeFiles/USB_Device_Library.dir/__/__/Middlewares/ST/STM32_USB_Device_Library/Core/Src/usbd_ctlreq.c.obj
+ .debug_str     0x000085c3      0x66f cmake/stm32cubemx/CMakeFiles/USB_Device_Library.dir/__/__/Middlewares/ST/STM32_USB_Device_Library/Core/Src/usbd_ioreq.c.obj
+ .debug_str     0x000085c3      0xc1b cmake/stm32cubemx/CMakeFiles/USB_Device_Library.dir/__/__/Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Src/usbd_cdc.c.obj
+ .debug_str     0x000085c3     0x11a8 CMakeFiles/STelescope.dir/USB_DEVICE/Target/usbd_conf.c.obj
+ .debug_str     0x000085c3      0x650 CMakeFiles/STelescope.dir/USB_DEVICE/App/usb_device.c.obj
+ .debug_str     0x000085c3      0x448 CMakeFiles/STelescope.dir/USB_DEVICE/App/usbd_desc.c.obj
+ .debug_str     0x000085c3      0x86a CMakeFiles/STelescope.dir/USB_DEVICE/App/usbd_cdc_if.c.obj
+ .debug_str     0x000085c3     0x1d1c CMakeFiles/STelescope.dir/Core/Src/main.c.obj
+ .debug_str     0x000085c3     0x1096 CMakeFiles/STelescope.dir/Core/Src/stm32f1xx_it.c.obj
+ .debug_str     0x000085c3     0x1195 CMakeFiles/STelescope.dir/Core/Src/stm32f1xx_hal_msp.c.obj
+ .debug_str     0x000085c3      0x20f CMakeFiles/STelescope.dir/Core/Src/sysmem.c.obj
+ .debug_str     0x000085c3      0x3e3 CMakeFiles/STelescope.dir/Core/Src/syscalls.c.obj
+ .debug_str     0x000085c3       0x81 CMakeFiles/STelescope.dir/startup_stm32f103xb.s.obj
+ .debug_str     0x000085c3      0x3ef CMakeFiles/STelescope.dir/Core/Src/accelerometer.c.obj
+ .debug_str     0x000085c3      0x4de CMakeFiles/STelescope.dir/Core/Src/compass.c.obj
+ .debug_str     0x000085c3      0x435 CMakeFiles/STelescope.dir/Core/Src/display.c.obj
+ .debug_str     0x000085c3      0xa5e CMakeFiles/STelescope.dir/Core/Src/peripheral.c.obj
+ .debug_str     0x000085c3      0x673 CMakeFiles/STelescope.dir/Core/Src/camera.c.obj
+ .debug_str     0x000085c3      0x548 CMakeFiles/STelescope.dir/Core/Src/stepper.c.obj
+ .debug_str     0x000085c3      0x577 CMakeFiles/STelescope.dir/Core/Src/mobility.c.obj
+ .debug_str     0x000085c3      0x2a7 CMakeFiles/STelescope.dir/Core/Src/status.c.obj
+ .debug_str     0x000085c3      0x348 CMakeFiles/STelescope.dir/Core/Src/rtc.c.obj
+ .debug_str     0x000085c3      0x564 D:/ST/STM32CubeCLT_1.18.0/GNU-tools-for-STM32/bin/../lib/gcc/arm-none-eabi/13.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg_nano.a(libc_a-printf.o)
+ .debug_str     0x000085c3      0x543 D:/ST/STM32CubeCLT_1.18.0/GNU-tools-for-STM32/bin/../lib/gcc/arm-none-eabi/13.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg_nano.a(libc_a-putchar.o)
+ .debug_str     0x000085c3      0x523 D:/ST/STM32CubeCLT_1.18.0/GNU-tools-for-STM32/bin/../lib/gcc/arm-none-eabi/13.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg_nano.a(libc_a-errno.o)
+ .debug_str     0x000085c3       0xef D:/ST/STM32CubeCLT_1.18.0/GNU-tools-for-STM32/bin/../lib/gcc/arm-none-eabi/13.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg_nano.a(libc_a-strlen.o)
+ .debug_str     0x000085c3      0x8da D:/ST/STM32CubeCLT_1.18.0/GNU-tools-for-STM32/bin/../lib/gcc/arm-none-eabi/13.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg_nano.a(libc_a-nano-vfprintf.o)
+ .debug_str     0x000085c3      0x808 D:/ST/STM32CubeCLT_1.18.0/GNU-tools-for-STM32/bin/../lib/gcc/arm-none-eabi/13.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg_nano.a(libc_a-nano-vfprintf_i.o)
+ .debug_str     0x000085c3      0x5a8 D:/ST/STM32CubeCLT_1.18.0/GNU-tools-for-STM32/bin/../lib/gcc/arm-none-eabi/13.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg_nano.a(libc_a-putc.o)
+ .debug_str     0x000085c3      0x55f D:/ST/STM32CubeCLT_1.18.0/GNU-tools-for-STM32/bin/../lib/gcc/arm-none-eabi/13.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg_nano.a(libc_a-wbuf.o)
+ .debug_str     0x000085c3      0x55a D:/ST/STM32CubeCLT_1.18.0/GNU-tools-for-STM32/bin/../lib/gcc/arm-none-eabi/13.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg_nano.a(libc_a-wsetup.o)
+ .debug_str     0x000085c3      0x223 D:/ST/STM32CubeCLT_1.18.0/GNU-tools-for-STM32/bin/../lib/gcc/arm-none-eabi/13.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg_nano.a(libc_a-memchr-stub.o)
+ .debug_str     0x000085c3      0x6bc D:/ST/STM32CubeCLT_1.18.0/GNU-tools-for-STM32/bin/../lib/gcc/arm-none-eabi/13.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg_nano.a(libc_a-makebuf.o)
+ .debug_str     0x000085c3      0x671 D:/ST/STM32CubeCLT_1.18.0/GNU-tools-for-STM32/bin/../lib/gcc/arm-none-eabi/13.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg_nano.a(libc_a-fstatr.o)
+ .debug_str     0x000085c3      0x529 D:/ST/STM32CubeCLT_1.18.0/GNU-tools-for-STM32/bin/../lib/gcc/arm-none-eabi/13.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg_nano.a(libc_a-isattyr.o)
 
 .debug_line_str
                 0x00000000      0x13f

@@ -19,6 +19,8 @@
 
 #define RAMP_DIVIDER 64
 
+#define STEPPER(axis) stepper_state.stepper[axis]
+
 typedef enum
 {
 	YAW = 0,
@@ -54,11 +56,12 @@ typedef struct
 	uint16_t dir_pin;
 
 	// Assuming no missed steps
-	uint32_t position;
+	int32_t position;
 
 	// Steps per minute
 	// dir_pin = rate < 0 ? RESET : SET
 	int32_t rate;
+	int32_t _prev_rate;
 
 	uint32_t _desired_steps;
 

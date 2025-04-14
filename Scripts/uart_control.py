@@ -168,7 +168,7 @@ def handle_orientation_packet(uart):
 
     try:
         unpacked_data = struct.unpack(
-            "<HhhhhhhhhhhhhIIIIiii",  # Little-endian format
+            "<HhhhhhhhhhhhhIiiiiii",  # Little-endian format
             orientation_packet_bytes
         )
 
@@ -319,23 +319,23 @@ def draw_ui(screen, font, active_keys, last_cmd):
         bar_height = 20
         base_x = 10
         base_y = 90
-        max_angle = 360  # Assuming angles are in degrees
+        max_steps = (360 / 1.8) * 1620 * (1 << microstep_mode)  # Assuming angles are in degrees
         spacing = 40  # Spacing between elements
 
         # Yaw
-        yaw_width = int((orientation_packet.yaw_position / max_angle) * bar_width)
+        yaw_width = int((orientation_packet.yaw_position / max_steps) * bar_width)
         pygame.draw.rect(screen, (255, 0, 0), (base_x, base_y, yaw_width, bar_height))
         yaw_text = font.render(f"Yaw: {orientation_packet.yaw_position}", True, (255, 255, 255))
         screen.blit(yaw_text, (base_x + bar_width + 10, base_y))
 
         # Roll
-        roll_width = int((orientation_packet.roll_position / max_angle) * bar_width)
+        roll_width = int((orientation_packet.roll_position / max_steps) * bar_width)
         pygame.draw.rect(screen, (0, 255, 0), (base_x, base_y + spacing, roll_width, bar_height))
         roll_text = font.render(f"Roll: {orientation_packet.roll_position}", True, (255, 255, 255))
         screen.blit(roll_text, (base_x + bar_width + 10, base_y + spacing))
 
         # Pitch
-        pitch_width = int((orientation_packet.pitch_position / max_angle) * bar_width)
+        pitch_width = int((orientation_packet.pitch_position / max_steps) * bar_width)
         pygame.draw.rect(screen, (0, 0, 255), (base_x, base_y + 2 * spacing, pitch_width, bar_height))
         pitch_text = font.render(f"Pitch: {orientation_packet.pitch_position}", True, (255, 255, 255))
         screen.blit(pitch_text, (base_x + bar_width + 10, base_y + 2 * spacing))
@@ -431,6 +431,17 @@ def main():
 
     running = True
     last_cmd = "None"
+    def uart_thread():
+        nonlocal running, last_cmd
+        while running:
+            last_cmd, tx_status = handle_uart_tx(uart)
+            rx_status = handle_uart_rx(uart)
+            running = tx_status and rx_status
+
+    # Start the UART thread
+    uart_thread_instance = threading.Thread(target=uart_thread, daemon=True)
+    uart_thread_instance.start()
+
     while running:
         for event in pygame.event.get():
             if event.type == pygame.QUIT:
@@ -440,11 +451,10 @@ def main():
             elif event.type == pygame.KEYUP:
                 handle_key_event(event, is_pressed=False)
 
-        last_cmd, running = handle_uart_tx(uart)
-        running = handle_uart_rx(uart)
         draw_ui(screen, font, active_keys, last_cmd)
 
     pygame.quit()
 
 if __name__ == "__main__":
     main()
+    

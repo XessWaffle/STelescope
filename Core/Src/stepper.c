@@ -80,12 +80,12 @@ inline stepper_op_mode_e get_stepper_state()
 
 inline uint32_t get_stepper_position(axes_e axis)
 {
-    return stepper_state.stepper[axis].position;
+    return STEPPER(axis).position;
 }
 
 inline uint32_t get_stepper_rate(axes_e axis)
 {
-    return stepper_state.stepper[axis].rate;
+    return STEPPER(axis).rate;
 }
 
 inline void set_update_freq(uint32_t freq_hz)
@@ -95,6 +95,13 @@ inline void set_update_freq(uint32_t freq_hz)
 
 inline void set_microstep_mode(microstep_e mode)
 {
+    for (uint8_t i = 0; i < AXES; i++)
+    {
+        int shift = mode - stepper_state.step_mode;
+        if (shift != 0)
+            STEPPER(i).position = (shift > 0) ? (STEPPER(i).position << shift) : (STEPPER(i).position >> -shift);
+    }
+
     stepper_state.step_mode = mode;
     
     switch (mode)
@@ -137,19 +144,17 @@ inline void set_stepper_state(stepper_op_mode_e state)
 
 inline void set_stepper_position(axes_e axis, uint32_t position)
 {
-    stepper_state.stepper[axis].position = position;
+    STEPPER(axis).position = position;
 }
 
 inline uint8_t set_stepper_rate(axes_e axis, int32_t rate)
 {
-    static int32_t prev_rate_axis[AXES] = {0};
-
-    int32_t *prev_rate = &(prev_rate_axis[axis]);
+    int32_t *prev_rate = &(STEPPER(axis)._prev_rate);
     uint8_t *flags = get_stepper_flags(axis);
 
     if(*flags & (TRUE << INIT_DIRECTION_FLAG))
     {
-        HAL_GPIO_WritePin(stepper_state.stepper[axis].dir_pin_port, stepper_state.stepper[axis].dir_pin, 
+        HAL_GPIO_WritePin(STEPPER(axis).dir_pin_port, STEPPER(axis).dir_pin, 
             rate < 0 ? GPIO_PIN_SET : GPIO_PIN_RESET);
         *flags &= ~(TRUE << INIT_DIRECTION_FLAG);
     }
@@ -161,7 +166,7 @@ inline uint8_t set_stepper_rate(axes_e axis, int32_t rate)
     if(((*prev_rate > 0 && rate < 0) || (*prev_rate < 0 && rate >= 0)))
     {   
         *flags = TRUE << DIRECTION_CHANGE_FLAG;
-        stepper_state.stepper[axis]._dir_change_des_rate = rate;
+        STEPPER(axis)._dir_change_des_rate = rate;
         rate = 0;
     }
 
@@ -170,11 +175,11 @@ inline uint8_t set_stepper_rate(axes_e axis, int32_t rate)
     
     uint32_t abs_rate = rate < 0 ? -rate : rate;
 
-    stepper_state.stepper[axis].rate = rate;
+    STEPPER(axis).rate = rate;
 
-    uint32_t *desired_arr = &(stepper_state.stepper[axis]._desired_arr_rate);
-    uint32_t *current_arr = &(stepper_state.stepper[axis]._current_arr_rate);
-    uint32_t *step_count = &(stepper_state.stepper[axis]._step_count);
+    uint32_t *desired_arr = &(STEPPER(axis)._desired_arr_rate);
+    uint32_t *current_arr = &(STEPPER(axis)._current_arr_rate);
+    uint32_t *step_count = &(STEPPER(axis)._step_count);
 
     if(abs_rate > 0)
         *desired_arr = ((30 * stepper_state.update_freq) / abs_rate) - 1;
@@ -193,8 +198,8 @@ inline uint8_t set_stepper_rate(axes_e axis, int32_t rate)
 
 inline uint8_t increment_tick(axes_e axis)
 { 
-    uint32_t *desired_arr = &(stepper_state.stepper[axis]._desired_arr_rate);
-    uint32_t *current_arr = &(stepper_state.stepper[axis]._current_arr_rate);
+    uint32_t *desired_arr = &(STEPPER(axis)._desired_arr_rate);
+    uint32_t *current_arr = &(STEPPER(axis)._current_arr_rate);
     uint8_t stop_condition = *desired_arr == stepper_state.update_freq;
     uint8_t stopped_condition = *current_arr == stepper_state.update_freq && *desired_arr == stepper_state.update_freq;
 
@@ -205,22 +210,22 @@ inline uint8_t increment_tick(axes_e axis)
         if(*flags & (TRUE << DIRECTION_CHANGE_FLAG))
         {
             *flags &= ~(TRUE << DIRECTION_CHANGE_FLAG);
-            HAL_GPIO_WritePin(stepper_state.stepper[axis].dir_pin_port, stepper_state.stepper[axis].dir_pin, 
-                stepper_state.stepper[axis]._dir_change_des_rate < 0 ? GPIO_PIN_SET : GPIO_PIN_RESET);
-            set_stepper_rate(axis, stepper_state.stepper[axis]._dir_change_des_rate);
+            HAL_GPIO_WritePin(STEPPER(axis).dir_pin_port, STEPPER(axis).dir_pin, 
+                STEPPER(axis)._dir_change_des_rate < 0 ? GPIO_PIN_SET : GPIO_PIN_RESET);
+            set_stepper_rate(axis, STEPPER(axis)._dir_change_des_rate);
         }
 
         return FALSE;
     }
 
-    stepper_state.stepper[axis]._tick++;
+    STEPPER(axis)._tick++;
     
-    uint8_t step_condition = stepper_state.stepper[axis]._tick > *current_arr;
-    uint32_t *step_count = &(stepper_state.stepper[axis]._step_count);
+    uint8_t step_condition = STEPPER(axis)._tick > *current_arr;
+    uint32_t *step_count = &(STEPPER(axis)._step_count);
 
     if(step_condition == TRUE)
     {
-        stepper_state.stepper[axis]._tick = 0;
+        STEPPER(axis)._tick = 0;
         *step_count = *step_count + 1;
         uint32_t step_size = *current_arr / (4 * *step_count + 1);
 
@@ -251,24 +256,25 @@ inline uint8_t increment_tick(axes_e axis)
 inline void step_axis(axes_e axis)
 {
     static uint8_t step_alt[AXES] = {1, 1, 1};
+    static int8_t step_direction[AXES] = {0, 0, 0};
 
     if(get_stepper_state() == SLEEP)
         return;
-    /* 
-     * HOMING State uses sensors to calibrate position otherwise 
-     * allow the stepper to move if it is not moving in the negative direction past 0
-     */
-    if(get_stepper_state() == HOMING 
-        || !(stepper_state.stepper[axis].position == 0 && stepper_state.stepper[axis].rate < 0))
-        HAL_GPIO_TogglePin(stepper_state.stepper[axis].step_pin_port, stepper_state.stepper[axis].step_pin);
+
+    HAL_GPIO_TogglePin(STEPPER(axis).step_pin_port, STEPPER(axis).step_pin);
 
     if(step_alt[axis] % 2 == 0)
-        stepper_state.stepper[axis].position += stepper_state.stepper[axis].rate < 0 ? -1 : 1;
+    {
+        if(STEPPER(axis).rate != 0)
+            step_direction[axis] = STEPPER(axis).rate < 0 ? -1 : 1;
+
+        STEPPER(axis).position += step_direction[axis];
+    }
 
     step_alt[axis]++;
 }
 
 inline uint8_t* get_stepper_flags(axes_e axis)
 {
-    return &(stepper_state.stepper[axis]._flags);
+    return &(STEPPER(axis)._flags);
 }

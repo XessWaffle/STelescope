@@ -52,10 +52,12 @@
 #define APP_RX_DATA_SIZE  1024
 #define APP_TX_DATA_SIZE  1024
 /* USER CODE BEGIN EXPORTED_DEFINES */
+#define PACKET_METADATA_SIZE 4
+
 #define ORIENTATION_PACKET_SIZE 56
 #define ORIENTATION_PACKET_ID 0xDEAD
 
-#define CAMERA_PACKET_SIZE 8 
+#define CAMERA_PACKET_METADATA_SIZE 4 
 #define CAMERA_PACKET_ID 0xBEEF
 #define CAMERA_PIPE_BUFFER_LENGTH 640
 /* USER CODE END EXPORTED_DEFINES */
@@ -100,9 +102,9 @@ typedef struct
   {
     struct
     {
-      /* Packet ID */
+      /* Packet Metadata */
       uint16_t packet_id;
-      uint16_t _res1;
+      uint16_t size;
 
       /* Packed Accelerometer Data */
       int16_t out_x_g_raw;
@@ -139,12 +141,17 @@ typedef struct
   {
     struct
     {
+      /* Packet Metadata */
       uint16_t packet_id;
-      uint16_t last_packet;
-      uint32_t size;
+      uint16_t size;
+
+      /* Camera Packet Metadata*/
+      uint32_t last_packet;
+
+      /* Image Buffer Data */
       uint8_t buff[CAMERA_PIPE_BUFFER_LENGTH];
     };
-    uint8_t raw_data[CAMERA_PACKET_SIZE + CAMERA_PIPE_BUFFER_LENGTH];
+    uint8_t raw_data[PACKET_METADATA_SIZE + CAMERA_PACKET_METADATA_SIZE + CAMERA_PIPE_BUFFER_LENGTH];
   };
 } camera_data_packet_s;
 /* USER CODE END EXPORTED_TYPES */

@@ -811,7 +811,7 @@ void camera_update()
   uint8_t send = (step_id == CAPTURE_DATA) || (step_id == CAPTURE_END);
 
   cam_data.packet_id = CAMERA_PACKET_ID;
-  cam_data.size = CAMERA_PIPE_BUFFER_LENGTH;
+  cam_data.size = CAMERA_PIPE_BUFFER_LENGTH + CAMERA_PACKET_METADATA_SIZE;
   cam_data.last_packet = packet;
 
   if(step_id == CAPTURE_DATA)
@@ -884,6 +884,7 @@ void populate_orientation_packet()
   
   /* Packet ID */
   orientation.packet_id = ORIENTATION_PACKET_ID;
+  orientation.size = ORIENTATION_PACKET_SIZE - PACKET_METADATA_SIZE;
 
   /* Accelerometer */
   orientation.out_x_g_raw = accel->out_x_g_raw;
