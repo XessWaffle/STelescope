@@ -23,6 +23,11 @@ class StepperOperatingMode(Enum):
     HOMING = 2
     SLEEP = 3
 
+class Direction(Enum):
+    PLUS = 0
+    MINUS = 1
+    STOP = 2
+
 class PhysicalTelescope:
 
     def __init__(self, tx_mgr: UARTTxManager):
@@ -30,6 +35,39 @@ class PhysicalTelescope:
         self.microstep_mode = Microstep.FULL
         self.homed = False
         self.tx_mgr = tx_mgr
+
+    
+    def _move_axis(self, axis: Axes, dir: Direction):
+
+        cmd_byte = 0x0
+
+        match axis:
+            case Axes.PITCH:
+                cmd_byte = UARTCommands.CMD_P_PLUS
+            case Axes.ROLL:
+                cmd_byte = UARTCommands.CMD_R_PLUS
+            case Axes.YAW:
+                cmd_byte = UARTCommands.CMD_Y_PLUS
+        
+
+        cmd_byte += dir.value
+
+        cmd = UARTCommand(cmd, 0)
+        self.tx_mgr.write_command(cmd)
+
+    
+    def _set_rate(self, rate):
+        if not (rate <= 100000 and rate > 0):
+            return
+
+        self.tx_mgr.write_command(UARTCommand(UARTCommands.CMD_SET_RATE, rate))
+
+
+    def _update_microstep(self, microstep: Microstep):
+        self.tx_mgr.write_command(UARTCommand(UARTCommands.CMD_MICST_MODE, microstep.value))
+
+    def _set_state(self, state: StepperOperatingMode):
+        self.tx_mgr.write_command(UARTCommand(UARTCommands.CMD_SET_STATE, state.value)
 
     def _home_pitch(self):
         pass
@@ -49,7 +87,7 @@ class PhysicalTelescope:
         self.microstep_mode = Microstep(log_packet["microstep_mode"])
     
     def home(self):
-
+        pass
 
 
 
