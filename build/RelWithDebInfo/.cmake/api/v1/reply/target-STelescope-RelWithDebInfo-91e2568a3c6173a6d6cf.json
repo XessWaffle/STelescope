@@ -139,8 +139,7 @@
 				14,
 				15,
 				16,
-				17,
-				18
+				17
 			]
 		},
 		{
@@ -263,8 +262,7 @@
 				14,
 				15,
 				16,
-				17,
-				18
+				17
 			]
 		},
 		{
@@ -278,6 +276,7 @@
 			"name" : "Object Libraries",
 			"sourceIndexes" : 
 			[
+				18,
 				19,
 				20,
 				21,
@@ -300,8 +299,7 @@
 				38,
 				39,
 				40,
-				41,
-				42
+				41
 			]
 		}
 	],
@@ -401,12 +399,6 @@
 			"backtrace" : 5,
 			"compileGroupIndex" : 0,
 			"path" : "Core/Src/stepper.c",
-			"sourceGroupIndex" : 0
-		},
-		{
-			"backtrace" : 5,
-			"compileGroupIndex" : 0,
-			"path" : "Core/Src/mobility.c",
 			"sourceGroupIndex" : 0
 		},
 		{

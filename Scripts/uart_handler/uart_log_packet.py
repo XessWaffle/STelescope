@@ -51,7 +51,7 @@ class OrientationDataLogPacket(UARTLogPacket):
 
         if len(raw_data) == 52:
             unpacked_data = struct.unpack(
-                "<hhhhhhhhhhhhIiiiiii",  # Little-endian format
+                "<hhhhhhhhhhhhbbbbiiiiii",  # Little-endian format
                 raw_data
             )
 
@@ -67,13 +67,14 @@ class OrientationDataLogPacket(UARTLogPacket):
             self["out_x_raw_onboard"] = unpacked_data[9]
             self["out_y_raw_onboard"] = unpacked_data[10]
             self["out_z_raw_onboard"] = unpacked_data[11]
-            self["_res2"] = unpacked_data[12]
-            self["yaw_position"] = unpacked_data[13]
-            self["roll_position"] = unpacked_data[14]
-            self["pitch_position"] = unpacked_data[15]
-            self["yaw_rate"] = unpacked_data[16]
-            self["roll_rate"] = unpacked_data[17]
-            self["pitch_rate"] = unpacked_data[18]
+            self["microstep_mode"] = unpacked_data[12]
+            self["_res1"] = unpacked_data[13] << 16 | unpacked_data[14] << 8 | unpacked_data[15]
+            self["yaw_position"] = unpacked_data[16]
+            self["roll_position"] = unpacked_data[17]
+            self["pitch_position"] = unpacked_data[18]
+            self["yaw_rate"] = unpacked_data[19]
+            self["roll_rate"] = unpacked_data[20]
+            self["pitch_rate"] = unpacked_data[21]
         else:
             raise ValueError("Invalid orientation data size")
         

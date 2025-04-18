@@ -9,212 +9,7 @@
 #include "camera.h"
 #include "display.h"
 
-const sensor_reg_s qvga_init[CAM_QVGA_INIT_LENGTH] = 
-{
-	{0xff, 0x0}, 
-	{0x2c, 0xff}, 
-	{0x2e, 0xdf}, 
-	{0xff, 0x1}, 
-	{0x3c, 0x32}, 
-	{0x11, 0x0}, 
-	{0x9, 0x2}, 
-	{0x4, 0xa8}, 
-	{0x13, 0xe5}, 
-	{0x14, 0x48}, 
-	{0x2c, 0xc}, 
-	{0x33, 0x78}, 
-	{0x3a, 0x33}, 
-	{0x3b, 0xfb}, 
-	{0x3e, 0x0}, 
-	{0x43, 0x11}, 
-	{0x16, 0x10}, 
-	{0x39, 0x2}, 
-	{0x35, 0x88}, 
-
-	{0x22, 0xa}, 
-	{0x37, 0x40}, 
-	{0x23, 0x0}, 
-	{0x34, 0xa0}, 
-	{0x6, 0x2}, 
-	{0x6, 0x88}, 
-	{0x7, 0xc0}, 
-	{0xd, 0xb7}, 
-	{0xe, 0x1}, 
-	{0x4c, 0x0}, 
-	{0x4a, 0x81}, 
-	{0x21, 0x99}, 
-	{0x24, 0x40}, 
-	{0x25, 0x38}, 
-	{0x26, 0x82}, 
-	{0x5c, 0x0}, 
-	{0x63, 0x0}, 
-	{0x46, 0x22}, 
-	{0xc, 0x3a}, 
-	{0x5d, 0x55}, 
-	{0x5e, 0x7d}, 
-	{0x5f, 0x7d}, 
-	{0x60, 0x55}, 
-	{0x61, 0x70}, 
-	{0x62, 0x80}, 
-	{0x7c, 0x5}, 
-	{0x20, 0x80}, 
-	{0x28, 0x30}, 
-	{0x6c, 0x0}, 
-	{0x6d, 0x80}, 
-	{0x6e, 0x0}, 
-	{0x70, 0x2}, 
-	{0x71, 0x94}, 
-	{0x73, 0xc1}, 
-	{0x3d, 0x34}, 
-	{0x12, 0x4}, 
-	{0x5a, 0x57}, 
-	{0x4f, 0xbb}, 
-	{0x50, 0x9c}, 
-	{0xff, 0x0}, 
-	{0xe5, 0x7f}, 
-	{0xf9, 0xc0}, 
-	{0x41, 0x24}, 
-	{0xe0, 0x14}, 
-	{0x76, 0xff}, 
-	{0x33, 0xa0}, 
-	{0x42, 0x20}, 
-	{0x43, 0x18}, 
-	{0x4c, 0x0}, 
-	{0x87, 0xd0}, 
-	{0x88, 0x3f}, 
-	{0xd7, 0x3}, 
-	{0xd9, 0x10}, 
-	{0xd3, 0x82}, 
-	{0xc8, 0x8}, 
-	{0xc9, 0x80}, 
-	{0x7c, 0x0}, 
-	{0x7d, 0x0}, 
-	{0x7c, 0x3}, 
-	{0x7d, 0x48}, 
-	{0x7d, 0x48}, 
-	{0x7c, 0x8}, 
-	{0x7d, 0x20}, 
-	{0x7d, 0x10}, 
-	{0x7d, 0xe}, 
-	{0x90, 0x0}, 
-	{0x91, 0xe}, 
-	{0x91, 0x1a}, 
-	{0x91, 0x31}, 
-	{0x91, 0x5a}, 
-	{0x91, 0x69}, 
-	{0x91, 0x75}, 
-	{0x91, 0x7e}, 
-	{0x91, 0x88}, 
-	{0x91, 0x8f}, 
-	{0x91, 0x96}, 
-	{0x91, 0xa3}, 
-	{0x91, 0xaf}, 
-	{0x91, 0xc4}, 
-	{0x91, 0xd7}, 
-	{0x91, 0xe8}, 
-	{0x91, 0x20}, 
-	{0x92, 0x0}, 
-
-	{0x93, 0x6}, 
-	{0x93, 0xe3}, 
-	{0x93, 0x3}, 
-	{0x93, 0x3}, 
-	{0x93, 0x0}, 
-	{0x93, 0x2}, 
-	{0x93, 0x0}, 
-	{0x93, 0x0}, 
-	{0x93, 0x0}, 
-	{0x93, 0x0}, 
-	{0x93, 0x0}, 
-	{0x93, 0x0}, 
-	{0x93, 0x0}, 
-	{0x96, 0x0}, 
-	{0x97, 0x8}, 
-	{0x97, 0x19}, 
-	{0x97, 0x2}, 
-	{0x97, 0xc}, 
-	{0x97, 0x24}, 
-	{0x97, 0x30}, 
-	{0x97, 0x28}, 
-	{0x97, 0x26}, 
-	{0x97, 0x2}, 
-	{0x97, 0x98}, 
-	{0x97, 0x80}, 
-	{0x97, 0x0}, 
-	{0x97, 0x0}, 
-	{0xa4, 0x0}, 
-	{0xa8, 0x0}, 
-	{0xc5, 0x11}, 
-	{0xc6, 0x51}, 
-	{0xbf, 0x80}, 
-	{0xc7, 0x10}, 
-	{0xb6, 0x66}, 
-	{0xb8, 0xa5}, 
-	{0xb7, 0x64}, 
-	{0xb9, 0x7c}, 
-	{0xb3, 0xaf}, 
-	{0xb4, 0x97}, 
-	{0xb5, 0xff}, 
-	{0xb0, 0xc5}, 
-	{0xb1, 0x94}, 
-	{0xb2, 0xf}, 
-	{0xc4, 0x5c}, 
-	{0xa6, 0x0}, 
-	{0xa7, 0x20}, 
-	{0xa7, 0xd8}, 
-	{0xa7, 0x1b}, 
-	{0xa7, 0x31}, 
-	{0xa7, 0x0}, 
-	{0xa7, 0x18}, 
-	{0xa7, 0x20}, 
-	{0xa7, 0xd8}, 
-	{0xa7, 0x19}, 
-	{0xa7, 0x31}, 
-	{0xa7, 0x0}, 
-	{0xa7, 0x18}, 
-	{0xa7, 0x20}, 
-	{0xa7, 0xd8}, 
-	{0xa7, 0x19}, 
-	{0xa7, 0x31}, 
-	{0xa7, 0x0}, 
-	{0xa7, 0x18}, 
-	{0x7f, 0x0}, 
-	{0xe5, 0x1f}, 
-	{0xe1, 0x77}, 
-	{0xdd, 0x7f}, 
-	{0xc2, 0xe}, 
-	
-	{0xff, 0x0}, 
-	{0xe0, 0x4}, 
-	{0xc0, 0xc8}, 
-	{0xc1, 0x96}, 
-	{0x86, 0x3d}, 
-	{0x51, 0x90}, 
-	{0x52, 0x2c}, 
-	{0x53, 0x0}, 
-	{0x54, 0x0}, 
-	{0x55, 0x88}, 
-	{0x57, 0x0}, 
-	
-	{0x50, 0x92}, 
-	{0x5a, 0x50}, 
-	{0x5b, 0x3c}, 
-	{0x5c, 0x0}, 
-	{0xd3, 0x4}, 
-	{0xe0, 0x0}, 
-	
-	{0xff, 0x0}, 
-	{0x5, 0x0}, 
-	
-	{0xda, 0x8}, 
-	{0xd7, 0x3}, 
-	{0xe0, 0x0}, 
-	
-	{0x5, 0x0}, 
-
-	
-	{0xff,0xff}
-};
+#include "ov2640_init_regs.h"
 
 camera_s camera;
 
@@ -291,6 +86,19 @@ void write_i2c_reg(uint8_t reg_addr, uint8_t reg_val)
     while(rtx_i2c(&(camera.cam_i2c)) == HAL_BUSY);
 }
 
+void write_i2c_regs(const sensor_reg_s *next)
+{
+    uint16_t reg_addr = 0;
+    uint16_t reg_val = 0;
+    while ((reg_addr != 0xff) | (reg_val != 0xff))
+    {
+      reg_addr = next->reg;
+      reg_val = next->value;
+      write_i2c_reg(reg_addr, reg_val);
+      next++;
+    }
+}
+
 uint8_t read_i2c_reg(uint8_t reg_addr)
 {
     populate_camera_tx_buff(TRUE, reg_addr);
@@ -365,70 +173,6 @@ void set_fifo_burst_read()
     reset_camera_tx_buffer();
 }
 
-uint8_t buffer_fifo()
-{
-    static uint16_t row = 0;
-
-    if(camera.fifo_length <= CAMERA_BUFFER_LENGTH || row >= 240)
-    {
-        /* Discard last few bytes of FIFO */
-        reset_camera_tx_buffer();   
-        clear_fifo();
-        row = 0;
-        return FALSE;
-    }
-
-    /*static uint8_t display_buff[CAMERA_BUFFER_LENGTH];
-
-    uint16_t k = 0;
-
-    for(uint16_t j = 0; j < 240; j++)
-    {
-        uint8_t vl = read_spi_reg(ARDUCAM_SPI_SINGLE_READ);
-        uint8_t vh = read_spi_reg(ARDUCAM_SPI_SINGLE_READ);
-
-        display_buff[2 * (j % 80 + k * 80)] = vl;
-        display_buff[2 * (j % 80 + k * 80) + 1] = vh;
-        k++;
-        k = k % 3;
-
-        if(k >= CAMERA_BUFFER_LENGTH)
-            break;
-
-    }
-
-    write_display_row(row, display_buff, CAMERA_BUFFER_LENGTH);*/
-    
-    // Discard dummy byte
-    if(row == 0)
-    {
-        discard_spi(1);
-        prep_display();
-    }
-
-    uint8_t *curr_buff = camera.cam_spi.data.rx_buff;
-
-    for(uint16_t i = 0; i < CAM_ROWS_CAPTURED; i++)
-    {        
-        discard_spi(CAMERA_DISCARD_BUFFER_LENGTH);
-
-        camera.cam_spi.data.rx_buff = curr_buff + i * CAMERA_ROW_LENGTH;
-        set_camera_spi_read(TRUE, CAMERA_ROW_LENGTH);
-        rtx_spi(&(camera.cam_spi), TRUE);
-
-        discard_spi(CAMERA_DISCARD_BUFFER_LENGTH);
-    }
-
-    camera.cam_spi.data.rx_buff = curr_buff;
-    write_display_row(curr_buff, CAMERA_BUFFER_LENGTH);
-
-    row += CAM_ROWS_CAPTURED;
-
-    camera.fifo_length -= (CAMERA_BUFFER_LENGTH);
-
-    return TRUE;
-}
-
 uint8_t is_camera_spi_data_ready()
 {
     return camera.cam_spi.data.ready;
@@ -439,30 +183,39 @@ uint8_t *get_camera_rx_buffer()
     return camera.cam_spi.data.rx_buff;
 }
 
+uint16_t get_camera_read_fifo_length()
+{
+    return camera.last_fifo_read_length;
+}
+
 uint8_t pipe_fifo(uint32_t buff_len)
 {
     static uint16_t packet = 0;
 
     if(camera.fifo_length < buff_len)
     {
-        /* Discard last few bytes of FIFO */
+        set_camera_spi_read(TRUE, camera.fifo_length);
+        rtx_spi(&(camera.cam_spi), TRUE);
+        
+        camera.last_fifo_read_length = camera.fifo_length;
+        camera.fifo_length = 0;
+
         reset_camera_tx_buffer();   
         clear_fifo();
+
         packet = 0;
         return FALSE;
     }
     
     // Discard dummy byte
     if(packet == 0)
-    {
         discard_spi(1);
-        prep_display();
-    }
 
     set_camera_spi_read(TRUE, buff_len);
     rtx_spi(&(camera.cam_spi), TRUE);
 
     camera.fifo_length -= (buff_len);
+    camera.last_fifo_read_length = buff_len;
 
     packet++;
 
@@ -528,16 +281,17 @@ uint8_t init_camera()
      */
     write_i2c_reg(OV2640_REG_COM7, OV2640_RESET_ALL);
 
-    uint16_t reg_addr = 0;
-    uint16_t reg_val = 0;
-    const sensor_reg_s *next = qvga_init;
-    while ((reg_addr != 0xff) | (reg_val != 0xff))
-    {
-      reg_addr = next->reg;
-      reg_val = next->value;
-      write_i2c_reg(reg_addr, reg_val);
-      next++;
-    }
+
+    /* Initialize QVGA */
+    //write_i2c_regs(OV2640_QVGA);
+
+    /* Initialize JPEG*/
+    write_i2c_regs(OV2640_JPEG_INIT);
+    write_i2c_regs(OV2640_YUV422);
+    write_i2c_regs(OV2640_JPEG);
+    write_i2c_reg(OV2640_REG_SENSOR_RESET, 0x01);
+    write_i2c_reg(OV2640_REG_COM10, 0x00);
+    write_i2c_regs(OV2640_1024x768_JPEG);
 
     return TRUE;
 }
@@ -598,6 +352,71 @@ uint8_t capture_and_pipe(uint8_t new_capture, uint8_t *buff, uint32_t buff_len)
     return step_id;
 }
 
+#if 0
+uint8_t buffer_fifo()
+{
+    static uint16_t row = 0;
+
+    if(camera.fifo_length <= CAMERA_BUFFER_LENGTH || row >= 240)
+    {
+        /* Discard last few bytes of FIFO */
+        reset_camera_tx_buffer();   
+        clear_fifo();
+        row = 0;
+        return FALSE;
+    }
+
+    /*static uint8_t display_buff[CAMERA_BUFFER_LENGTH];
+
+    uint16_t k = 0;
+
+    for(uint16_t j = 0; j < 240; j++)
+    {
+        uint8_t vl = read_spi_reg(ARDUCAM_SPI_SINGLE_READ);
+        uint8_t vh = read_spi_reg(ARDUCAM_SPI_SINGLE_READ);
+
+        display_buff[2 * (j % 80 + k * 80)] = vl;
+        display_buff[2 * (j % 80 + k * 80) + 1] = vh;
+        k++;
+        k = k % 3;
+
+        if(k >= CAMERA_BUFFER_LENGTH)
+            break;
+
+    }
+
+    write_display_row(row, display_buff, CAMERA_BUFFER_LENGTH);*/
+    
+    // Discard dummy byte
+    if(row == 0)
+    {
+        discard_spi(1);
+        prep_display();
+    }
+
+    uint8_t *curr_buff = camera.cam_spi.data.rx_buff;
+
+    for(uint16_t i = 0; i < CAM_ROWS_CAPTURED; i++)
+    {        
+        discard_spi(CAMERA_DISCARD_BUFFER_LENGTH);
+
+        camera.cam_spi.data.rx_buff = curr_buff + i * CAMERA_ROW_LENGTH;
+        set_camera_spi_read(TRUE, CAMERA_ROW_LENGTH);
+        rtx_spi(&(camera.cam_spi), TRUE);
+
+        discard_spi(CAMERA_DISCARD_BUFFER_LENGTH);
+    }
+
+    camera.cam_spi.data.rx_buff = curr_buff;
+    write_display_row(curr_buff, CAMERA_BUFFER_LENGTH);
+
+    row += CAM_ROWS_CAPTURED;
+
+    camera.fifo_length -= (CAMERA_BUFFER_LENGTH);
+
+    return TRUE;
+}
+
 uint8_t capture_and_display(uint8_t new_capture)
 {
     static capture_step_e step_id = 0;
@@ -649,3 +468,5 @@ uint8_t capture_and_display(uint8_t new_capture)
 
     return step_id;
 }
+
+#endif

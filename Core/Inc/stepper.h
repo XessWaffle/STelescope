@@ -11,7 +11,7 @@
 #include "main.h"
 
 // Steps per minute
-#define MAX_RATE 600000
+#define MAX_RATE 100000
 
 #define DIRECTION_CHANGE_FLAG 0
 #define INIT_DIRECTION_FLAG 1

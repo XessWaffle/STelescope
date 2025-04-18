@@ -55,7 +55,6 @@ target_sources(${CMAKE_PROJECT_NAME} PRIVATE
     ${CMAKE_SOURCE_DIR}/Core/Src/peripheral.c
     ${CMAKE_SOURCE_DIR}/Core/Src/camera.c
     ${CMAKE_SOURCE_DIR}/Core/Src/stepper.c
-    ${CMAKE_SOURCE_DIR}/Core/Src/mobility.c
     ${CMAKE_SOURCE_DIR}/Core/Src/status.c
     ${CMAKE_SOURCE_DIR}/Core/Src/rtc.c
 )

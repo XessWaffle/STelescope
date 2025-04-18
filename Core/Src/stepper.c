@@ -148,7 +148,11 @@ inline void set_stepper_position(axes_e axis, uint32_t position)
 }
 
 inline uint8_t set_stepper_rate(axes_e axis, int32_t rate)
-{
+{   
+    /* Sanity check the stepper rate */
+    if((rate < 0 && -rate > MAX_RATE) || (rate > 0 && rate > MAX_RATE))
+        return 0;
+    
     int32_t *prev_rate = &(STEPPER(axis)._prev_rate);
     uint8_t *flags = get_stepper_flags(axis);
 

@@ -11,11 +11,7 @@
 #include "peripheral.h"
 #include "ov2640.h"
 
-#define CAMERA_BUFFER_LENGTH 2400
-#define CAMERA_DISCARD_BUFFER_LENGTH 80
-#define CAMERA_ROW_LENGTH 480
-#define CAM_ROWS_CAPTURED (CAMERA_BUFFER_LENGTH / CAMERA_ROW_LENGTH)
-#define CAM_QVGA_INIT_LENGTH 306
+#define CAMERA_BUFFER_LENGTH 8
 
 typedef enum
 {
@@ -30,12 +26,6 @@ typedef enum
 
 typedef struct
 {
-	uint8_t reg;
-	uint8_t value;
-} sensor_reg_s;
-
-typedef struct
-{
 	spi_per_s cam_spi;
 	i2c_per_s cam_i2c;
 
@@ -45,6 +35,7 @@ typedef struct
 
 	uint8_t pid, vid;
 	uint32_t fifo_length;
+	uint16_t last_fifo_read_length;
 
 } camera_s;
 
@@ -52,10 +43,10 @@ extern camera_s camera;
 
 uint8_t init_camera();
 
-uint8_t capture_and_display(uint8_t new_capture);
 uint8_t capture_and_pipe(uint8_t new_capture, uint8_t *buff, uint32_t buff_len);
 
 uint8_t is_camera_spi_data_ready();
 
 uint8_t *get_camera_rx_buffer();
+uint16_t get_camera_read_fifo_length();
 #endif /* INC_CAMERA_H_ */

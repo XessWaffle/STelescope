@@ -55,7 +55,7 @@ class UARTRxManager:
         """
         
         if(self.packet_queue.qsize() != 0):
-            print(f"Grabbed packet, Queue Length: {self.packet_queue.qsize()}")
+            #print(f"Grabbed packet, Queue Length: {self.packet_queue.qsize()}")
             packet = self.packet_queue.get()
             return (type(packet), packet)
         else:

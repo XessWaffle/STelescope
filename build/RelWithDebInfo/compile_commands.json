@@ -97,12 +97,6 @@
 },
 {
   "directory": "E:/Programming/ST/STelescope/build/RelWithDebInfo",
-  "command": "D:\\ST\\STM32CubeCLT_1.18.0\\GNU-tools-for-STM32\\bin\\arm-none-eabi-gcc.exe -DSTM32F103xB -DUSE_HAL_DRIVER -IE:/Programming/ST/STelescope/USB_DEVICE/App -IE:/Programming/ST/STelescope/USB_DEVICE/Target -IE:/Programming/ST/STelescope/Core/Inc -IE:/Programming/ST/STelescope/Drivers/STM32F1xx_HAL_Driver/Inc -IE:/Programming/ST/STelescope/Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -IE:/Programming/ST/STelescope/Middlewares/ST/STM32_USB_Device_Library/Core/Inc -IE:/Programming/ST/STelescope/Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Inc -IE:/Programming/ST/STelescope/Drivers/CMSIS/Device/ST/STM32F1xx/Include -IE:/Programming/ST/STelescope/Drivers/CMSIS/Include  -mcpu=cortex-m3  -Wall -Wextra -Wpedantic -fdata-sections -ffunction-sections -mcpu=cortex-m3  -Wall -Wextra -Wpedantic -fdata-sections -ffunction-sections -O2 -g -DNDEBUG -std=gnu11 -o CMakeFiles\\STelescope.dir\\Core\\Src\\mobility.c.obj -c E:\\Programming\\ST\\STelescope\\Core\\Src\\mobility.c",
-  "file": "E:\\Programming\\ST\\STelescope\\Core\\Src\\mobility.c",
-  "output": "CMakeFiles\\STelescope.dir\\Core\\Src\\mobility.c.obj"
-},
-{
-  "directory": "E:/Programming/ST/STelescope/build/RelWithDebInfo",
   "command": "D:\\ST\\STM32CubeCLT_1.18.0\\GNU-tools-for-STM32\\bin\\arm-none-eabi-gcc.exe -DSTM32F103xB -DUSE_HAL_DRIVER -IE:/Programming/ST/STelescope/USB_DEVICE/App -IE:/Programming/ST/STelescope/USB_DEVICE/Target -IE:/Programming/ST/STelescope/Core/Inc -IE:/Programming/ST/STelescope/Drivers/STM32F1xx_HAL_Driver/Inc -IE:/Programming/ST/STelescope/Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -IE:/Programming/ST/STelescope/Middlewares/ST/STM32_USB_Device_Library/Core/Inc -IE:/Programming/ST/STelescope/Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Inc -IE:/Programming/ST/STelescope/Drivers/CMSIS/Device/ST/STM32F1xx/Include -IE:/Programming/ST/STelescope/Drivers/CMSIS/Include  -mcpu=cortex-m3  -Wall -Wextra -Wpedantic -fdata-sections -ffunction-sections -mcpu=cortex-m3  -Wall -Wextra -Wpedantic -fdata-sections -ffunction-sections -O2 -g -DNDEBUG -std=gnu11 -o CMakeFiles\\STelescope.dir\\Core\\Src\\status.c.obj -c E:\\Programming\\ST\\STelescope\\Core\\Src\\status.c",
   "file": "E:\\Programming\\ST\\STelescope\\Core\\Src\\status.c",
   "output": "CMakeFiles\\STelescope.dir\\Core\\Src\\status.c.obj"

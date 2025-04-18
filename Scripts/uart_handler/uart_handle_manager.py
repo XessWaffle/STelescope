@@ -13,7 +13,7 @@ class STM32UARTHandle:
                 cls._instance = super(STM32UARTHandle, cls).__new__(cls)
         return cls._instance
 
-    def __init__(self, baudrate=115200, timeout=1):
+    def __init__(self, baudrate=3000000, timeout=1):
         if not hasattr(self, '_initialized'):
             self.baudrate = baudrate
             self.timeout = timeout

@@ -1,18 +1,25 @@
 from enum import Enum
 
 class UARTCommands(Enum):
-    CMD_R_PLUS = 0
-    CMD_R_MINUS = 1
-    CMD_R_STOP = 2
-    CMD_Y_PLUS = 3
-    CMD_Y_MINUS = 4
-    CMD_Y_STOP = 5
-    CMD_P_PLUS = 6
-    CMD_P_MINUS = 7
-    CMD_P_STOP = 8
-    CMD_HOME = 9
-    CMD_MICST_MODE = 10
-    CMD_INVALID = 11
+    CMD_R_PLUS = 0x01  # Move the rotation axis with a positive rate
+    CMD_R_MINUS = 0x02  # Move the rotation axis with a negative rate
+    CMD_R_STOP = 0x03  # Stop the rotation axis
+    CMD_Y_PLUS = 0x04  # Move the yaw axis with a positive rate
+    CMD_Y_MINUS = 0x05  # Move the yaw axis with a negative rate
+    CMD_Y_STOP = 0x06  # Stop the yaw axis
+    CMD_P_PLUS = 0x07  # Move the pitch axis with a positive rate
+    CMD_P_MINUS = 0x08  # Move the pitch axis with a negative rate
+    CMD_P_STOP = 0x09  # Stop the pitch axis
+    CMD_SET_STATE = 0x0A  # Set the state
+    CMD_SET_RATE = 0x0B  # Set the rate
+    CMD_RESET_POS = 0x0C  # Reset the position
+    CMD_HOME = 0x0D  # Deprecated
+    CMD_MICST_MODE = 0x0E  # Change the microstep mode (mode given in info)
+    CMD_CAPTURE = 0x0F  # Capture
+    CMD_EM_STOP = 0x10  # Emergency stop
+    CMD_STOP = 0x11     # Regular stop
+    CMD_ACK = 0x12      # Acknowledge
+    CMD_INVALID = 0x13  # Invalid command
 
 
 class UARTCommand:
@@ -41,7 +48,7 @@ class UARTCommand:
 
     def _validate(self) -> None:
         """Validates the command byte and info bytes."""
-        if not (0x00 <= self.command_byte <= 0xFF):
+        if not (0x00 <= self.command_byte <= UARTCommands.CMD_INVALID.value):
             raise ValueError("Command byte must be between 0x00 and 0xFF.")
         if len(self.info_bytes) != 3 or not all(0x00 <= b <= 0xFF for b in self.info_bytes):
             raise ValueError("Info bytes must be a list or tuple of three bytes between 0x00 and 0xFF.")

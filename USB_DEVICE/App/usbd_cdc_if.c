@@ -96,7 +96,7 @@ uint8_t UserTxBufferFS[APP_TX_DATA_SIZE];
 
 /* USER CODE BEGIN PRIVATE_VARIABLES */
 /* BAUD, #STOP BITS - 1, PARITY, #BITS*/
-USBD_CDC_LineCodingTypeDef LineCoding = {115200, 0x00, 0x00, 0x08};
+USBD_CDC_LineCodingTypeDef LineCoding = {3000000, 0x00, 0x00, 0x08};
 
 /* Track incoming commands */
 uint8_t cmds_idx = 0, last_processed_cmd = 0;

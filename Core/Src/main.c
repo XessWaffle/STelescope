@@ -22,11 +22,11 @@
 
 /* Private includes ----------------------------------------------------------*/
 /* USER CODE BEGIN Includes */
+#include "stepper.h"
 #include "status.h"
 #include "compass.h"
 #include "accelerometer.h"
 #include "display.h"
-#include "mobility.h"
 #include "camera.h"
 #include "rtc.h"
 #include "usbd_cdc_if.h"
@@ -39,12 +39,12 @@
 
 /* Private define ------------------------------------------------------------*/
 /* USER CODE BEGIN PD */
-
+#define ACK_DELAY 10000
 /* USER CODE END PD */
 
 /* Private macro -------------------------------------------------------------*/
 /* USER CODE BEGIN PM */
-#define USBD_CDC_BUFF_LEN 128
+
 /* USER CODE END PM */
 
 /* Private variables ---------------------------------------------------------*/
@@ -68,13 +68,13 @@ uint32_t tim2_tick_sec;
 
 uint32_t tim3_counter_max;
 
-uint8_t usbd_buff[USBD_CDC_BUFF_LEN];
-uint32_t usbd_buff_len;
-
 uint32_t rate;
+
+uint32_t last_ack;
 
 uint8_t capture_flag = FALSE;
 uint8_t sensor_flag = FALSE;
+uint8_t connected = FALSE;
 
 orientation_packet_s orientation;
 camera_data_packet_s cam_data;
@@ -177,7 +177,6 @@ int main(void)
   set_status_led(STATUS_SENS, 0x010000);
   update_leds();
 
-
   if(init_stepper() != TRUE)
     Error_Handler();
 
@@ -196,10 +195,6 @@ int main(void)
 
   HAL_Delay(1000);
   set_stepper_state(TRACKING);
-
-  usbd_buff_len = snprintf((char*) usbd_buff, USBD_CDC_BUFF_LEN, "Homing Complete, Ready to Track Objects\r\n");  
-  CDC_Transmit_FS(usbd_buff, usbd_buff_len);
-
 
   /* USER CODE END 2 */
 
@@ -223,6 +218,15 @@ int main(void)
     CDC_Transmit_FS(usbd_buff, usbd_buff_len);
 
     HAL_Delay(400);*/
+
+    if(connected && (HAL_GetTick() - last_ack > ACK_DELAY))
+    {
+      connected = FALSE;
+      set_stepper_rate(PITCH, 0);
+      set_stepper_rate(YAW, 0);
+      set_stepper_rate(ROLL, 0);
+      set_stepper_state(SLEEP);
+    }
 
     sensor_update();
     camera_update();
@@ -259,7 +263,18 @@ int main(void)
       case CMD_P_STOP:
         set_stepper_rate(PITCH, 0);
         break;
+      case CMD_SET_STATE:
+        set_stepper_state(t_cmd->info);
+        break;
+      case CMD_SET_RATE:
+        rate = t_cmd->info;
+        break;
+      case CMD_RESET_POS:
+        set_stepper_position(t_cmd->info, 0);
+        break;
       case CMD_HOME:
+#if 0
+        /* Deprecated */
         HAL_TIM_Base_Stop_IT(&htim4);
         HAL_NVIC_DisableIRQ(EXTI2_IRQn);
         home(YAW);
@@ -267,12 +282,27 @@ int main(void)
         home(ROLL);
         HAL_TIM_Base_Start_IT(&htim4);
         HAL_NVIC_EnableIRQ(EXTI2_IRQn);
+#endif
         break;
       case CMD_MICST_MODE: /* Change the microstep mode (mode given in info)*/
         set_microstep_mode(t_cmd->info);
         break;
       case CMD_CAPTURE:
         break;
+      case CMD_EM_STOP:
+        set_stepper_state(SLEEP);
+        set_stepper_rate(PITCH, 0);
+        set_stepper_rate(YAW, 0);
+        set_stepper_rate(ROLL, 0);
+        break;
+      case CMD_STOP:
+        set_stepper_rate(PITCH, 0);
+        set_stepper_rate(YAW, 0);
+        set_stepper_rate(ROLL, 0);
+        break;
+      case CMD_ACK:
+        connected = TRUE;
+        last_ack = HAL_GetTick();
       case CMD_INVALID:
       default:
         break;
@@ -422,7 +452,7 @@ void MX_SPI1_Init(void)
   hspi1.Init.CLKPolarity = SPI_POLARITY_LOW;
   hspi1.Init.CLKPhase = SPI_PHASE_1EDGE;
   hspi1.Init.NSS = SPI_NSS_SOFT;
-  hspi1.Init.BaudRatePrescaler = SPI_BAUDRATEPRESCALER_8;
+  hspi1.Init.BaudRatePrescaler = SPI_BAUDRATEPRESCALER_4;
   hspi1.Init.FirstBit = SPI_FIRSTBIT_MSB;
   hspi1.Init.TIMode = SPI_TIMODE_DISABLE;
   hspi1.Init.CRCCalculation = SPI_CRCCALCULATION_DISABLE;
@@ -735,7 +765,6 @@ static void MX_GPIO_Init(void)
 
   /* EXTI interrupt init*/
   HAL_NVIC_SetPriority(EXTI2_IRQn, 0, 0);
-  HAL_NVIC_EnableIRQ(EXTI2_IRQn);
 
   /* USER CODE BEGIN MX_GPIO_Init_2 */
 
@@ -811,7 +840,7 @@ void camera_update()
   uint8_t send = (step_id == CAPTURE_DATA) || (step_id == CAPTURE_END);
 
   cam_data.packet_id = CAMERA_PACKET_ID;
-  cam_data.size = CAMERA_PIPE_BUFFER_LENGTH + CAMERA_PACKET_METADATA_SIZE;
+  cam_data.size = CAMERA_PACKET_METADATA_SIZE + get_camera_read_fifo_length();
   cam_data.last_packet = packet;
 
   if(step_id == CAPTURE_DATA)
@@ -820,9 +849,7 @@ void camera_update()
     packet = 0;
 
   if(send)
-  {
-    CDC_Transmit_FS((uint8_t*) cam_data.raw_data, sizeof(camera_data_packet_s));
-  }
+    CDC_Transmit_FS((uint8_t*) cam_data.raw_data, PACKET_METADATA_SIZE + cam_data.size);
 }
 
 void step_isr()
@@ -901,6 +928,9 @@ void populate_orientation_packet()
   orientation.out_x_raw_onboard = onboard_compass->out_x_raw;
   orientation.out_y_raw_onboard = onboard_compass->out_y_raw;
   orientation.out_z_raw_onboard = onboard_compass->out_z_raw;
+
+  /* Microstep mode */
+  orientation.microstep_mode = get_microstep_mode();
 
   /* Stepper position */
   orientation.yaw_position = get_stepper_position(YAW);

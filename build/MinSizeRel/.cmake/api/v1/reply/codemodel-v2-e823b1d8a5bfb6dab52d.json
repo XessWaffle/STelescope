@@ -10,7 +10,7 @@
 					[
 						1
 					],
-					"jsonFile" : "directory-.-RelWithDebInfo-d0094a50bb2071803777.json",
+					"jsonFile" : "directory-.-MinSizeRel-d0094a50bb2071803777.json",
 					"minimumCMakeVersion" : 
 					{
 						"string" : "3.22"
@@ -24,7 +24,7 @@
 				},
 				{
 					"build" : "cmake/stm32cubemx",
-					"jsonFile" : "directory-cmake.stm32cubemx-RelWithDebInfo-a874d3cc84b5982fda2e.json",
+					"jsonFile" : "directory-cmake.stm32cubemx-MinSizeRel-a874d3cc84b5982fda2e.json",
 					"minimumCMakeVersion" : 
 					{
 						"string" : "3.22"
@@ -39,7 +39,7 @@
 					]
 				}
 			],
-			"name" : "RelWithDebInfo",
+			"name" : "MinSizeRel",
 			"projects" : 
 			[
 				{
@@ -62,21 +62,21 @@
 				{
 					"directoryIndex" : 1,
 					"id" : "STM32_Drivers::@768a070a0fe75716b479",
-					"jsonFile" : "target-STM32_Drivers-RelWithDebInfo-48cb091032423932af75.json",
+					"jsonFile" : "target-STM32_Drivers-MinSizeRel-53eeace7565f7e98cda5.json",
 					"name" : "STM32_Drivers",
 					"projectIndex" : 0
 				},
 				{
 					"directoryIndex" : 0,
 					"id" : "STelescope::@6890427a1f51a3e7e1df",
-					"jsonFile" : "target-STelescope-RelWithDebInfo-9ad84de8cc4f61b2a6e4.json",
+					"jsonFile" : "target-STelescope-MinSizeRel-5a4eacba4ea45dc5254b.json",
 					"name" : "STelescope",
 					"projectIndex" : 0
 				},
 				{
 					"directoryIndex" : 1,
 					"id" : "USB_Device_Library::@768a070a0fe75716b479",
-					"jsonFile" : "target-USB_Device_Library-RelWithDebInfo-7265e11cf00e5b9c5c8c.json",
+					"jsonFile" : "target-USB_Device_Library-MinSizeRel-b536aa85f960ebca4ce2.json",
 					"name" : "USB_Device_Library",
 					"projectIndex" : 0
 				}
@@ -86,7 +86,7 @@
 	"kind" : "codemodel",
 	"paths" : 
 	{
-		"build" : "E:/Programming/ST/STelescope/build/RelWithDebInfo",
+		"build" : "E:/Programming/ST/STelescope/build/MinSizeRel",
 		"source" : "E:/Programming/ST/STelescope"
 	},
 	"version" : 

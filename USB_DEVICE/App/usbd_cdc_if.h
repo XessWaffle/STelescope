@@ -50,7 +50,7 @@
   */
 /* Define size for the receive and transmit buffer over CDC */
 #define APP_RX_DATA_SIZE  1024
-#define APP_TX_DATA_SIZE  1024
+#define APP_TX_DATA_SIZE  4096
 /* USER CODE BEGIN EXPORTED_DEFINES */
 #define PACKET_METADATA_SIZE 4
 
@@ -59,7 +59,7 @@
 
 #define CAMERA_PACKET_METADATA_SIZE 4 
 #define CAMERA_PACKET_ID 0xBEEF
-#define CAMERA_PIPE_BUFFER_LENGTH 640
+#define CAMERA_PIPE_BUFFER_LENGTH APP_TX_DATA_SIZE - CAMERA_PACKET_METADATA_SIZE - PACKET_METADATA_SIZE
 /* USER CODE END EXPORTED_DEFINES */
 
 /**
@@ -84,10 +84,16 @@ typedef enum
   CMD_P_PLUS,
   CMD_P_MINUS,
   CMD_P_STOP,
-  CMD_HOME,
+  CMD_SET_STATE,
+  CMD_SET_RATE,
+  CMD_RESET_POS,
+  CMD_HOME, /* Deprecated */
   CMD_MICST_MODE, /* Change the microstep mode (mode given in info)*/
   CMD_CAPTURE,
-  CMD_INVALID
+  CMD_EM_STOP,
+  CMD_STOP,
+  CMD_ACK,
+  CMD_INVALID = 0xFF
 } telescope_command_e;
 
 typedef struct
@@ -121,7 +127,8 @@ typedef struct
       int16_t out_x_raw_onboard;
       int16_t out_y_raw_onboard;
       int16_t out_z_raw_onboard;
-      uint32_t _res2;
+      uint32_t microstep_mode: 8;
+      uint32_t _res1:24;
 
       /* Packed stepper data */
       uint32_t yaw_position;

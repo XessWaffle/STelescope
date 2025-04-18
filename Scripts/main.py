@@ -2,6 +2,7 @@ import pygame
 
 from uart_handler import *
 from ui_component import *
+from telescope import *
 import threading
 
 active_keys = []
@@ -15,6 +16,8 @@ cmd_component = CommandComponent(ui_mgr.get_screen(), 10, 10, 0, 0)
 orient_component = OrientationComponent(ui_mgr.get_screen(), 10, 100, 0, 0)
 camera_component = CameraComponent(ui_mgr.get_screen(), 700, 100, 0, 0)
 
+phy_telescope = PhysicalTelescope()
+
 def handle_key_event(event, is_pressed):
     """Handle key press or release events."""
     key = event.key
@@ -24,7 +27,6 @@ def handle_key_event(event, is_pressed):
     if is_pressed:
         if key in active_keys:
             return
-        print(f"Key pressed: {pygame.key.name(key)}")
         active_keys.append(key)
 
         match key:
@@ -50,7 +52,6 @@ def handle_key_event(event, is_pressed):
             case _:
                 cmd = None
     else:
-        print(f"Key released: {pygame.key.name(key)}")
         if key in active_keys:
             active_keys.remove(key)
 
@@ -86,7 +87,6 @@ def main():
     ui_component_manager.add_component(camera_component)
 
     def uart_processing_thread():
-        poll_next = True
         data_packet = None
         type = None
         while running:
@@ -94,18 +94,18 @@ def main():
 
             if data_packet == None:
                 type, data_packet = rx_mgr.poll_packet()
-            elif data_packet != None:
+                continue
+            
+            if(not data_packet.is_ready()):
+                continue
 
-                print(data_packet.is_ready())
-                if(not data_packet.is_ready()):
-                    continue
+            if type == OrientationDataLogPacket:
+                orient_component.set_orientation_packet(data_packet)
+                phy_telescope.orientation_update(data_packet)
+            elif type == CameraDataLogPacket:
+                camera_component.add_camera_data(data_packet)
 
-                if type == OrientationDataLogPacket:
-                    orient_component.set_orientation_packet(data_packet)
-                elif type == CameraDataLogPacket:
-                    camera_component.add_camera_data(data_packet)
-                    
-                data_packet = None
+            data_packet = None
 
     uart_thread = threading.Thread(target=uart_processing_thread, daemon=True)
     uart_thread.start()

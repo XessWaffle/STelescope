@@ -218,10 +218,9 @@ void EXTI2_IRQHandler(void)
   /* USER CODE END EXTI2_IRQn 0 */
   HAL_GPIO_EXTI_IRQHandler(RTC_1HZ_Pin);
   /* USER CODE BEGIN EXTI2_IRQn 1 */
-  camera_update_isr();  
 
   /* Reset counter to keep phase locked */
-  __HAL_TIM_SetCounter(&htim4, 0);
+  //__HAL_TIM_SetCounter(&htim4, 0);
   /* USER CODE END EXTI2_IRQn 1 */
 }
 
@@ -316,11 +315,20 @@ void TIM3_IRQHandler(void)
 void TIM4_IRQHandler(void)
 {
   /* USER CODE BEGIN TIM4_IRQn 0 */
-
+  static const uint8_t cam_interval = 5;
+  static uint8_t cam_step = 0;
   /* USER CODE END TIM4_IRQn 0 */
   HAL_TIM_IRQHandler(&htim4);
   /* USER CODE BEGIN TIM4_IRQn 1 */
   sensor_update_isr();
+
+  if(cam_step == cam_interval)
+  {
+    camera_update_isr();
+    cam_step = 0;
+  }
+
+  cam_step++;
   /* USER CODE END TIM4_IRQn 1 */
 }
 
