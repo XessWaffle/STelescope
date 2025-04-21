@@ -88,3 +88,19 @@ class OrientationComponent(UIComponent):
                   offboard_center_y - int(orientation_packet["out_y_raw_offboard"] / 5000 * radius)), 2)
         offboard_text = font.render("Offboard Mag", True, (255, 255, 255))
         screen.blit(offboard_text, (onboard_center_x - 20, offboard_center_y + radius + 10))
+
+        # Display yaw rate
+        yaw_rate_text = font.render(f"Yaw Rate: {orientation_packet['yaw_rate']}", True, (255, 255, 255))
+        screen.blit(yaw_rate_text, (base_x, base_y + 3 * spacing))
+
+        # Display roll rate
+        roll_rate_text = font.render(f"Roll Rate: {orientation_packet['roll_rate']}", True, (255, 255, 255))
+        screen.blit(roll_rate_text, (base_x, base_y + 4 * spacing))
+
+        # Display pitch rate
+        pitch_rate_text = font.render(f"Pitch Rate: {orientation_packet['pitch_rate']}", True, (255, 255, 255))
+        screen.blit(pitch_rate_text, (base_x, base_y + 5 * spacing))
+
+        # Display state
+        state_text = font.render(f"State: {orientation_packet['state']}", True, (255, 255, 255))
+        screen.blit(state_text, (base_x, base_y + 6 * spacing))

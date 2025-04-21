@@ -15,6 +15,6 @@ class UARTTxManager:
             raise ValueError("Command cannot be None.")
         if not isinstance(command, UARTCommand):
             raise TypeError("Command must be an instance of UARTCommand.")
-        
+
         self.uart_mgr.request_write(command.to_bytes(), self._write_command_cb)
 

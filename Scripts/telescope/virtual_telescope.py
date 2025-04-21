@@ -50,9 +50,11 @@ class VirtualTelescope:
         self._loc = EarthLocation(lat=self.lat * u.deg, lon=self.long * u.deg, height=self.height * u.m)
 
     def track_planet(self, name):
-        obstime = Time.now() + 90 * u.s
+        obstime = Time.now() + 90 * u.s + 3 * u.h
         planet = get_body(name, obstime)
         yaw, roll, pitch = self._to_deg_min_sec(planet, obstime)
+
+        print(f"Slewing to {name} for observation at {obstime}")
 
         self.telescope.goto(yaw, roll, pitch)
 
@@ -68,10 +70,10 @@ class VirtualTelescope:
 
             while self._tracking:
                 # Calculate the time i seconds into the future
-                future_time = Time.now() + 1 * u.s
+                future_time = Time.now() + 3 * u.h + 1 * u.s
                 yaw, roll, pitch = self._to_deg_min_sec(planet, future_time)
                 self.telescope.track(yaw, roll, pitch)
-                time.sleep(0.8)
+                time.sleep(0.25)
 
             self.telescope.stop_tracking()
 

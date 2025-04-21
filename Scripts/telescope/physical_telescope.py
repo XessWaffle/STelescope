@@ -172,6 +172,7 @@ class PhysicalTelescope:
         self.orientation = np.array([0.0, 0.0, 0.0])
         self.step_orientation = np.array([0.0, 0.0, 0.0])
         self.rates = np.array([0, 0, 0])
+        self._retry_count = np.array([0, 0, 0])
         self.desired_positions = np.array([0, 0, 0])
 
         self.microstep_mgr = MicrostepModeManager(tx_mgr)
@@ -245,11 +246,19 @@ class PhysicalTelescope:
     def _set_axis_rate(self, axis: Axes, rate, force = False):
         if not (rate <= 100000 and rate >= -100000):
             return
-        
-        if self.rates[axis.value] == rate and not force:
-            return
 
+        if self.rates[axis.value] == rate and not force:
+            self._retry_count[axis.value] = self._retry_count[axis.value] + 1
+        else:
+            self._retry_count[axis.value] = 0
+
+        if self._retry_count[axis.value] > 7:
+            self._retry_count[axis.value] = 8
+            return
+        
         self.rates[axis.value] = rate
+
+        print(f"Sending rate req: {axis}: {rate}")
 
         cmd_byte = UARTCommands.CMD_INVALID
 
@@ -262,16 +271,21 @@ class PhysicalTelescope:
                 cmd_byte = UARTCommands.CMD_SET_Y_RATE
 
         self.tx_mgr.write_command(UARTCommand(cmd_byte, UARTCommand.to_int24(rate)))
+        threading.Event().wait(0.05)
                 
     
     def _set_state(self, state: StepperOperatingMode):
+        print(f"Sending state req: {state}")
         self.tx_mgr.write_command(UARTCommand(UARTCommands.CMD_SET_STATE, state.value))
+        threading.Event().wait(0.05)
 
     def _reset_desired_pos(self, axis: Axes):
         self.tx_mgr.write_command(UARTCommand(UARTCommands.CMD_RESET_DES_POS, axis.value))
+        threading.Event().wait(0.05)
 
     def _reset_pos(self, axis: Axes):
         self.tx_mgr.write_command(UARTCommand(UARTCommands.CMD_RESET_POS, axis.value))
+        threading.Event().wait(0.05)
 
     def _home_yaw(self, angle = 0):
 
@@ -455,6 +469,11 @@ class PhysicalTelescope:
         self.step_orientation[Axes.YAW.value] = log_packet["yaw_position"]
         self.step_orientation[Axes.ROLL.value] = log_packet["roll_position"]
         self.step_orientation[Axes.PITCH.value] = log_packet["pitch_position"]
+        """
+        self.rates[Axes.YAW.value] = log_packet["yaw_rate"]
+        self.rates[Axes.ROLL.value] = log_packet["roll_rate"]
+        self.rates[Axes.PITCH.value] = log_packet["pitch_rate"]
+        """
 
         self.microstep_mgr.microstep_update(log_packet)
 
@@ -792,6 +811,7 @@ class PhysicalTelescope:
         return self._processing
 
     def ack(self):
+        print("Sent Ack")
         self.tx_mgr.write_command(UARTCommand(UARTCommands.CMD_ACK, UARTCommand.to_int24(0)))
 
     def stop(self):

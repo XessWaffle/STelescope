@@ -144,13 +144,7 @@ def main():
     uart_thread = threading.Thread(target=uart_processing_thread, daemon=True)
     uart_thread.start()
 
-    def periodic_ack():
-        while running:
-            telescope.physical().ack()
-            pygame.time.wait(5000)
-
-    ack_thread = threading.Thread(target=periodic_ack, daemon=True)
-    ack_thread.start()
+    time_start = pygame.time.get_ticks()
 
     while running:
         for event in pygame.event.get():
@@ -162,6 +156,10 @@ def main():
                 handle_key_event(event, is_pressed=False)
 
         ui_mgr.draw()
+
+        if pygame.time.get_ticks() - time_start > 2500:
+            telescope.physical().ack()
+            time_start = pygame.time.get_ticks()
 
     pygame.quit()
     telescope.physical().disconnect()
