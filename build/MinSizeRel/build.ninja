@@ -52,182 +52,146 @@ build cmake_object_order_depends_target_STelescope: phony || cmake_object_order_
 build CMakeFiles/STelescope.dir/USB_DEVICE/Target/usbd_conf.c.obj: C_COMPILER__STelescope_unscanned_MinSizeRel E$:/Programming/ST/STelescope/USB_DEVICE/Target/usbd_conf.c || cmake_object_order_depends_target_STelescope
   DEFINES = -DSTM32F103xB -DUSE_HAL_DRIVER
   DEP_FILE = CMakeFiles\STelescope.dir\USB_DEVICE\Target\usbd_conf.c.obj.d
-  FLAGS = -mcpu=cortex-m3  -Wall -Wextra -Wpedantic -fdata-sections -ffunction-sections -mcpu=cortex-m3  -Wall -Wextra -Wpedantic -fdata-sections -ffunction-sections -mcpu=cortex-m3  -Wall -Wextra -Wpedantic -fdata-sections -ffunction-sections -Os -DNDEBUG -std=gnu11
+  FLAGS = -mcpu=cortex-m3  -Wall -Wextra -Wpedantic -fdata-sections -ffunction-sections -mcpu=cortex-m3  -Wall -Wextra -Wpedantic -fdata-sections -ffunction-sections -Os -DNDEBUG -std=gnu11
   INCLUDES = -IE:/Programming/ST/STelescope/USB_DEVICE/App -IE:/Programming/ST/STelescope/USB_DEVICE/Target -IE:/Programming/ST/STelescope/Core/Inc -IE:/Programming/ST/STelescope/Drivers/STM32F1xx_HAL_Driver/Inc -IE:/Programming/ST/STelescope/Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -IE:/Programming/ST/STelescope/Middlewares/ST/STM32_USB_Device_Library/Core/Inc -IE:/Programming/ST/STelescope/Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Inc -IE:/Programming/ST/STelescope/Drivers/CMSIS/Device/ST/STM32F1xx/Include -IE:/Programming/ST/STelescope/Drivers/CMSIS/Include
   OBJECT_DIR = CMakeFiles\STelescope.dir
   OBJECT_FILE_DIR = CMakeFiles\STelescope.dir\USB_DEVICE\Target
-  TARGET_COMPILE_PDB = CMakeFiles\STelescope.dir\
-  TARGET_PDB = STelescope.pdb
 
 build CMakeFiles/STelescope.dir/USB_DEVICE/App/usb_device.c.obj: C_COMPILER__STelescope_unscanned_MinSizeRel E$:/Programming/ST/STelescope/USB_DEVICE/App/usb_device.c || cmake_object_order_depends_target_STelescope
   DEFINES = -DSTM32F103xB -DUSE_HAL_DRIVER
   DEP_FILE = CMakeFiles\STelescope.dir\USB_DEVICE\App\usb_device.c.obj.d
-  FLAGS = -mcpu=cortex-m3  -Wall -Wextra -Wpedantic -fdata-sections -ffunction-sections -mcpu=cortex-m3  -Wall -Wextra -Wpedantic -fdata-sections -ffunction-sections -mcpu=cortex-m3  -Wall -Wextra -Wpedantic -fdata-sections -ffunction-sections -Os -DNDEBUG -std=gnu11
+  FLAGS = -mcpu=cortex-m3  -Wall -Wextra -Wpedantic -fdata-sections -ffunction-sections -mcpu=cortex-m3  -Wall -Wextra -Wpedantic -fdata-sections -ffunction-sections -Os -DNDEBUG -std=gnu11
   INCLUDES = -IE:/Programming/ST/STelescope/USB_DEVICE/App -IE:/Programming/ST/STelescope/USB_DEVICE/Target -IE:/Programming/ST/STelescope/Core/Inc -IE:/Programming/ST/STelescope/Drivers/STM32F1xx_HAL_Driver/Inc -IE:/Programming/ST/STelescope/Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -IE:/Programming/ST/STelescope/Middlewares/ST/STM32_USB_Device_Library/Core/Inc -IE:/Programming/ST/STelescope/Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Inc -IE:/Programming/ST/STelescope/Drivers/CMSIS/Device/ST/STM32F1xx/Include -IE:/Programming/ST/STelescope/Drivers/CMSIS/Include
   OBJECT_DIR = CMakeFiles\STelescope.dir
   OBJECT_FILE_DIR = CMakeFiles\STelescope.dir\USB_DEVICE\App
-  TARGET_COMPILE_PDB = CMakeFiles\STelescope.dir\
-  TARGET_PDB = STelescope.pdb
 
 build CMakeFiles/STelescope.dir/USB_DEVICE/App/usbd_desc.c.obj: C_COMPILER__STelescope_unscanned_MinSizeRel E$:/Programming/ST/STelescope/USB_DEVICE/App/usbd_desc.c || cmake_object_order_depends_target_STelescope
   DEFINES = -DSTM32F103xB -DUSE_HAL_DRIVER
   DEP_FILE = CMakeFiles\STelescope.dir\USB_DEVICE\App\usbd_desc.c.obj.d
-  FLAGS = -mcpu=cortex-m3  -Wall -Wextra -Wpedantic -fdata-sections -ffunction-sections -mcpu=cortex-m3  -Wall -Wextra -Wpedantic -fdata-sections -ffunction-sections -mcpu=cortex-m3  -Wall -Wextra -Wpedantic -fdata-sections -ffunction-sections -Os -DNDEBUG -std=gnu11
+  FLAGS = -mcpu=cortex-m3  -Wall -Wextra -Wpedantic -fdata-sections -ffunction-sections -mcpu=cortex-m3  -Wall -Wextra -Wpedantic -fdata-sections -ffunction-sections -Os -DNDEBUG -std=gnu11
   INCLUDES = -IE:/Programming/ST/STelescope/USB_DEVICE/App -IE:/Programming/ST/STelescope/USB_DEVICE/Target -IE:/Programming/ST/STelescope/Core/Inc -IE:/Programming/ST/STelescope/Drivers/STM32F1xx_HAL_Driver/Inc -IE:/Programming/ST/STelescope/Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -IE:/Programming/ST/STelescope/Middlewares/ST/STM32_USB_Device_Library/Core/Inc -IE:/Programming/ST/STelescope/Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Inc -IE:/Programming/ST/STelescope/Drivers/CMSIS/Device/ST/STM32F1xx/Include -IE:/Programming/ST/STelescope/Drivers/CMSIS/Include
   OBJECT_DIR = CMakeFiles\STelescope.dir
   OBJECT_FILE_DIR = CMakeFiles\STelescope.dir\USB_DEVICE\App
-  TARGET_COMPILE_PDB = CMakeFiles\STelescope.dir\
-  TARGET_PDB = STelescope.pdb
 
 build CMakeFiles/STelescope.dir/USB_DEVICE/App/usbd_cdc_if.c.obj: C_COMPILER__STelescope_unscanned_MinSizeRel E$:/Programming/ST/STelescope/USB_DEVICE/App/usbd_cdc_if.c || cmake_object_order_depends_target_STelescope
   DEFINES = -DSTM32F103xB -DUSE_HAL_DRIVER
   DEP_FILE = CMakeFiles\STelescope.dir\USB_DEVICE\App\usbd_cdc_if.c.obj.d
-  FLAGS = -mcpu=cortex-m3  -Wall -Wextra -Wpedantic -fdata-sections -ffunction-sections -mcpu=cortex-m3  -Wall -Wextra -Wpedantic -fdata-sections -ffunction-sections -mcpu=cortex-m3  -Wall -Wextra -Wpedantic -fdata-sections -ffunction-sections -Os -DNDEBUG -std=gnu11
+  FLAGS = -mcpu=cortex-m3  -Wall -Wextra -Wpedantic -fdata-sections -ffunction-sections -mcpu=cortex-m3  -Wall -Wextra -Wpedantic -fdata-sections -ffunction-sections -Os -DNDEBUG -std=gnu11
   INCLUDES = -IE:/Programming/ST/STelescope/USB_DEVICE/App -IE:/Programming/ST/STelescope/USB_DEVICE/Target -IE:/Programming/ST/STelescope/Core/Inc -IE:/Programming/ST/STelescope/Drivers/STM32F1xx_HAL_Driver/Inc -IE:/Programming/ST/STelescope/Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -IE:/Programming/ST/STelescope/Middlewares/ST/STM32_USB_Device_Library/Core/Inc -IE:/Programming/ST/STelescope/Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Inc -IE:/Programming/ST/STelescope/Drivers/CMSIS/Device/ST/STM32F1xx/Include -IE:/Programming/ST/STelescope/Drivers/CMSIS/Include
   OBJECT_DIR = CMakeFiles\STelescope.dir
   OBJECT_FILE_DIR = CMakeFiles\STelescope.dir\USB_DEVICE\App
-  TARGET_COMPILE_PDB = CMakeFiles\STelescope.dir\
-  TARGET_PDB = STelescope.pdb
 
 build CMakeFiles/STelescope.dir/Core/Src/main.c.obj: C_COMPILER__STelescope_unscanned_MinSizeRel E$:/Programming/ST/STelescope/Core/Src/main.c || cmake_object_order_depends_target_STelescope
   DEFINES = -DSTM32F103xB -DUSE_HAL_DRIVER
   DEP_FILE = CMakeFiles\STelescope.dir\Core\Src\main.c.obj.d
-  FLAGS = -mcpu=cortex-m3  -Wall -Wextra -Wpedantic -fdata-sections -ffunction-sections -mcpu=cortex-m3  -Wall -Wextra -Wpedantic -fdata-sections -ffunction-sections -mcpu=cortex-m3  -Wall -Wextra -Wpedantic -fdata-sections -ffunction-sections -Os -DNDEBUG -std=gnu11
+  FLAGS = -mcpu=cortex-m3  -Wall -Wextra -Wpedantic -fdata-sections -ffunction-sections -mcpu=cortex-m3  -Wall -Wextra -Wpedantic -fdata-sections -ffunction-sections -Os -DNDEBUG -std=gnu11
   INCLUDES = -IE:/Programming/ST/STelescope/USB_DEVICE/App -IE:/Programming/ST/STelescope/USB_DEVICE/Target -IE:/Programming/ST/STelescope/Core/Inc -IE:/Programming/ST/STelescope/Drivers/STM32F1xx_HAL_Driver/Inc -IE:/Programming/ST/STelescope/Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -IE:/Programming/ST/STelescope/Middlewares/ST/STM32_USB_Device_Library/Core/Inc -IE:/Programming/ST/STelescope/Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Inc -IE:/Programming/ST/STelescope/Drivers/CMSIS/Device/ST/STM32F1xx/Include -IE:/Programming/ST/STelescope/Drivers/CMSIS/Include
   OBJECT_DIR = CMakeFiles\STelescope.dir
   OBJECT_FILE_DIR = CMakeFiles\STelescope.dir\Core\Src
-  TARGET_COMPILE_PDB = CMakeFiles\STelescope.dir\
-  TARGET_PDB = STelescope.pdb
 
 build CMakeFiles/STelescope.dir/Core/Src/stm32f1xx_it.c.obj: C_COMPILER__STelescope_unscanned_MinSizeRel E$:/Programming/ST/STelescope/Core/Src/stm32f1xx_it.c || cmake_object_order_depends_target_STelescope
   DEFINES = -DSTM32F103xB -DUSE_HAL_DRIVER
   DEP_FILE = CMakeFiles\STelescope.dir\Core\Src\stm32f1xx_it.c.obj.d
-  FLAGS = -mcpu=cortex-m3  -Wall -Wextra -Wpedantic -fdata-sections -ffunction-sections -mcpu=cortex-m3  -Wall -Wextra -Wpedantic -fdata-sections -ffunction-sections -mcpu=cortex-m3  -Wall -Wextra -Wpedantic -fdata-sections -ffunction-sections -Os -DNDEBUG -std=gnu11
+  FLAGS = -mcpu=cortex-m3  -Wall -Wextra -Wpedantic -fdata-sections -ffunction-sections -mcpu=cortex-m3  -Wall -Wextra -Wpedantic -fdata-sections -ffunction-sections -Os -DNDEBUG -std=gnu11
   INCLUDES = -IE:/Programming/ST/STelescope/USB_DEVICE/App -IE:/Programming/ST/STelescope/USB_DEVICE/Target -IE:/Programming/ST/STelescope/Core/Inc -IE:/Programming/ST/STelescope/Drivers/STM32F1xx_HAL_Driver/Inc -IE:/Programming/ST/STelescope/Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -IE:/Programming/ST/STelescope/Middlewares/ST/STM32_USB_Device_Library/Core/Inc -IE:/Programming/ST/STelescope/Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Inc -IE:/Programming/ST/STelescope/Drivers/CMSIS/Device/ST/STM32F1xx/Include -IE:/Programming/ST/STelescope/Drivers/CMSIS/Include
   OBJECT_DIR = CMakeFiles\STelescope.dir
   OBJECT_FILE_DIR = CMakeFiles\STelescope.dir\Core\Src
-  TARGET_COMPILE_PDB = CMakeFiles\STelescope.dir\
-  TARGET_PDB = STelescope.pdb
 
 build CMakeFiles/STelescope.dir/Core/Src/stm32f1xx_hal_msp.c.obj: C_COMPILER__STelescope_unscanned_MinSizeRel E$:/Programming/ST/STelescope/Core/Src/stm32f1xx_hal_msp.c || cmake_object_order_depends_target_STelescope
   DEFINES = -DSTM32F103xB -DUSE_HAL_DRIVER
   DEP_FILE = CMakeFiles\STelescope.dir\Core\Src\stm32f1xx_hal_msp.c.obj.d
-  FLAGS = -mcpu=cortex-m3  -Wall -Wextra -Wpedantic -fdata-sections -ffunction-sections -mcpu=cortex-m3  -Wall -Wextra -Wpedantic -fdata-sections -ffunction-sections -mcpu=cortex-m3  -Wall -Wextra -Wpedantic -fdata-sections -ffunction-sections -Os -DNDEBUG -std=gnu11
+  FLAGS = -mcpu=cortex-m3  -Wall -Wextra -Wpedantic -fdata-sections -ffunction-sections -mcpu=cortex-m3  -Wall -Wextra -Wpedantic -fdata-sections -ffunction-sections -Os -DNDEBUG -std=gnu11
   INCLUDES = -IE:/Programming/ST/STelescope/USB_DEVICE/App -IE:/Programming/ST/STelescope/USB_DEVICE/Target -IE:/Programming/ST/STelescope/Core/Inc -IE:/Programming/ST/STelescope/Drivers/STM32F1xx_HAL_Driver/Inc -IE:/Programming/ST/STelescope/Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -IE:/Programming/ST/STelescope/Middlewares/ST/STM32_USB_Device_Library/Core/Inc -IE:/Programming/ST/STelescope/Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Inc -IE:/Programming/ST/STelescope/Drivers/CMSIS/Device/ST/STM32F1xx/Include -IE:/Programming/ST/STelescope/Drivers/CMSIS/Include
   OBJECT_DIR = CMakeFiles\STelescope.dir
   OBJECT_FILE_DIR = CMakeFiles\STelescope.dir\Core\Src
-  TARGET_COMPILE_PDB = CMakeFiles\STelescope.dir\
-  TARGET_PDB = STelescope.pdb
 
 build CMakeFiles/STelescope.dir/Core/Src/sysmem.c.obj: C_COMPILER__STelescope_unscanned_MinSizeRel E$:/Programming/ST/STelescope/Core/Src/sysmem.c || cmake_object_order_depends_target_STelescope
   DEFINES = -DSTM32F103xB -DUSE_HAL_DRIVER
   DEP_FILE = CMakeFiles\STelescope.dir\Core\Src\sysmem.c.obj.d
-  FLAGS = -mcpu=cortex-m3  -Wall -Wextra -Wpedantic -fdata-sections -ffunction-sections -mcpu=cortex-m3  -Wall -Wextra -Wpedantic -fdata-sections -ffunction-sections -mcpu=cortex-m3  -Wall -Wextra -Wpedantic -fdata-sections -ffunction-sections -Os -DNDEBUG -std=gnu11
+  FLAGS = -mcpu=cortex-m3  -Wall -Wextra -Wpedantic -fdata-sections -ffunction-sections -mcpu=cortex-m3  -Wall -Wextra -Wpedantic -fdata-sections -ffunction-sections -Os -DNDEBUG -std=gnu11
   INCLUDES = -IE:/Programming/ST/STelescope/USB_DEVICE/App -IE:/Programming/ST/STelescope/USB_DEVICE/Target -IE:/Programming/ST/STelescope/Core/Inc -IE:/Programming/ST/STelescope/Drivers/STM32F1xx_HAL_Driver/Inc -IE:/Programming/ST/STelescope/Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -IE:/Programming/ST/STelescope/Middlewares/ST/STM32_USB_Device_Library/Core/Inc -IE:/Programming/ST/STelescope/Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Inc -IE:/Programming/ST/STelescope/Drivers/CMSIS/Device/ST/STM32F1xx/Include -IE:/Programming/ST/STelescope/Drivers/CMSIS/Include
   OBJECT_DIR = CMakeFiles\STelescope.dir
   OBJECT_FILE_DIR = CMakeFiles\STelescope.dir\Core\Src
-  TARGET_COMPILE_PDB = CMakeFiles\STelescope.dir\
-  TARGET_PDB = STelescope.pdb
 
 build CMakeFiles/STelescope.dir/Core/Src/syscalls.c.obj: C_COMPILER__STelescope_unscanned_MinSizeRel E$:/Programming/ST/STelescope/Core/Src/syscalls.c || cmake_object_order_depends_target_STelescope
   DEFINES = -DSTM32F103xB -DUSE_HAL_DRIVER
   DEP_FILE = CMakeFiles\STelescope.dir\Core\Src\syscalls.c.obj.d
-  FLAGS = -mcpu=cortex-m3  -Wall -Wextra -Wpedantic -fdata-sections -ffunction-sections -mcpu=cortex-m3  -Wall -Wextra -Wpedantic -fdata-sections -ffunction-sections -mcpu=cortex-m3  -Wall -Wextra -Wpedantic -fdata-sections -ffunction-sections -Os -DNDEBUG -std=gnu11
+  FLAGS = -mcpu=cortex-m3  -Wall -Wextra -Wpedantic -fdata-sections -ffunction-sections -mcpu=cortex-m3  -Wall -Wextra -Wpedantic -fdata-sections -ffunction-sections -Os -DNDEBUG -std=gnu11
   INCLUDES = -IE:/Programming/ST/STelescope/USB_DEVICE/App -IE:/Programming/ST/STelescope/USB_DEVICE/Target -IE:/Programming/ST/STelescope/Core/Inc -IE:/Programming/ST/STelescope/Drivers/STM32F1xx_HAL_Driver/Inc -IE:/Programming/ST/STelescope/Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -IE:/Programming/ST/STelescope/Middlewares/ST/STM32_USB_Device_Library/Core/Inc -IE:/Programming/ST/STelescope/Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Inc -IE:/Programming/ST/STelescope/Drivers/CMSIS/Device/ST/STM32F1xx/Include -IE:/Programming/ST/STelescope/Drivers/CMSIS/Include
   OBJECT_DIR = CMakeFiles\STelescope.dir
   OBJECT_FILE_DIR = CMakeFiles\STelescope.dir\Core\Src
-  TARGET_COMPILE_PDB = CMakeFiles\STelescope.dir\
-  TARGET_PDB = STelescope.pdb
 
 build CMakeFiles/STelescope.dir/startup_stm32f103xb.s.obj: ASM_COMPILER__STelescope_unscanned_MinSizeRel E$:/Programming/ST/STelescope/startup_stm32f103xb.s || cmake_object_order_depends_target_STelescope
   DEFINES = -DSTM32F103xB -DUSE_HAL_DRIVER
   DEP_FILE = CMakeFiles\STelescope.dir\startup_stm32f103xb.s.obj.d
-  FLAGS = -mcpu=cortex-m3  -Wall -Wextra -Wpedantic -fdata-sections -ffunction-sections -mcpu=cortex-m3  -Wall -Wextra -Wpedantic -fdata-sections -ffunction-sections -mcpu=cortex-m3  -x assembler-with-cpp -MMD -MP -Os -DNDEBUG
+  FLAGS = -mcpu=cortex-m3  -Wall -Wextra -Wpedantic -fdata-sections -ffunction-sections -mcpu=cortex-m3  -x assembler-with-cpp -MMD -MP -Os -DNDEBUG
   INCLUDES = -IE:/Programming/ST/STelescope/USB_DEVICE/App -IE:/Programming/ST/STelescope/USB_DEVICE/Target -IE:/Programming/ST/STelescope/Core/Inc -IE:/Programming/ST/STelescope/Drivers/STM32F1xx_HAL_Driver/Inc -IE:/Programming/ST/STelescope/Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -IE:/Programming/ST/STelescope/Middlewares/ST/STM32_USB_Device_Library/Core/Inc -IE:/Programming/ST/STelescope/Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Inc -IE:/Programming/ST/STelescope/Drivers/CMSIS/Device/ST/STM32F1xx/Include -IE:/Programming/ST/STelescope/Drivers/CMSIS/Include
   OBJECT_DIR = CMakeFiles\STelescope.dir
   OBJECT_FILE_DIR = CMakeFiles\STelescope.dir
-  TARGET_COMPILE_PDB = CMakeFiles\STelescope.dir\
-  TARGET_PDB = STelescope.pdb
 
 build CMakeFiles/STelescope.dir/Core/Src/accelerometer.c.obj: C_COMPILER__STelescope_unscanned_MinSizeRel E$:/Programming/ST/STelescope/Core/Src/accelerometer.c || cmake_object_order_depends_target_STelescope
   DEFINES = -DSTM32F103xB -DUSE_HAL_DRIVER
   DEP_FILE = CMakeFiles\STelescope.dir\Core\Src\accelerometer.c.obj.d
-  FLAGS = -mcpu=cortex-m3  -Wall -Wextra -Wpedantic -fdata-sections -ffunction-sections -mcpu=cortex-m3  -Wall -Wextra -Wpedantic -fdata-sections -ffunction-sections -mcpu=cortex-m3  -Wall -Wextra -Wpedantic -fdata-sections -ffunction-sections -Os -DNDEBUG -std=gnu11
+  FLAGS = -mcpu=cortex-m3  -Wall -Wextra -Wpedantic -fdata-sections -ffunction-sections -mcpu=cortex-m3  -Wall -Wextra -Wpedantic -fdata-sections -ffunction-sections -Os -DNDEBUG -std=gnu11
   INCLUDES = -IE:/Programming/ST/STelescope/USB_DEVICE/App -IE:/Programming/ST/STelescope/USB_DEVICE/Target -IE:/Programming/ST/STelescope/Core/Inc -IE:/Programming/ST/STelescope/Drivers/STM32F1xx_HAL_Driver/Inc -IE:/Programming/ST/STelescope/Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -IE:/Programming/ST/STelescope/Middlewares/ST/STM32_USB_Device_Library/Core/Inc -IE:/Programming/ST/STelescope/Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Inc -IE:/Programming/ST/STelescope/Drivers/CMSIS/Device/ST/STM32F1xx/Include -IE:/Programming/ST/STelescope/Drivers/CMSIS/Include
   OBJECT_DIR = CMakeFiles\STelescope.dir
   OBJECT_FILE_DIR = CMakeFiles\STelescope.dir\Core\Src
-  TARGET_COMPILE_PDB = CMakeFiles\STelescope.dir\
-  TARGET_PDB = STelescope.pdb
 
 build CMakeFiles/STelescope.dir/Core/Src/compass.c.obj: C_COMPILER__STelescope_unscanned_MinSizeRel E$:/Programming/ST/STelescope/Core/Src/compass.c || cmake_object_order_depends_target_STelescope
   DEFINES = -DSTM32F103xB -DUSE_HAL_DRIVER
   DEP_FILE = CMakeFiles\STelescope.dir\Core\Src\compass.c.obj.d
-  FLAGS = -mcpu=cortex-m3  -Wall -Wextra -Wpedantic -fdata-sections -ffunction-sections -mcpu=cortex-m3  -Wall -Wextra -Wpedantic -fdata-sections -ffunction-sections -mcpu=cortex-m3  -Wall -Wextra -Wpedantic -fdata-sections -ffunction-sections -Os -DNDEBUG -std=gnu11
+  FLAGS = -mcpu=cortex-m3  -Wall -Wextra -Wpedantic -fdata-sections -ffunction-sections -mcpu=cortex-m3  -Wall -Wextra -Wpedantic -fdata-sections -ffunction-sections -Os -DNDEBUG -std=gnu11
   INCLUDES = -IE:/Programming/ST/STelescope/USB_DEVICE/App -IE:/Programming/ST/STelescope/USB_DEVICE/Target -IE:/Programming/ST/STelescope/Core/Inc -IE:/Programming/ST/STelescope/Drivers/STM32F1xx_HAL_Driver/Inc -IE:/Programming/ST/STelescope/Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -IE:/Programming/ST/STelescope/Middlewares/ST/STM32_USB_Device_Library/Core/Inc -IE:/Programming/ST/STelescope/Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Inc -IE:/Programming/ST/STelescope/Drivers/CMSIS/Device/ST/STM32F1xx/Include -IE:/Programming/ST/STelescope/Drivers/CMSIS/Include
   OBJECT_DIR = CMakeFiles\STelescope.dir
   OBJECT_FILE_DIR = CMakeFiles\STelescope.dir\Core\Src
-  TARGET_COMPILE_PDB = CMakeFiles\STelescope.dir\
-  TARGET_PDB = STelescope.pdb
 
 build CMakeFiles/STelescope.dir/Core/Src/display.c.obj: C_COMPILER__STelescope_unscanned_MinSizeRel E$:/Programming/ST/STelescope/Core/Src/display.c || cmake_object_order_depends_target_STelescope
   DEFINES = -DSTM32F103xB -DUSE_HAL_DRIVER
   DEP_FILE = CMakeFiles\STelescope.dir\Core\Src\display.c.obj.d
-  FLAGS = -mcpu=cortex-m3  -Wall -Wextra -Wpedantic -fdata-sections -ffunction-sections -mcpu=cortex-m3  -Wall -Wextra -Wpedantic -fdata-sections -ffunction-sections -mcpu=cortex-m3  -Wall -Wextra -Wpedantic -fdata-sections -ffunction-sections -Os -DNDEBUG -std=gnu11
+  FLAGS = -mcpu=cortex-m3  -Wall -Wextra -Wpedantic -fdata-sections -ffunction-sections -mcpu=cortex-m3  -Wall -Wextra -Wpedantic -fdata-sections -ffunction-sections -Os -DNDEBUG -std=gnu11
   INCLUDES = -IE:/Programming/ST/STelescope/USB_DEVICE/App -IE:/Programming/ST/STelescope/USB_DEVICE/Target -IE:/Programming/ST/STelescope/Core/Inc -IE:/Programming/ST/STelescope/Drivers/STM32F1xx_HAL_Driver/Inc -IE:/Programming/ST/STelescope/Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -IE:/Programming/ST/STelescope/Middlewares/ST/STM32_USB_Device_Library/Core/Inc -IE:/Programming/ST/STelescope/Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Inc -IE:/Programming/ST/STelescope/Drivers/CMSIS/Device/ST/STM32F1xx/Include -IE:/Programming/ST/STelescope/Drivers/CMSIS/Include
   OBJECT_DIR = CMakeFiles\STelescope.dir
   OBJECT_FILE_DIR = CMakeFiles\STelescope.dir\Core\Src
-  TARGET_COMPILE_PDB = CMakeFiles\STelescope.dir\
-  TARGET_PDB = STelescope.pdb
 
 build CMakeFiles/STelescope.dir/Core/Src/peripheral.c.obj: C_COMPILER__STelescope_unscanned_MinSizeRel E$:/Programming/ST/STelescope/Core/Src/peripheral.c || cmake_object_order_depends_target_STelescope
   DEFINES = -DSTM32F103xB -DUSE_HAL_DRIVER
   DEP_FILE = CMakeFiles\STelescope.dir\Core\Src\peripheral.c.obj.d
-  FLAGS = -mcpu=cortex-m3  -Wall -Wextra -Wpedantic -fdata-sections -ffunction-sections -mcpu=cortex-m3  -Wall -Wextra -Wpedantic -fdata-sections -ffunction-sections -mcpu=cortex-m3  -Wall -Wextra -Wpedantic -fdata-sections -ffunction-sections -Os -DNDEBUG -std=gnu11
+  FLAGS = -mcpu=cortex-m3  -Wall -Wextra -Wpedantic -fdata-sections -ffunction-sections -mcpu=cortex-m3  -Wall -Wextra -Wpedantic -fdata-sections -ffunction-sections -Os -DNDEBUG -std=gnu11
   INCLUDES = -IE:/Programming/ST/STelescope/USB_DEVICE/App -IE:/Programming/ST/STelescope/USB_DEVICE/Target -IE:/Programming/ST/STelescope/Core/Inc -IE:/Programming/ST/STelescope/Drivers/STM32F1xx_HAL_Driver/Inc -IE:/Programming/ST/STelescope/Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -IE:/Programming/ST/STelescope/Middlewares/ST/STM32_USB_Device_Library/Core/Inc -IE:/Programming/ST/STelescope/Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Inc -IE:/Programming/ST/STelescope/Drivers/CMSIS/Device/ST/STM32F1xx/Include -IE:/Programming/ST/STelescope/Drivers/CMSIS/Include
   OBJECT_DIR = CMakeFiles\STelescope.dir
   OBJECT_FILE_DIR = CMakeFiles\STelescope.dir\Core\Src
-  TARGET_COMPILE_PDB = CMakeFiles\STelescope.dir\
-  TARGET_PDB = STelescope.pdb
 
 build CMakeFiles/STelescope.dir/Core/Src/camera.c.obj: C_COMPILER__STelescope_unscanned_MinSizeRel E$:/Programming/ST/STelescope/Core/Src/camera.c || cmake_object_order_depends_target_STelescope
   DEFINES = -DSTM32F103xB -DUSE_HAL_DRIVER
   DEP_FILE = CMakeFiles\STelescope.dir\Core\Src\camera.c.obj.d
-  FLAGS = -mcpu=cortex-m3  -Wall -Wextra -Wpedantic -fdata-sections -ffunction-sections -mcpu=cortex-m3  -Wall -Wextra -Wpedantic -fdata-sections -ffunction-sections -mcpu=cortex-m3  -Wall -Wextra -Wpedantic -fdata-sections -ffunction-sections -Os -DNDEBUG -std=gnu11
+  FLAGS = -mcpu=cortex-m3  -Wall -Wextra -Wpedantic -fdata-sections -ffunction-sections -mcpu=cortex-m3  -Wall -Wextra -Wpedantic -fdata-sections -ffunction-sections -Os -DNDEBUG -std=gnu11
   INCLUDES = -IE:/Programming/ST/STelescope/USB_DEVICE/App -IE:/Programming/ST/STelescope/USB_DEVICE/Target -IE:/Programming/ST/STelescope/Core/Inc -IE:/Programming/ST/STelescope/Drivers/STM32F1xx_HAL_Driver/Inc -IE:/Programming/ST/STelescope/Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -IE:/Programming/ST/STelescope/Middlewares/ST/STM32_USB_Device_Library/Core/Inc -IE:/Programming/ST/STelescope/Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Inc -IE:/Programming/ST/STelescope/Drivers/CMSIS/Device/ST/STM32F1xx/Include -IE:/Programming/ST/STelescope/Drivers/CMSIS/Include
   OBJECT_DIR = CMakeFiles\STelescope.dir
   OBJECT_FILE_DIR = CMakeFiles\STelescope.dir\Core\Src
-  TARGET_COMPILE_PDB = CMakeFiles\STelescope.dir\
-  TARGET_PDB = STelescope.pdb
 
 build CMakeFiles/STelescope.dir/Core/Src/stepper.c.obj: C_COMPILER__STelescope_unscanned_MinSizeRel E$:/Programming/ST/STelescope/Core/Src/stepper.c || cmake_object_order_depends_target_STelescope
   DEFINES = -DSTM32F103xB -DUSE_HAL_DRIVER
   DEP_FILE = CMakeFiles\STelescope.dir\Core\Src\stepper.c.obj.d
-  FLAGS = -mcpu=cortex-m3  -Wall -Wextra -Wpedantic -fdata-sections -ffunction-sections -mcpu=cortex-m3  -Wall -Wextra -Wpedantic -fdata-sections -ffunction-sections -mcpu=cortex-m3  -Wall -Wextra -Wpedantic -fdata-sections -ffunction-sections -Os -DNDEBUG -std=gnu11
+  FLAGS = -mcpu=cortex-m3  -Wall -Wextra -Wpedantic -fdata-sections -ffunction-sections -mcpu=cortex-m3  -Wall -Wextra -Wpedantic -fdata-sections -ffunction-sections -Os -DNDEBUG -std=gnu11
   INCLUDES = -IE:/Programming/ST/STelescope/USB_DEVICE/App -IE:/Programming/ST/STelescope/USB_DEVICE/Target -IE:/Programming/ST/STelescope/Core/Inc -IE:/Programming/ST/STelescope/Drivers/STM32F1xx_HAL_Driver/Inc -IE:/Programming/ST/STelescope/Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -IE:/Programming/ST/STelescope/Middlewares/ST/STM32_USB_Device_Library/Core/Inc -IE:/Programming/ST/STelescope/Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Inc -IE:/Programming/ST/STelescope/Drivers/CMSIS/Device/ST/STM32F1xx/Include -IE:/Programming/ST/STelescope/Drivers/CMSIS/Include
   OBJECT_DIR = CMakeFiles\STelescope.dir
   OBJECT_FILE_DIR = CMakeFiles\STelescope.dir\Core\Src
-  TARGET_COMPILE_PDB = CMakeFiles\STelescope.dir\
-  TARGET_PDB = STelescope.pdb
 
 build CMakeFiles/STelescope.dir/Core/Src/status.c.obj: C_COMPILER__STelescope_unscanned_MinSizeRel E$:/Programming/ST/STelescope/Core/Src/status.c || cmake_object_order_depends_target_STelescope
   DEFINES = -DSTM32F103xB -DUSE_HAL_DRIVER
   DEP_FILE = CMakeFiles\STelescope.dir\Core\Src\status.c.obj.d
-  FLAGS = -mcpu=cortex-m3  -Wall -Wextra -Wpedantic -fdata-sections -ffunction-sections -mcpu=cortex-m3  -Wall -Wextra -Wpedantic -fdata-sections -ffunction-sections -mcpu=cortex-m3  -Wall -Wextra -Wpedantic -fdata-sections -ffunction-sections -Os -DNDEBUG -std=gnu11
+  FLAGS = -mcpu=cortex-m3  -Wall -Wextra -Wpedantic -fdata-sections -ffunction-sections -mcpu=cortex-m3  -Wall -Wextra -Wpedantic -fdata-sections -ffunction-sections -Os -DNDEBUG -std=gnu11
   INCLUDES = -IE:/Programming/ST/STelescope/USB_DEVICE/App -IE:/Programming/ST/STelescope/USB_DEVICE/Target -IE:/Programming/ST/STelescope/Core/Inc -IE:/Programming/ST/STelescope/Drivers/STM32F1xx_HAL_Driver/Inc -IE:/Programming/ST/STelescope/Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -IE:/Programming/ST/STelescope/Middlewares/ST/STM32_USB_Device_Library/Core/Inc -IE:/Programming/ST/STelescope/Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Inc -IE:/Programming/ST/STelescope/Drivers/CMSIS/Device/ST/STM32F1xx/Include -IE:/Programming/ST/STelescope/Drivers/CMSIS/Include
   OBJECT_DIR = CMakeFiles\STelescope.dir
   OBJECT_FILE_DIR = CMakeFiles\STelescope.dir\Core\Src
-  TARGET_COMPILE_PDB = CMakeFiles\STelescope.dir\
-  TARGET_PDB = STelescope.pdb
 
 build CMakeFiles/STelescope.dir/Core/Src/rtc.c.obj: C_COMPILER__STelescope_unscanned_MinSizeRel E$:/Programming/ST/STelescope/Core/Src/rtc.c || cmake_object_order_depends_target_STelescope
   DEFINES = -DSTM32F103xB -DUSE_HAL_DRIVER
   DEP_FILE = CMakeFiles\STelescope.dir\Core\Src\rtc.c.obj.d
-  FLAGS = -mcpu=cortex-m3  -Wall -Wextra -Wpedantic -fdata-sections -ffunction-sections -mcpu=cortex-m3  -Wall -Wextra -Wpedantic -fdata-sections -ffunction-sections -mcpu=cortex-m3  -Wall -Wextra -Wpedantic -fdata-sections -ffunction-sections -Os -DNDEBUG -std=gnu11
+  FLAGS = -mcpu=cortex-m3  -Wall -Wextra -Wpedantic -fdata-sections -ffunction-sections -mcpu=cortex-m3  -Wall -Wextra -Wpedantic -fdata-sections -ffunction-sections -Os -DNDEBUG -std=gnu11
   INCLUDES = -IE:/Programming/ST/STelescope/USB_DEVICE/App -IE:/Programming/ST/STelescope/USB_DEVICE/Target -IE:/Programming/ST/STelescope/Core/Inc -IE:/Programming/ST/STelescope/Drivers/STM32F1xx_HAL_Driver/Inc -IE:/Programming/ST/STelescope/Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -IE:/Programming/ST/STelescope/Middlewares/ST/STM32_USB_Device_Library/Core/Inc -IE:/Programming/ST/STelescope/Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Inc -IE:/Programming/ST/STelescope/Drivers/CMSIS/Device/ST/STM32F1xx/Include -IE:/Programming/ST/STelescope/Drivers/CMSIS/Include
   OBJECT_DIR = CMakeFiles\STelescope.dir
   OBJECT_FILE_DIR = CMakeFiles\STelescope.dir\Core\Src
-  TARGET_COMPILE_PDB = CMakeFiles\STelescope.dir\
-  TARGET_PDB = STelescope.pdb
 
 
 # =============================================================================
@@ -238,13 +202,12 @@ build CMakeFiles/STelescope.dir/Core/Src/rtc.c.obj: C_COMPILER__STelescope_unsca
 # Link the executable STelescope.elf
 
 build STelescope.elf: C_EXECUTABLE_LINKER__STelescope_MinSizeRel cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Core/Src/system_stm32f1xx.c.obj cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio_ex.c.obj cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_pcd.c.obj cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_pcd_ex.c.obj cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_ll_usb.c.obj cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal.c.obj cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc.c.obj cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc_ex.c.obj cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio.c.obj cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_dma.c.obj cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_cortex.c.obj cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_pwr.c.obj cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_flash.c.obj cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_flash_ex.c.obj cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_exti.c.obj cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_i2c.c.obj cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_spi.c.obj cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim.c.obj cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim_ex.c.obj cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_uart.c.obj cmake/stm32cubemx/CMakeFiles/USB_Device_Library.dir/__/__/Middlewares/ST/STM32_USB_Device_Library/Core/Src/usbd_core.c.obj cmake/stm32cubemx/CMakeFiles/USB_Device_Library.dir/__/__/Middlewares/ST/STM32_USB_Device_Library/Core/Src/usbd_ctlreq.c.obj cmake/stm32cubemx/CMakeFiles/USB_Device_Library.dir/__/__/Middlewares/ST/STM32_USB_Device_Library/Core/Src/usbd_ioreq.c.obj cmake/stm32cubemx/CMakeFiles/USB_Device_Library.dir/__/__/Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Src/usbd_cdc.c.obj CMakeFiles/STelescope.dir/USB_DEVICE/Target/usbd_conf.c.obj CMakeFiles/STelescope.dir/USB_DEVICE/App/usb_device.c.obj CMakeFiles/STelescope.dir/USB_DEVICE/App/usbd_desc.c.obj CMakeFiles/STelescope.dir/USB_DEVICE/App/usbd_cdc_if.c.obj CMakeFiles/STelescope.dir/Core/Src/main.c.obj CMakeFiles/STelescope.dir/Core/Src/stm32f1xx_it.c.obj CMakeFiles/STelescope.dir/Core/Src/stm32f1xx_hal_msp.c.obj CMakeFiles/STelescope.dir/Core/Src/sysmem.c.obj CMakeFiles/STelescope.dir/Core/Src/syscalls.c.obj CMakeFiles/STelescope.dir/startup_stm32f103xb.s.obj CMakeFiles/STelescope.dir/Core/Src/accelerometer.c.obj CMakeFiles/STelescope.dir/Core/Src/compass.c.obj CMakeFiles/STelescope.dir/Core/Src/display.c.obj CMakeFiles/STelescope.dir/Core/Src/peripheral.c.obj CMakeFiles/STelescope.dir/Core/Src/camera.c.obj CMakeFiles/STelescope.dir/Core/Src/stepper.c.obj CMakeFiles/STelescope.dir/Core/Src/status.c.obj CMakeFiles/STelescope.dir/Core/Src/rtc.c.obj || cmake/stm32cubemx/STM32_Drivers cmake/stm32cubemx/USB_Device_Library
-  FLAGS = -mcpu=cortex-m3  -Wall -Wextra -Wpedantic -fdata-sections -ffunction-sections -mcpu=cortex-m3  -Wall -Wextra -Wpedantic -fdata-sections -ffunction-sections -mcpu=cortex-m3  -Wall -Wextra -Wpedantic -fdata-sections -ffunction-sections -Os -DNDEBUG
+  FLAGS = -mcpu=cortex-m3  -Wall -Wextra -Wpedantic -fdata-sections -ffunction-sections -mcpu=cortex-m3  -Wall -Wextra -Wpedantic -fdata-sections -ffunction-sections -Os -DNDEBUG
   OBJECT_DIR = CMakeFiles\STelescope.dir
   POST_BUILD = cd .
   PRE_LINK = cd .
-  TARGET_COMPILE_PDB = CMakeFiles\STelescope.dir\
   TARGET_FILE = STelescope.elf
-  TARGET_PDB = STelescope.pdb
+  TARGET_PDB = STelescope.elf.dbg
 
 
 #############################################
@@ -287,202 +250,162 @@ build cmake_object_order_depends_target_STM32_Drivers: phony || cmake/stm32cubem
 build cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Core/Src/system_stm32f1xx.c.obj: C_COMPILER__STM32_Drivers_unscanned_MinSizeRel E$:/Programming/ST/STelescope/Core/Src/system_stm32f1xx.c || cmake_object_order_depends_target_STM32_Drivers
   DEFINES = -DSTM32F103xB -DUSE_HAL_DRIVER
   DEP_FILE = cmake\stm32cubemx\CMakeFiles\STM32_Drivers.dir\__\__\Core\Src\system_stm32f1xx.c.obj.d
-  FLAGS = -mcpu=cortex-m3  -Wall -Wextra -Wpedantic -fdata-sections -ffunction-sections -mcpu=cortex-m3  -Wall -Wextra -Wpedantic -fdata-sections -ffunction-sections -mcpu=cortex-m3  -Wall -Wextra -Wpedantic -fdata-sections -ffunction-sections -Os -DNDEBUG -std=gnu11
+  FLAGS = -mcpu=cortex-m3  -Wall -Wextra -Wpedantic -fdata-sections -ffunction-sections -mcpu=cortex-m3  -Wall -Wextra -Wpedantic -fdata-sections -ffunction-sections -Os -DNDEBUG -std=gnu11
   INCLUDES = -IE:/Programming/ST/STelescope/USB_DEVICE/App -IE:/Programming/ST/STelescope/USB_DEVICE/Target -IE:/Programming/ST/STelescope/Core/Inc -IE:/Programming/ST/STelescope/Drivers/STM32F1xx_HAL_Driver/Inc -IE:/Programming/ST/STelescope/Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -IE:/Programming/ST/STelescope/Middlewares/ST/STM32_USB_Device_Library/Core/Inc -IE:/Programming/ST/STelescope/Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Inc -IE:/Programming/ST/STelescope/Drivers/CMSIS/Device/ST/STM32F1xx/Include -IE:/Programming/ST/STelescope/Drivers/CMSIS/Include
   OBJECT_DIR = cmake\stm32cubemx\CMakeFiles\STM32_Drivers.dir
   OBJECT_FILE_DIR = cmake\stm32cubemx\CMakeFiles\STM32_Drivers.dir\__\__\Core\Src
-  TARGET_COMPILE_PDB = cmake\stm32cubemx\CMakeFiles\STM32_Drivers.dir\
-  TARGET_PDB = ""
 
 build cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio_ex.c.obj: C_COMPILER__STM32_Drivers_unscanned_MinSizeRel E$:/Programming/ST/STelescope/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio_ex.c || cmake_object_order_depends_target_STM32_Drivers
   DEFINES = -DSTM32F103xB -DUSE_HAL_DRIVER
   DEP_FILE = cmake\stm32cubemx\CMakeFiles\STM32_Drivers.dir\__\__\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_gpio_ex.c.obj.d
-  FLAGS = -mcpu=cortex-m3  -Wall -Wextra -Wpedantic -fdata-sections -ffunction-sections -mcpu=cortex-m3  -Wall -Wextra -Wpedantic -fdata-sections -ffunction-sections -mcpu=cortex-m3  -Wall -Wextra -Wpedantic -fdata-sections -ffunction-sections -Os -DNDEBUG -std=gnu11
+  FLAGS = -mcpu=cortex-m3  -Wall -Wextra -Wpedantic -fdata-sections -ffunction-sections -mcpu=cortex-m3  -Wall -Wextra -Wpedantic -fdata-sections -ffunction-sections -Os -DNDEBUG -std=gnu11
   INCLUDES = -IE:/Programming/ST/STelescope/USB_DEVICE/App -IE:/Programming/ST/STelescope/USB_DEVICE/Target -IE:/Programming/ST/STelescope/Core/Inc -IE:/Programming/ST/STelescope/Drivers/STM32F1xx_HAL_Driver/Inc -IE:/Programming/ST/STelescope/Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -IE:/Programming/ST/STelescope/Middlewares/ST/STM32_USB_Device_Library/Core/Inc -IE:/Programming/ST/STelescope/Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Inc -IE:/Programming/ST/STelescope/Drivers/CMSIS/Device/ST/STM32F1xx/Include -IE:/Programming/ST/STelescope/Drivers/CMSIS/Include
   OBJECT_DIR = cmake\stm32cubemx\CMakeFiles\STM32_Drivers.dir
   OBJECT_FILE_DIR = cmake\stm32cubemx\CMakeFiles\STM32_Drivers.dir\__\__\Drivers\STM32F1xx_HAL_Driver\Src
-  TARGET_COMPILE_PDB = cmake\stm32cubemx\CMakeFiles\STM32_Drivers.dir\
-  TARGET_PDB = ""
 
 build cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_pcd.c.obj: C_COMPILER__STM32_Drivers_unscanned_MinSizeRel E$:/Programming/ST/STelescope/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_pcd.c || cmake_object_order_depends_target_STM32_Drivers
   DEFINES = -DSTM32F103xB -DUSE_HAL_DRIVER
   DEP_FILE = cmake\stm32cubemx\CMakeFiles\STM32_Drivers.dir\__\__\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_pcd.c.obj.d
-  FLAGS = -mcpu=cortex-m3  -Wall -Wextra -Wpedantic -fdata-sections -ffunction-sections -mcpu=cortex-m3  -Wall -Wextra -Wpedantic -fdata-sections -ffunction-sections -mcpu=cortex-m3  -Wall -Wextra -Wpedantic -fdata-sections -ffunction-sections -Os -DNDEBUG -std=gnu11
+  FLAGS = -mcpu=cortex-m3  -Wall -Wextra -Wpedantic -fdata-sections -ffunction-sections -mcpu=cortex-m3  -Wall -Wextra -Wpedantic -fdata-sections -ffunction-sections -Os -DNDEBUG -std=gnu11
   INCLUDES = -IE:/Programming/ST/STelescope/USB_DEVICE/App -IE:/Programming/ST/STelescope/USB_DEVICE/Target -IE:/Programming/ST/STelescope/Core/Inc -IE:/Programming/ST/STelescope/Drivers/STM32F1xx_HAL_Driver/Inc -IE:/Programming/ST/STelescope/Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -IE:/Programming/ST/STelescope/Middlewares/ST/STM32_USB_Device_Library/Core/Inc -IE:/Programming/ST/STelescope/Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Inc -IE:/Programming/ST/STelescope/Drivers/CMSIS/Device/ST/STM32F1xx/Include -IE:/Programming/ST/STelescope/Drivers/CMSIS/Include
   OBJECT_DIR = cmake\stm32cubemx\CMakeFiles\STM32_Drivers.dir
   OBJECT_FILE_DIR = cmake\stm32cubemx\CMakeFiles\STM32_Drivers.dir\__\__\Drivers\STM32F1xx_HAL_Driver\Src
-  TARGET_COMPILE_PDB = cmake\stm32cubemx\CMakeFiles\STM32_Drivers.dir\
-  TARGET_PDB = ""
 
 build cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_pcd_ex.c.obj: C_COMPILER__STM32_Drivers_unscanned_MinSizeRel E$:/Programming/ST/STelescope/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_pcd_ex.c || cmake_object_order_depends_target_STM32_Drivers
   DEFINES = -DSTM32F103xB -DUSE_HAL_DRIVER
   DEP_FILE = cmake\stm32cubemx\CMakeFiles\STM32_Drivers.dir\__\__\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_pcd_ex.c.obj.d
-  FLAGS = -mcpu=cortex-m3  -Wall -Wextra -Wpedantic -fdata-sections -ffunction-sections -mcpu=cortex-m3  -Wall -Wextra -Wpedantic -fdata-sections -ffunction-sections -mcpu=cortex-m3  -Wall -Wextra -Wpedantic -fdata-sections -ffunction-sections -Os -DNDEBUG -std=gnu11
+  FLAGS = -mcpu=cortex-m3  -Wall -Wextra -Wpedantic -fdata-sections -ffunction-sections -mcpu=cortex-m3  -Wall -Wextra -Wpedantic -fdata-sections -ffunction-sections -Os -DNDEBUG -std=gnu11
   INCLUDES = -IE:/Programming/ST/STelescope/USB_DEVICE/App -IE:/Programming/ST/STelescope/USB_DEVICE/Target -IE:/Programming/ST/STelescope/Core/Inc -IE:/Programming/ST/STelescope/Drivers/STM32F1xx_HAL_Driver/Inc -IE:/Programming/ST/STelescope/Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -IE:/Programming/ST/STelescope/Middlewares/ST/STM32_USB_Device_Library/Core/Inc -IE:/Programming/ST/STelescope/Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Inc -IE:/Programming/ST/STelescope/Drivers/CMSIS/Device/ST/STM32F1xx/Include -IE:/Programming/ST/STelescope/Drivers/CMSIS/Include
   OBJECT_DIR = cmake\stm32cubemx\CMakeFiles\STM32_Drivers.dir
   OBJECT_FILE_DIR = cmake\stm32cubemx\CMakeFiles\STM32_Drivers.dir\__\__\Drivers\STM32F1xx_HAL_Driver\Src
-  TARGET_COMPILE_PDB = cmake\stm32cubemx\CMakeFiles\STM32_Drivers.dir\
-  TARGET_PDB = ""
 
 build cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_ll_usb.c.obj: C_COMPILER__STM32_Drivers_unscanned_MinSizeRel E$:/Programming/ST/STelescope/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_ll_usb.c || cmake_object_order_depends_target_STM32_Drivers
   DEFINES = -DSTM32F103xB -DUSE_HAL_DRIVER
   DEP_FILE = cmake\stm32cubemx\CMakeFiles\STM32_Drivers.dir\__\__\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_ll_usb.c.obj.d
-  FLAGS = -mcpu=cortex-m3  -Wall -Wextra -Wpedantic -fdata-sections -ffunction-sections -mcpu=cortex-m3  -Wall -Wextra -Wpedantic -fdata-sections -ffunction-sections -mcpu=cortex-m3  -Wall -Wextra -Wpedantic -fdata-sections -ffunction-sections -Os -DNDEBUG -std=gnu11
+  FLAGS = -mcpu=cortex-m3  -Wall -Wextra -Wpedantic -fdata-sections -ffunction-sections -mcpu=cortex-m3  -Wall -Wextra -Wpedantic -fdata-sections -ffunction-sections -Os -DNDEBUG -std=gnu11
   INCLUDES = -IE:/Programming/ST/STelescope/USB_DEVICE/App -IE:/Programming/ST/STelescope/USB_DEVICE/Target -IE:/Programming/ST/STelescope/Core/Inc -IE:/Programming/ST/STelescope/Drivers/STM32F1xx_HAL_Driver/Inc -IE:/Programming/ST/STelescope/Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -IE:/Programming/ST/STelescope/Middlewares/ST/STM32_USB_Device_Library/Core/Inc -IE:/Programming/ST/STelescope/Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Inc -IE:/Programming/ST/STelescope/Drivers/CMSIS/Device/ST/STM32F1xx/Include -IE:/Programming/ST/STelescope/Drivers/CMSIS/Include
   OBJECT_DIR = cmake\stm32cubemx\CMakeFiles\STM32_Drivers.dir
   OBJECT_FILE_DIR = cmake\stm32cubemx\CMakeFiles\STM32_Drivers.dir\__\__\Drivers\STM32F1xx_HAL_Driver\Src
-  TARGET_COMPILE_PDB = cmake\stm32cubemx\CMakeFiles\STM32_Drivers.dir\
-  TARGET_PDB = ""
 
 build cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal.c.obj: C_COMPILER__STM32_Drivers_unscanned_MinSizeRel E$:/Programming/ST/STelescope/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal.c || cmake_object_order_depends_target_STM32_Drivers
   DEFINES = -DSTM32F103xB -DUSE_HAL_DRIVER
   DEP_FILE = cmake\stm32cubemx\CMakeFiles\STM32_Drivers.dir\__\__\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal.c.obj.d
-  FLAGS = -mcpu=cortex-m3  -Wall -Wextra -Wpedantic -fdata-sections -ffunction-sections -mcpu=cortex-m3  -Wall -Wextra -Wpedantic -fdata-sections -ffunction-sections -mcpu=cortex-m3  -Wall -Wextra -Wpedantic -fdata-sections -ffunction-sections -Os -DNDEBUG -std=gnu11
+  FLAGS = -mcpu=cortex-m3  -Wall -Wextra -Wpedantic -fdata-sections -ffunction-sections -mcpu=cortex-m3  -Wall -Wextra -Wpedantic -fdata-sections -ffunction-sections -Os -DNDEBUG -std=gnu11
   INCLUDES = -IE:/Programming/ST/STelescope/USB_DEVICE/App -IE:/Programming/ST/STelescope/USB_DEVICE/Target -IE:/Programming/ST/STelescope/Core/Inc -IE:/Programming/ST/STelescope/Drivers/STM32F1xx_HAL_Driver/Inc -IE:/Programming/ST/STelescope/Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -IE:/Programming/ST/STelescope/Middlewares/ST/STM32_USB_Device_Library/Core/Inc -IE:/Programming/ST/STelescope/Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Inc -IE:/Programming/ST/STelescope/Drivers/CMSIS/Device/ST/STM32F1xx/Include -IE:/Programming/ST/STelescope/Drivers/CMSIS/Include
   OBJECT_DIR = cmake\stm32cubemx\CMakeFiles\STM32_Drivers.dir
   OBJECT_FILE_DIR = cmake\stm32cubemx\CMakeFiles\STM32_Drivers.dir\__\__\Drivers\STM32F1xx_HAL_Driver\Src
-  TARGET_COMPILE_PDB = cmake\stm32cubemx\CMakeFiles\STM32_Drivers.dir\
-  TARGET_PDB = ""
 
 build cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc.c.obj: C_COMPILER__STM32_Drivers_unscanned_MinSizeRel E$:/Programming/ST/STelescope/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc.c || cmake_object_order_depends_target_STM32_Drivers
   DEFINES = -DSTM32F103xB -DUSE_HAL_DRIVER
   DEP_FILE = cmake\stm32cubemx\CMakeFiles\STM32_Drivers.dir\__\__\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_rcc.c.obj.d
-  FLAGS = -mcpu=cortex-m3  -Wall -Wextra -Wpedantic -fdata-sections -ffunction-sections -mcpu=cortex-m3  -Wall -Wextra -Wpedantic -fdata-sections -ffunction-sections -mcpu=cortex-m3  -Wall -Wextra -Wpedantic -fdata-sections -ffunction-sections -Os -DNDEBUG -std=gnu11
+  FLAGS = -mcpu=cortex-m3  -Wall -Wextra -Wpedantic -fdata-sections -ffunction-sections -mcpu=cortex-m3  -Wall -Wextra -Wpedantic -fdata-sections -ffunction-sections -Os -DNDEBUG -std=gnu11
   INCLUDES = -IE:/Programming/ST/STelescope/USB_DEVICE/App -IE:/Programming/ST/STelescope/USB_DEVICE/Target -IE:/Programming/ST/STelescope/Core/Inc -IE:/Programming/ST/STelescope/Drivers/STM32F1xx_HAL_Driver/Inc -IE:/Programming/ST/STelescope/Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -IE:/Programming/ST/STelescope/Middlewares/ST/STM32_USB_Device_Library/Core/Inc -IE:/Programming/ST/STelescope/Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Inc -IE:/Programming/ST/STelescope/Drivers/CMSIS/Device/ST/STM32F1xx/Include -IE:/Programming/ST/STelescope/Drivers/CMSIS/Include
   OBJECT_DIR = cmake\stm32cubemx\CMakeFiles\STM32_Drivers.dir
   OBJECT_FILE_DIR = cmake\stm32cubemx\CMakeFiles\STM32_Drivers.dir\__\__\Drivers\STM32F1xx_HAL_Driver\Src
-  TARGET_COMPILE_PDB = cmake\stm32cubemx\CMakeFiles\STM32_Drivers.dir\
-  TARGET_PDB = ""
 
 build cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc_ex.c.obj: C_COMPILER__STM32_Drivers_unscanned_MinSizeRel E$:/Programming/ST/STelescope/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc_ex.c || cmake_object_order_depends_target_STM32_Drivers
   DEFINES = -DSTM32F103xB -DUSE_HAL_DRIVER
   DEP_FILE = cmake\stm32cubemx\CMakeFiles\STM32_Drivers.dir\__\__\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_rcc_ex.c.obj.d
-  FLAGS = -mcpu=cortex-m3  -Wall -Wextra -Wpedantic -fdata-sections -ffunction-sections -mcpu=cortex-m3  -Wall -Wextra -Wpedantic -fdata-sections -ffunction-sections -mcpu=cortex-m3  -Wall -Wextra -Wpedantic -fdata-sections -ffunction-sections -Os -DNDEBUG -std=gnu11
+  FLAGS = -mcpu=cortex-m3  -Wall -Wextra -Wpedantic -fdata-sections -ffunction-sections -mcpu=cortex-m3  -Wall -Wextra -Wpedantic -fdata-sections -ffunction-sections -Os -DNDEBUG -std=gnu11
   INCLUDES = -IE:/Programming/ST/STelescope/USB_DEVICE/App -IE:/Programming/ST/STelescope/USB_DEVICE/Target -IE:/Programming/ST/STelescope/Core/Inc -IE:/Programming/ST/STelescope/Drivers/STM32F1xx_HAL_Driver/Inc -IE:/Programming/ST/STelescope/Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -IE:/Programming/ST/STelescope/Middlewares/ST/STM32_USB_Device_Library/Core/Inc -IE:/Programming/ST/STelescope/Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Inc -IE:/Programming/ST/STelescope/Drivers/CMSIS/Device/ST/STM32F1xx/Include -IE:/Programming/ST/STelescope/Drivers/CMSIS/Include
   OBJECT_DIR = cmake\stm32cubemx\CMakeFiles\STM32_Drivers.dir
   OBJECT_FILE_DIR = cmake\stm32cubemx\CMakeFiles\STM32_Drivers.dir\__\__\Drivers\STM32F1xx_HAL_Driver\Src
-  TARGET_COMPILE_PDB = cmake\stm32cubemx\CMakeFiles\STM32_Drivers.dir\
-  TARGET_PDB = ""
 
 build cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio.c.obj: C_COMPILER__STM32_Drivers_unscanned_MinSizeRel E$:/Programming/ST/STelescope/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio.c || cmake_object_order_depends_target_STM32_Drivers
   DEFINES = -DSTM32F103xB -DUSE_HAL_DRIVER
   DEP_FILE = cmake\stm32cubemx\CMakeFiles\STM32_Drivers.dir\__\__\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_gpio.c.obj.d
-  FLAGS = -mcpu=cortex-m3  -Wall -Wextra -Wpedantic -fdata-sections -ffunction-sections -mcpu=cortex-m3  -Wall -Wextra -Wpedantic -fdata-sections -ffunction-sections -mcpu=cortex-m3  -Wall -Wextra -Wpedantic -fdata-sections -ffunction-sections -Os -DNDEBUG -std=gnu11
+  FLAGS = -mcpu=cortex-m3  -Wall -Wextra -Wpedantic -fdata-sections -ffunction-sections -mcpu=cortex-m3  -Wall -Wextra -Wpedantic -fdata-sections -ffunction-sections -Os -DNDEBUG -std=gnu11
   INCLUDES = -IE:/Programming/ST/STelescope/USB_DEVICE/App -IE:/Programming/ST/STelescope/USB_DEVICE/Target -IE:/Programming/ST/STelescope/Core/Inc -IE:/Programming/ST/STelescope/Drivers/STM32F1xx_HAL_Driver/Inc -IE:/Programming/ST/STelescope/Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -IE:/Programming/ST/STelescope/Middlewares/ST/STM32_USB_Device_Library/Core/Inc -IE:/Programming/ST/STelescope/Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Inc -IE:/Programming/ST/STelescope/Drivers/CMSIS/Device/ST/STM32F1xx/Include -IE:/Programming/ST/STelescope/Drivers/CMSIS/Include
   OBJECT_DIR = cmake\stm32cubemx\CMakeFiles\STM32_Drivers.dir
   OBJECT_FILE_DIR = cmake\stm32cubemx\CMakeFiles\STM32_Drivers.dir\__\__\Drivers\STM32F1xx_HAL_Driver\Src
-  TARGET_COMPILE_PDB = cmake\stm32cubemx\CMakeFiles\STM32_Drivers.dir\
-  TARGET_PDB = ""
 
 build cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_dma.c.obj: C_COMPILER__STM32_Drivers_unscanned_MinSizeRel E$:/Programming/ST/STelescope/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_dma.c || cmake_object_order_depends_target_STM32_Drivers
   DEFINES = -DSTM32F103xB -DUSE_HAL_DRIVER
   DEP_FILE = cmake\stm32cubemx\CMakeFiles\STM32_Drivers.dir\__\__\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_dma.c.obj.d
-  FLAGS = -mcpu=cortex-m3  -Wall -Wextra -Wpedantic -fdata-sections -ffunction-sections -mcpu=cortex-m3  -Wall -Wextra -Wpedantic -fdata-sections -ffunction-sections -mcpu=cortex-m3  -Wall -Wextra -Wpedantic -fdata-sections -ffunction-sections -Os -DNDEBUG -std=gnu11
+  FLAGS = -mcpu=cortex-m3  -Wall -Wextra -Wpedantic -fdata-sections -ffunction-sections -mcpu=cortex-m3  -Wall -Wextra -Wpedantic -fdata-sections -ffunction-sections -Os -DNDEBUG -std=gnu11
   INCLUDES = -IE:/Programming/ST/STelescope/USB_DEVICE/App -IE:/Programming/ST/STelescope/USB_DEVICE/Target -IE:/Programming/ST/STelescope/Core/Inc -IE:/Programming/ST/STelescope/Drivers/STM32F1xx_HAL_Driver/Inc -IE:/Programming/ST/STelescope/Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -IE:/Programming/ST/STelescope/Middlewares/ST/STM32_USB_Device_Library/Core/Inc -IE:/Programming/ST/STelescope/Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Inc -IE:/Programming/ST/STelescope/Drivers/CMSIS/Device/ST/STM32F1xx/Include -IE:/Programming/ST/STelescope/Drivers/CMSIS/Include
   OBJECT_DIR = cmake\stm32cubemx\CMakeFiles\STM32_Drivers.dir
   OBJECT_FILE_DIR = cmake\stm32cubemx\CMakeFiles\STM32_Drivers.dir\__\__\Drivers\STM32F1xx_HAL_Driver\Src
-  TARGET_COMPILE_PDB = cmake\stm32cubemx\CMakeFiles\STM32_Drivers.dir\
-  TARGET_PDB = ""
 
 build cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_cortex.c.obj: C_COMPILER__STM32_Drivers_unscanned_MinSizeRel E$:/Programming/ST/STelescope/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_cortex.c || cmake_object_order_depends_target_STM32_Drivers
   DEFINES = -DSTM32F103xB -DUSE_HAL_DRIVER
   DEP_FILE = cmake\stm32cubemx\CMakeFiles\STM32_Drivers.dir\__\__\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_cortex.c.obj.d
-  FLAGS = -mcpu=cortex-m3  -Wall -Wextra -Wpedantic -fdata-sections -ffunction-sections -mcpu=cortex-m3  -Wall -Wextra -Wpedantic -fdata-sections -ffunction-sections -mcpu=cortex-m3  -Wall -Wextra -Wpedantic -fdata-sections -ffunction-sections -Os -DNDEBUG -std=gnu11
+  FLAGS = -mcpu=cortex-m3  -Wall -Wextra -Wpedantic -fdata-sections -ffunction-sections -mcpu=cortex-m3  -Wall -Wextra -Wpedantic -fdata-sections -ffunction-sections -Os -DNDEBUG -std=gnu11
   INCLUDES = -IE:/Programming/ST/STelescope/USB_DEVICE/App -IE:/Programming/ST/STelescope/USB_DEVICE/Target -IE:/Programming/ST/STelescope/Core/Inc -IE:/Programming/ST/STelescope/Drivers/STM32F1xx_HAL_Driver/Inc -IE:/Programming/ST/STelescope/Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -IE:/Programming/ST/STelescope/Middlewares/ST/STM32_USB_Device_Library/Core/Inc -IE:/Programming/ST/STelescope/Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Inc -IE:/Programming/ST/STelescope/Drivers/CMSIS/Device/ST/STM32F1xx/Include -IE:/Programming/ST/STelescope/Drivers/CMSIS/Include
   OBJECT_DIR = cmake\stm32cubemx\CMakeFiles\STM32_Drivers.dir
   OBJECT_FILE_DIR = cmake\stm32cubemx\CMakeFiles\STM32_Drivers.dir\__\__\Drivers\STM32F1xx_HAL_Driver\Src
-  TARGET_COMPILE_PDB = cmake\stm32cubemx\CMakeFiles\STM32_Drivers.dir\
-  TARGET_PDB = ""
 
 build cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_pwr.c.obj: C_COMPILER__STM32_Drivers_unscanned_MinSizeRel E$:/Programming/ST/STelescope/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_pwr.c || cmake_object_order_depends_target_STM32_Drivers
   DEFINES = -DSTM32F103xB -DUSE_HAL_DRIVER
   DEP_FILE = cmake\stm32cubemx\CMakeFiles\STM32_Drivers.dir\__\__\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_pwr.c.obj.d
-  FLAGS = -mcpu=cortex-m3  -Wall -Wextra -Wpedantic -fdata-sections -ffunction-sections -mcpu=cortex-m3  -Wall -Wextra -Wpedantic -fdata-sections -ffunction-sections -mcpu=cortex-m3  -Wall -Wextra -Wpedantic -fdata-sections -ffunction-sections -Os -DNDEBUG -std=gnu11
+  FLAGS = -mcpu=cortex-m3  -Wall -Wextra -Wpedantic -fdata-sections -ffunction-sections -mcpu=cortex-m3  -Wall -Wextra -Wpedantic -fdata-sections -ffunction-sections -Os -DNDEBUG -std=gnu11
   INCLUDES = -IE:/Programming/ST/STelescope/USB_DEVICE/App -IE:/Programming/ST/STelescope/USB_DEVICE/Target -IE:/Programming/ST/STelescope/Core/Inc -IE:/Programming/ST/STelescope/Drivers/STM32F1xx_HAL_Driver/Inc -IE:/Programming/ST/STelescope/Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -IE:/Programming/ST/STelescope/Middlewares/ST/STM32_USB_Device_Library/Core/Inc -IE:/Programming/ST/STelescope/Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Inc -IE:/Programming/ST/STelescope/Drivers/CMSIS/Device/ST/STM32F1xx/Include -IE:/Programming/ST/STelescope/Drivers/CMSIS/Include
   OBJECT_DIR = cmake\stm32cubemx\CMakeFiles\STM32_Drivers.dir
   OBJECT_FILE_DIR = cmake\stm32cubemx\CMakeFiles\STM32_Drivers.dir\__\__\Drivers\STM32F1xx_HAL_Driver\Src
-  TARGET_COMPILE_PDB = cmake\stm32cubemx\CMakeFiles\STM32_Drivers.dir\
-  TARGET_PDB = ""
 
 build cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_flash.c.obj: C_COMPILER__STM32_Drivers_unscanned_MinSizeRel E$:/Programming/ST/STelescope/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_flash.c || cmake_object_order_depends_target_STM32_Drivers
   DEFINES = -DSTM32F103xB -DUSE_HAL_DRIVER
   DEP_FILE = cmake\stm32cubemx\CMakeFiles\STM32_Drivers.dir\__\__\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_flash.c.obj.d
-  FLAGS = -mcpu=cortex-m3  -Wall -Wextra -Wpedantic -fdata-sections -ffunction-sections -mcpu=cortex-m3  -Wall -Wextra -Wpedantic -fdata-sections -ffunction-sections -mcpu=cortex-m3  -Wall -Wextra -Wpedantic -fdata-sections -ffunction-sections -Os -DNDEBUG -std=gnu11
+  FLAGS = -mcpu=cortex-m3  -Wall -Wextra -Wpedantic -fdata-sections -ffunction-sections -mcpu=cortex-m3  -Wall -Wextra -Wpedantic -fdata-sections -ffunction-sections -Os -DNDEBUG -std=gnu11
   INCLUDES = -IE:/Programming/ST/STelescope/USB_DEVICE/App -IE:/Programming/ST/STelescope/USB_DEVICE/Target -IE:/Programming/ST/STelescope/Core/Inc -IE:/Programming/ST/STelescope/Drivers/STM32F1xx_HAL_Driver/Inc -IE:/Programming/ST/STelescope/Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -IE:/Programming/ST/STelescope/Middlewares/ST/STM32_USB_Device_Library/Core/Inc -IE:/Programming/ST/STelescope/Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Inc -IE:/Programming/ST/STelescope/Drivers/CMSIS/Device/ST/STM32F1xx/Include -IE:/Programming/ST/STelescope/Drivers/CMSIS/Include
   OBJECT_DIR = cmake\stm32cubemx\CMakeFiles\STM32_Drivers.dir
   OBJECT_FILE_DIR = cmake\stm32cubemx\CMakeFiles\STM32_Drivers.dir\__\__\Drivers\STM32F1xx_HAL_Driver\Src
-  TARGET_COMPILE_PDB = cmake\stm32cubemx\CMakeFiles\STM32_Drivers.dir\
-  TARGET_PDB = ""
 
 build cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_flash_ex.c.obj: C_COMPILER__STM32_Drivers_unscanned_MinSizeRel E$:/Programming/ST/STelescope/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_flash_ex.c || cmake_object_order_depends_target_STM32_Drivers
   DEFINES = -DSTM32F103xB -DUSE_HAL_DRIVER
   DEP_FILE = cmake\stm32cubemx\CMakeFiles\STM32_Drivers.dir\__\__\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_flash_ex.c.obj.d
-  FLAGS = -mcpu=cortex-m3  -Wall -Wextra -Wpedantic -fdata-sections -ffunction-sections -mcpu=cortex-m3  -Wall -Wextra -Wpedantic -fdata-sections -ffunction-sections -mcpu=cortex-m3  -Wall -Wextra -Wpedantic -fdata-sections -ffunction-sections -Os -DNDEBUG -std=gnu11
+  FLAGS = -mcpu=cortex-m3  -Wall -Wextra -Wpedantic -fdata-sections -ffunction-sections -mcpu=cortex-m3  -Wall -Wextra -Wpedantic -fdata-sections -ffunction-sections -Os -DNDEBUG -std=gnu11
   INCLUDES = -IE:/Programming/ST/STelescope/USB_DEVICE/App -IE:/Programming/ST/STelescope/USB_DEVICE/Target -IE:/Programming/ST/STelescope/Core/Inc -IE:/Programming/ST/STelescope/Drivers/STM32F1xx_HAL_Driver/Inc -IE:/Programming/ST/STelescope/Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -IE:/Programming/ST/STelescope/Middlewares/ST/STM32_USB_Device_Library/Core/Inc -IE:/Programming/ST/STelescope/Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Inc -IE:/Programming/ST/STelescope/Drivers/CMSIS/Device/ST/STM32F1xx/Include -IE:/Programming/ST/STelescope/Drivers/CMSIS/Include
   OBJECT_DIR = cmake\stm32cubemx\CMakeFiles\STM32_Drivers.dir
   OBJECT_FILE_DIR = cmake\stm32cubemx\CMakeFiles\STM32_Drivers.dir\__\__\Drivers\STM32F1xx_HAL_Driver\Src
-  TARGET_COMPILE_PDB = cmake\stm32cubemx\CMakeFiles\STM32_Drivers.dir\
-  TARGET_PDB = ""
 
 build cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_exti.c.obj: C_COMPILER__STM32_Drivers_unscanned_MinSizeRel E$:/Programming/ST/STelescope/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_exti.c || cmake_object_order_depends_target_STM32_Drivers
   DEFINES = -DSTM32F103xB -DUSE_HAL_DRIVER
   DEP_FILE = cmake\stm32cubemx\CMakeFiles\STM32_Drivers.dir\__\__\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_exti.c.obj.d
-  FLAGS = -mcpu=cortex-m3  -Wall -Wextra -Wpedantic -fdata-sections -ffunction-sections -mcpu=cortex-m3  -Wall -Wextra -Wpedantic -fdata-sections -ffunction-sections -mcpu=cortex-m3  -Wall -Wextra -Wpedantic -fdata-sections -ffunction-sections -Os -DNDEBUG -std=gnu11
+  FLAGS = -mcpu=cortex-m3  -Wall -Wextra -Wpedantic -fdata-sections -ffunction-sections -mcpu=cortex-m3  -Wall -Wextra -Wpedantic -fdata-sections -ffunction-sections -Os -DNDEBUG -std=gnu11
   INCLUDES = -IE:/Programming/ST/STelescope/USB_DEVICE/App -IE:/Programming/ST/STelescope/USB_DEVICE/Target -IE:/Programming/ST/STelescope/Core/Inc -IE:/Programming/ST/STelescope/Drivers/STM32F1xx_HAL_Driver/Inc -IE:/Programming/ST/STelescope/Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -IE:/Programming/ST/STelescope/Middlewares/ST/STM32_USB_Device_Library/Core/Inc -IE:/Programming/ST/STelescope/Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Inc -IE:/Programming/ST/STelescope/Drivers/CMSIS/Device/ST/STM32F1xx/Include -IE:/Programming/ST/STelescope/Drivers/CMSIS/Include
   OBJECT_DIR = cmake\stm32cubemx\CMakeFiles\STM32_Drivers.dir
   OBJECT_FILE_DIR = cmake\stm32cubemx\CMakeFiles\STM32_Drivers.dir\__\__\Drivers\STM32F1xx_HAL_Driver\Src
-  TARGET_COMPILE_PDB = cmake\stm32cubemx\CMakeFiles\STM32_Drivers.dir\
-  TARGET_PDB = ""
 
 build cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_i2c.c.obj: C_COMPILER__STM32_Drivers_unscanned_MinSizeRel E$:/Programming/ST/STelescope/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_i2c.c || cmake_object_order_depends_target_STM32_Drivers
   DEFINES = -DSTM32F103xB -DUSE_HAL_DRIVER
   DEP_FILE = cmake\stm32cubemx\CMakeFiles\STM32_Drivers.dir\__\__\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_i2c.c.obj.d
-  FLAGS = -mcpu=cortex-m3  -Wall -Wextra -Wpedantic -fdata-sections -ffunction-sections -mcpu=cortex-m3  -Wall -Wextra -Wpedantic -fdata-sections -ffunction-sections -mcpu=cortex-m3  -Wall -Wextra -Wpedantic -fdata-sections -ffunction-sections -Os -DNDEBUG -std=gnu11
+  FLAGS = -mcpu=cortex-m3  -Wall -Wextra -Wpedantic -fdata-sections -ffunction-sections -mcpu=cortex-m3  -Wall -Wextra -Wpedantic -fdata-sections -ffunction-sections -Os -DNDEBUG -std=gnu11
   INCLUDES = -IE:/Programming/ST/STelescope/USB_DEVICE/App -IE:/Programming/ST/STelescope/USB_DEVICE/Target -IE:/Programming/ST/STelescope/Core/Inc -IE:/Programming/ST/STelescope/Drivers/STM32F1xx_HAL_Driver/Inc -IE:/Programming/ST/STelescope/Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -IE:/Programming/ST/STelescope/Middlewares/ST/STM32_USB_Device_Library/Core/Inc -IE:/Programming/ST/STelescope/Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Inc -IE:/Programming/ST/STelescope/Drivers/CMSIS/Device/ST/STM32F1xx/Include -IE:/Programming/ST/STelescope/Drivers/CMSIS/Include
   OBJECT_DIR = cmake\stm32cubemx\CMakeFiles\STM32_Drivers.dir
   OBJECT_FILE_DIR = cmake\stm32cubemx\CMakeFiles\STM32_Drivers.dir\__\__\Drivers\STM32F1xx_HAL_Driver\Src
-  TARGET_COMPILE_PDB = cmake\stm32cubemx\CMakeFiles\STM32_Drivers.dir\
-  TARGET_PDB = ""
 
 build cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_spi.c.obj: C_COMPILER__STM32_Drivers_unscanned_MinSizeRel E$:/Programming/ST/STelescope/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_spi.c || cmake_object_order_depends_target_STM32_Drivers
   DEFINES = -DSTM32F103xB -DUSE_HAL_DRIVER
   DEP_FILE = cmake\stm32cubemx\CMakeFiles\STM32_Drivers.dir\__\__\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_spi.c.obj.d
-  FLAGS = -mcpu=cortex-m3  -Wall -Wextra -Wpedantic -fdata-sections -ffunction-sections -mcpu=cortex-m3  -Wall -Wextra -Wpedantic -fdata-sections -ffunction-sections -mcpu=cortex-m3  -Wall -Wextra -Wpedantic -fdata-sections -ffunction-sections -Os -DNDEBUG -std=gnu11
+  FLAGS = -mcpu=cortex-m3  -Wall -Wextra -Wpedantic -fdata-sections -ffunction-sections -mcpu=cortex-m3  -Wall -Wextra -Wpedantic -fdata-sections -ffunction-sections -Os -DNDEBUG -std=gnu11
   INCLUDES = -IE:/Programming/ST/STelescope/USB_DEVICE/App -IE:/Programming/ST/STelescope/USB_DEVICE/Target -IE:/Programming/ST/STelescope/Core/Inc -IE:/Programming/ST/STelescope/Drivers/STM32F1xx_HAL_Driver/Inc -IE:/Programming/ST/STelescope/Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -IE:/Programming/ST/STelescope/Middlewares/ST/STM32_USB_Device_Library/Core/Inc -IE:/Programming/ST/STelescope/Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Inc -IE:/Programming/ST/STelescope/Drivers/CMSIS/Device/ST/STM32F1xx/Include -IE:/Programming/ST/STelescope/Drivers/CMSIS/Include
   OBJECT_DIR = cmake\stm32cubemx\CMakeFiles\STM32_Drivers.dir
   OBJECT_FILE_DIR = cmake\stm32cubemx\CMakeFiles\STM32_Drivers.dir\__\__\Drivers\STM32F1xx_HAL_Driver\Src
-  TARGET_COMPILE_PDB = cmake\stm32cubemx\CMakeFiles\STM32_Drivers.dir\
-  TARGET_PDB = ""
 
 build cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim.c.obj: C_COMPILER__STM32_Drivers_unscanned_MinSizeRel E$:/Programming/ST/STelescope/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim.c || cmake_object_order_depends_target_STM32_Drivers
   DEFINES = -DSTM32F103xB -DUSE_HAL_DRIVER
   DEP_FILE = cmake\stm32cubemx\CMakeFiles\STM32_Drivers.dir\__\__\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_tim.c.obj.d
-  FLAGS = -mcpu=cortex-m3  -Wall -Wextra -Wpedantic -fdata-sections -ffunction-sections -mcpu=cortex-m3  -Wall -Wextra -Wpedantic -fdata-sections -ffunction-sections -mcpu=cortex-m3  -Wall -Wextra -Wpedantic -fdata-sections -ffunction-sections -Os -DNDEBUG -std=gnu11
+  FLAGS = -mcpu=cortex-m3  -Wall -Wextra -Wpedantic -fdata-sections -ffunction-sections -mcpu=cortex-m3  -Wall -Wextra -Wpedantic -fdata-sections -ffunction-sections -Os -DNDEBUG -std=gnu11
   INCLUDES = -IE:/Programming/ST/STelescope/USB_DEVICE/App -IE:/Programming/ST/STelescope/USB_DEVICE/Target -IE:/Programming/ST/STelescope/Core/Inc -IE:/Programming/ST/STelescope/Drivers/STM32F1xx_HAL_Driver/Inc -IE:/Programming/ST/STelescope/Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -IE:/Programming/ST/STelescope/Middlewares/ST/STM32_USB_Device_Library/Core/Inc -IE:/Programming/ST/STelescope/Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Inc -IE:/Programming/ST/STelescope/Drivers/CMSIS/Device/ST/STM32F1xx/Include -IE:/Programming/ST/STelescope/Drivers/CMSIS/Include
   OBJECT_DIR = cmake\stm32cubemx\CMakeFiles\STM32_Drivers.dir
   OBJECT_FILE_DIR = cmake\stm32cubemx\CMakeFiles\STM32_Drivers.dir\__\__\Drivers\STM32F1xx_HAL_Driver\Src
-  TARGET_COMPILE_PDB = cmake\stm32cubemx\CMakeFiles\STM32_Drivers.dir\
-  TARGET_PDB = ""
 
 build cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim_ex.c.obj: C_COMPILER__STM32_Drivers_unscanned_MinSizeRel E$:/Programming/ST/STelescope/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim_ex.c || cmake_object_order_depends_target_STM32_Drivers
   DEFINES = -DSTM32F103xB -DUSE_HAL_DRIVER
   DEP_FILE = cmake\stm32cubemx\CMakeFiles\STM32_Drivers.dir\__\__\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_tim_ex.c.obj.d
-  FLAGS = -mcpu=cortex-m3  -Wall -Wextra -Wpedantic -fdata-sections -ffunction-sections -mcpu=cortex-m3  -Wall -Wextra -Wpedantic -fdata-sections -ffunction-sections -mcpu=cortex-m3  -Wall -Wextra -Wpedantic -fdata-sections -ffunction-sections -Os -DNDEBUG -std=gnu11
+  FLAGS = -mcpu=cortex-m3  -Wall -Wextra -Wpedantic -fdata-sections -ffunction-sections -mcpu=cortex-m3  -Wall -Wextra -Wpedantic -fdata-sections -ffunction-sections -Os -DNDEBUG -std=gnu11
   INCLUDES = -IE:/Programming/ST/STelescope/USB_DEVICE/App -IE:/Programming/ST/STelescope/USB_DEVICE/Target -IE:/Programming/ST/STelescope/Core/Inc -IE:/Programming/ST/STelescope/Drivers/STM32F1xx_HAL_Driver/Inc -IE:/Programming/ST/STelescope/Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -IE:/Programming/ST/STelescope/Middlewares/ST/STM32_USB_Device_Library/Core/Inc -IE:/Programming/ST/STelescope/Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Inc -IE:/Programming/ST/STelescope/Drivers/CMSIS/Device/ST/STM32F1xx/Include -IE:/Programming/ST/STelescope/Drivers/CMSIS/Include
   OBJECT_DIR = cmake\stm32cubemx\CMakeFiles\STM32_Drivers.dir
   OBJECT_FILE_DIR = cmake\stm32cubemx\CMakeFiles\STM32_Drivers.dir\__\__\Drivers\STM32F1xx_HAL_Driver\Src
-  TARGET_COMPILE_PDB = cmake\stm32cubemx\CMakeFiles\STM32_Drivers.dir\
-  TARGET_PDB = ""
 
 build cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_uart.c.obj: C_COMPILER__STM32_Drivers_unscanned_MinSizeRel E$:/Programming/ST/STelescope/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_uart.c || cmake_object_order_depends_target_STM32_Drivers
   DEFINES = -DSTM32F103xB -DUSE_HAL_DRIVER
   DEP_FILE = cmake\stm32cubemx\CMakeFiles\STM32_Drivers.dir\__\__\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_uart.c.obj.d
-  FLAGS = -mcpu=cortex-m3  -Wall -Wextra -Wpedantic -fdata-sections -ffunction-sections -mcpu=cortex-m3  -Wall -Wextra -Wpedantic -fdata-sections -ffunction-sections -mcpu=cortex-m3  -Wall -Wextra -Wpedantic -fdata-sections -ffunction-sections -Os -DNDEBUG -std=gnu11
+  FLAGS = -mcpu=cortex-m3  -Wall -Wextra -Wpedantic -fdata-sections -ffunction-sections -mcpu=cortex-m3  -Wall -Wextra -Wpedantic -fdata-sections -ffunction-sections -Os -DNDEBUG -std=gnu11
   INCLUDES = -IE:/Programming/ST/STelescope/USB_DEVICE/App -IE:/Programming/ST/STelescope/USB_DEVICE/Target -IE:/Programming/ST/STelescope/Core/Inc -IE:/Programming/ST/STelescope/Drivers/STM32F1xx_HAL_Driver/Inc -IE:/Programming/ST/STelescope/Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -IE:/Programming/ST/STelescope/Middlewares/ST/STM32_USB_Device_Library/Core/Inc -IE:/Programming/ST/STelescope/Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Inc -IE:/Programming/ST/STelescope/Drivers/CMSIS/Device/ST/STM32F1xx/Include -IE:/Programming/ST/STelescope/Drivers/CMSIS/Include
   OBJECT_DIR = cmake\stm32cubemx\CMakeFiles\STM32_Drivers.dir
   OBJECT_FILE_DIR = cmake\stm32cubemx\CMakeFiles\STM32_Drivers.dir\__\__\Drivers\STM32F1xx_HAL_Driver\Src
-  TARGET_COMPILE_PDB = cmake\stm32cubemx\CMakeFiles\STM32_Drivers.dir\
-  TARGET_PDB = ""
 
 
 
@@ -503,42 +426,34 @@ build cmake_object_order_depends_target_USB_Device_Library: phony || cmake/stm32
 build cmake/stm32cubemx/CMakeFiles/USB_Device_Library.dir/__/__/Middlewares/ST/STM32_USB_Device_Library/Core/Src/usbd_core.c.obj: C_COMPILER__USB_Device_Library_unscanned_MinSizeRel E$:/Programming/ST/STelescope/Middlewares/ST/STM32_USB_Device_Library/Core/Src/usbd_core.c || cmake_object_order_depends_target_USB_Device_Library
   DEFINES = -DSTM32F103xB -DUSE_HAL_DRIVER
   DEP_FILE = cmake\stm32cubemx\CMakeFiles\USB_Device_Library.dir\__\__\Middlewares\ST\STM32_USB_Device_Library\Core\Src\usbd_core.c.obj.d
-  FLAGS = -mcpu=cortex-m3  -Wall -Wextra -Wpedantic -fdata-sections -ffunction-sections -mcpu=cortex-m3  -Wall -Wextra -Wpedantic -fdata-sections -ffunction-sections -mcpu=cortex-m3  -Wall -Wextra -Wpedantic -fdata-sections -ffunction-sections -Os -DNDEBUG -std=gnu11
+  FLAGS = -mcpu=cortex-m3  -Wall -Wextra -Wpedantic -fdata-sections -ffunction-sections -mcpu=cortex-m3  -Wall -Wextra -Wpedantic -fdata-sections -ffunction-sections -Os -DNDEBUG -std=gnu11
   INCLUDES = -IE:/Programming/ST/STelescope/USB_DEVICE/App -IE:/Programming/ST/STelescope/USB_DEVICE/Target -IE:/Programming/ST/STelescope/Core/Inc -IE:/Programming/ST/STelescope/Drivers/STM32F1xx_HAL_Driver/Inc -IE:/Programming/ST/STelescope/Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -IE:/Programming/ST/STelescope/Middlewares/ST/STM32_USB_Device_Library/Core/Inc -IE:/Programming/ST/STelescope/Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Inc -IE:/Programming/ST/STelescope/Drivers/CMSIS/Device/ST/STM32F1xx/Include -IE:/Programming/ST/STelescope/Drivers/CMSIS/Include
   OBJECT_DIR = cmake\stm32cubemx\CMakeFiles\USB_Device_Library.dir
   OBJECT_FILE_DIR = cmake\stm32cubemx\CMakeFiles\USB_Device_Library.dir\__\__\Middlewares\ST\STM32_USB_Device_Library\Core\Src
-  TARGET_COMPILE_PDB = cmake\stm32cubemx\CMakeFiles\USB_Device_Library.dir\
-  TARGET_PDB = ""
 
 build cmake/stm32cubemx/CMakeFiles/USB_Device_Library.dir/__/__/Middlewares/ST/STM32_USB_Device_Library/Core/Src/usbd_ctlreq.c.obj: C_COMPILER__USB_Device_Library_unscanned_MinSizeRel E$:/Programming/ST/STelescope/Middlewares/ST/STM32_USB_Device_Library/Core/Src/usbd_ctlreq.c || cmake_object_order_depends_target_USB_Device_Library
   DEFINES = -DSTM32F103xB -DUSE_HAL_DRIVER
   DEP_FILE = cmake\stm32cubemx\CMakeFiles\USB_Device_Library.dir\__\__\Middlewares\ST\STM32_USB_Device_Library\Core\Src\usbd_ctlreq.c.obj.d
-  FLAGS = -mcpu=cortex-m3  -Wall -Wextra -Wpedantic -fdata-sections -ffunction-sections -mcpu=cortex-m3  -Wall -Wextra -Wpedantic -fdata-sections -ffunction-sections -mcpu=cortex-m3  -Wall -Wextra -Wpedantic -fdata-sections -ffunction-sections -Os -DNDEBUG -std=gnu11
+  FLAGS = -mcpu=cortex-m3  -Wall -Wextra -Wpedantic -fdata-sections -ffunction-sections -mcpu=cortex-m3  -Wall -Wextra -Wpedantic -fdata-sections -ffunction-sections -Os -DNDEBUG -std=gnu11
   INCLUDES = -IE:/Programming/ST/STelescope/USB_DEVICE/App -IE:/Programming/ST/STelescope/USB_DEVICE/Target -IE:/Programming/ST/STelescope/Core/Inc -IE:/Programming/ST/STelescope/Drivers/STM32F1xx_HAL_Driver/Inc -IE:/Programming/ST/STelescope/Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -IE:/Programming/ST/STelescope/Middlewares/ST/STM32_USB_Device_Library/Core/Inc -IE:/Programming/ST/STelescope/Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Inc -IE:/Programming/ST/STelescope/Drivers/CMSIS/Device/ST/STM32F1xx/Include -IE:/Programming/ST/STelescope/Drivers/CMSIS/Include
   OBJECT_DIR = cmake\stm32cubemx\CMakeFiles\USB_Device_Library.dir
   OBJECT_FILE_DIR = cmake\stm32cubemx\CMakeFiles\USB_Device_Library.dir\__\__\Middlewares\ST\STM32_USB_Device_Library\Core\Src
-  TARGET_COMPILE_PDB = cmake\stm32cubemx\CMakeFiles\USB_Device_Library.dir\
-  TARGET_PDB = ""
 
 build cmake/stm32cubemx/CMakeFiles/USB_Device_Library.dir/__/__/Middlewares/ST/STM32_USB_Device_Library/Core/Src/usbd_ioreq.c.obj: C_COMPILER__USB_Device_Library_unscanned_MinSizeRel E$:/Programming/ST/STelescope/Middlewares/ST/STM32_USB_Device_Library/Core/Src/usbd_ioreq.c || cmake_object_order_depends_target_USB_Device_Library
   DEFINES = -DSTM32F103xB -DUSE_HAL_DRIVER
   DEP_FILE = cmake\stm32cubemx\CMakeFiles\USB_Device_Library.dir\__\__\Middlewares\ST\STM32_USB_Device_Library\Core\Src\usbd_ioreq.c.obj.d
-  FLAGS = -mcpu=cortex-m3  -Wall -Wextra -Wpedantic -fdata-sections -ffunction-sections -mcpu=cortex-m3  -Wall -Wextra -Wpedantic -fdata-sections -ffunction-sections -mcpu=cortex-m3  -Wall -Wextra -Wpedantic -fdata-sections -ffunction-sections -Os -DNDEBUG -std=gnu11
+  FLAGS = -mcpu=cortex-m3  -Wall -Wextra -Wpedantic -fdata-sections -ffunction-sections -mcpu=cortex-m3  -Wall -Wextra -Wpedantic -fdata-sections -ffunction-sections -Os -DNDEBUG -std=gnu11
   INCLUDES = -IE:/Programming/ST/STelescope/USB_DEVICE/App -IE:/Programming/ST/STelescope/USB_DEVICE/Target -IE:/Programming/ST/STelescope/Core/Inc -IE:/Programming/ST/STelescope/Drivers/STM32F1xx_HAL_Driver/Inc -IE:/Programming/ST/STelescope/Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -IE:/Programming/ST/STelescope/Middlewares/ST/STM32_USB_Device_Library/Core/Inc -IE:/Programming/ST/STelescope/Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Inc -IE:/Programming/ST/STelescope/Drivers/CMSIS/Device/ST/STM32F1xx/Include -IE:/Programming/ST/STelescope/Drivers/CMSIS/Include
   OBJECT_DIR = cmake\stm32cubemx\CMakeFiles\USB_Device_Library.dir
   OBJECT_FILE_DIR = cmake\stm32cubemx\CMakeFiles\USB_Device_Library.dir\__\__\Middlewares\ST\STM32_USB_Device_Library\Core\Src
-  TARGET_COMPILE_PDB = cmake\stm32cubemx\CMakeFiles\USB_Device_Library.dir\
-  TARGET_PDB = ""
 
 build cmake/stm32cubemx/CMakeFiles/USB_Device_Library.dir/__/__/Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Src/usbd_cdc.c.obj: C_COMPILER__USB_Device_Library_unscanned_MinSizeRel E$:/Programming/ST/STelescope/Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Src/usbd_cdc.c || cmake_object_order_depends_target_USB_Device_Library
   DEFINES = -DSTM32F103xB -DUSE_HAL_DRIVER
   DEP_FILE = cmake\stm32cubemx\CMakeFiles\USB_Device_Library.dir\__\__\Middlewares\ST\STM32_USB_Device_Library\Class\CDC\Src\usbd_cdc.c.obj.d
-  FLAGS = -mcpu=cortex-m3  -Wall -Wextra -Wpedantic -fdata-sections -ffunction-sections -mcpu=cortex-m3  -Wall -Wextra -Wpedantic -fdata-sections -ffunction-sections -mcpu=cortex-m3  -Wall -Wextra -Wpedantic -fdata-sections -ffunction-sections -Os -DNDEBUG -std=gnu11
+  FLAGS = -mcpu=cortex-m3  -Wall -Wextra -Wpedantic -fdata-sections -ffunction-sections -mcpu=cortex-m3  -Wall -Wextra -Wpedantic -fdata-sections -ffunction-sections -Os -DNDEBUG -std=gnu11
   INCLUDES = -IE:/Programming/ST/STelescope/USB_DEVICE/App -IE:/Programming/ST/STelescope/USB_DEVICE/Target -IE:/Programming/ST/STelescope/Core/Inc -IE:/Programming/ST/STelescope/Drivers/STM32F1xx_HAL_Driver/Inc -IE:/Programming/ST/STelescope/Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -IE:/Programming/ST/STelescope/Middlewares/ST/STM32_USB_Device_Library/Core/Inc -IE:/Programming/ST/STelescope/Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Inc -IE:/Programming/ST/STelescope/Drivers/CMSIS/Device/ST/STM32F1xx/Include -IE:/Programming/ST/STelescope/Drivers/CMSIS/Include
   OBJECT_DIR = cmake\stm32cubemx\CMakeFiles\USB_Device_Library.dir
   OBJECT_FILE_DIR = cmake\stm32cubemx\CMakeFiles\USB_Device_Library.dir\__\__\Middlewares\ST\STM32_USB_Device_Library\Class\CDC\Src
-  TARGET_COMPILE_PDB = cmake\stm32cubemx\CMakeFiles\USB_Device_Library.dir\
-  TARGET_PDB = ""
 
 
 
@@ -604,14 +519,14 @@ build cmake/stm32cubemx/all: phony cmake/stm32cubemx/STM32_Drivers cmake/stm32cu
 #############################################
 # Re-run CMake if any of its inputs changed.
 
-build build.ninja: RERUN_CMAKE | CMakeCache.txt CMakeFiles/3.28.1/CMakeASMCompiler.cmake CMakeFiles/3.28.1/CMakeCCompiler.cmake CMakeFiles/3.28.1/CMakeCXXCompiler.cmake CMakeFiles/3.28.1/CMakeSystem.cmake D$:/ST/STM32CubeCLT_1.18.0/CMake/share/cmake-3.28/Modules/CMakeASMCompiler.cmake.in D$:/ST/STM32CubeCLT_1.18.0/CMake/share/cmake-3.28/Modules/CMakeASMInformation.cmake D$:/ST/STM32CubeCLT_1.18.0/CMake/share/cmake-3.28/Modules/CMakeCCompiler.cmake.in D$:/ST/STM32CubeCLT_1.18.0/CMake/share/cmake-3.28/Modules/CMakeCCompilerABI.c D$:/ST/STM32CubeCLT_1.18.0/CMake/share/cmake-3.28/Modules/CMakeCInformation.cmake D$:/ST/STM32CubeCLT_1.18.0/CMake/share/cmake-3.28/Modules/CMakeCXXCompiler.cmake.in D$:/ST/STM32CubeCLT_1.18.0/CMake/share/cmake-3.28/Modules/CMakeCXXCompilerABI.cpp D$:/ST/STM32CubeCLT_1.18.0/CMake/share/cmake-3.28/Modules/CMakeCXXInformation.cmake D$:/ST/STM32CubeCLT_1.18.0/CMake/share/cmake-3.28/Modules/CMakeCommonLanguageInclude.cmake D$:/ST/STM32CubeCLT_1.18.0/CMake/share/cmake-3.28/Modules/CMakeCompilerIdDetection.cmake D$:/ST/STM32CubeCLT_1.18.0/CMake/share/cmake-3.28/Modules/CMakeDetermineASMCompiler.cmake D$:/ST/STM32CubeCLT_1.18.0/CMake/share/cmake-3.28/Modules/CMakeDetermineCCompiler.cmake D$:/ST/STM32CubeCLT_1.18.0/CMake/share/cmake-3.28/Modules/CMakeDetermineCXXCompiler.cmake D$:/ST/STM32CubeCLT_1.18.0/CMake/share/cmake-3.28/Modules/CMakeDetermineCompileFeatures.cmake D$:/ST/STM32CubeCLT_1.18.0/CMake/share/cmake-3.28/Modules/CMakeDetermineCompiler.cmake D$:/ST/STM32CubeCLT_1.18.0/CMake/share/cmake-3.28/Modules/CMakeDetermineCompilerABI.cmake D$:/ST/STM32CubeCLT_1.18.0/CMake/share/cmake-3.28/Modules/CMakeDetermineCompilerId.cmake D$:/ST/STM32CubeCLT_1.18.0/CMake/share/cmake-3.28/Modules/CMakeDetermineSystem.cmake D$:/ST/STM32CubeCLT_1.18.0/CMake/share/cmake-3.28/Modules/CMakeFindBinUtils.cmake D$:/ST/STM32CubeCLT_1.18.0/CMake/share/cmake-3.28/Modules/CMakeGenericSystem.cmake D$:/ST/STM32CubeCLT_1.18.0/CMake/share/cmake-3.28/Modules/CMakeInitializeConfigs.cmake D$:/ST/STM32CubeCLT_1.18.0/CMake/share/cmake-3.28/Modules/CMakeLanguageInformation.cmake D$:/ST/STM32CubeCLT_1.18.0/CMake/share/cmake-3.28/Modules/CMakeNinjaFindMake.cmake D$:/ST/STM32CubeCLT_1.18.0/CMake/share/cmake-3.28/Modules/CMakeParseImplicitIncludeInfo.cmake D$:/ST/STM32CubeCLT_1.18.0/CMake/share/cmake-3.28/Modules/CMakeParseImplicitLinkInfo.cmake D$:/ST/STM32CubeCLT_1.18.0/CMake/share/cmake-3.28/Modules/CMakeParseLibraryArchitecture.cmake D$:/ST/STM32CubeCLT_1.18.0/CMake/share/cmake-3.28/Modules/CMakeSystem.cmake.in D$:/ST/STM32CubeCLT_1.18.0/CMake/share/cmake-3.28/Modules/CMakeSystemSpecificInformation.cmake D$:/ST/STM32CubeCLT_1.18.0/CMake/share/cmake-3.28/Modules/CMakeSystemSpecificInitialize.cmake D$:/ST/STM32CubeCLT_1.18.0/CMake/share/cmake-3.28/Modules/CMakeTestASMCompiler.cmake D$:/ST/STM32CubeCLT_1.18.0/CMake/share/cmake-3.28/Modules/CMakeTestCCompiler.cmake D$:/ST/STM32CubeCLT_1.18.0/CMake/share/cmake-3.28/Modules/CMakeTestCXXCompiler.cmake D$:/ST/STM32CubeCLT_1.18.0/CMake/share/cmake-3.28/Modules/CMakeTestCompilerCommon.cmake D$:/ST/STM32CubeCLT_1.18.0/CMake/share/cmake-3.28/Modules/Compiler/ADSP-DetermineCompiler.cmake D$:/ST/STM32CubeCLT_1.18.0/CMake/share/cmake-3.28/Modules/Compiler/ARMCC-DetermineCompiler.cmake D$:/ST/STM32CubeCLT_1.18.0/CMake/share/cmake-3.28/Modules/Compiler/ARMClang-DetermineCompiler.cmake D$:/ST/STM32CubeCLT_1.18.0/CMake/share/cmake-3.28/Modules/Compiler/AppleClang-DetermineCompiler.cmake D$:/ST/STM32CubeCLT_1.18.0/CMake/share/cmake-3.28/Modules/Compiler/Borland-DetermineCompiler.cmake D$:/ST/STM32CubeCLT_1.18.0/CMake/share/cmake-3.28/Modules/Compiler/Bruce-C-DetermineCompiler.cmake D$:/ST/STM32CubeCLT_1.18.0/CMake/share/cmake-3.28/Modules/Compiler/CMakeCommonCompilerMacros.cmake D$:/ST/STM32CubeCLT_1.18.0/CMake/share/cmake-3.28/Modules/Compiler/Clang-DetermineCompiler.cmake D$:/ST/STM32CubeCLT_1.18.0/CMake/share/cmake-3.28/Modules/Compiler/Clang-DetermineCompilerInternal.cmake D$:/ST/STM32CubeCLT_1.18.0/CMake/share/cmake-3.28/Modules/Compiler/Comeau-CXX-DetermineCompiler.cmake D$:/ST/STM32CubeCLT_1.18.0/CMake/share/cmake-3.28/Modules/Compiler/Compaq-C-DetermineCompiler.cmake D$:/ST/STM32CubeCLT_1.18.0/CMake/share/cmake-3.28/Modules/Compiler/Compaq-CXX-DetermineCompiler.cmake D$:/ST/STM32CubeCLT_1.18.0/CMake/share/cmake-3.28/Modules/Compiler/Cray-DetermineCompiler.cmake D$:/ST/STM32CubeCLT_1.18.0/CMake/share/cmake-3.28/Modules/Compiler/CrayClang-DetermineCompiler.cmake D$:/ST/STM32CubeCLT_1.18.0/CMake/share/cmake-3.28/Modules/Compiler/Embarcadero-DetermineCompiler.cmake D$:/ST/STM32CubeCLT_1.18.0/CMake/share/cmake-3.28/Modules/Compiler/Fujitsu-DetermineCompiler.cmake D$:/ST/STM32CubeCLT_1.18.0/CMake/share/cmake-3.28/Modules/Compiler/FujitsuClang-DetermineCompiler.cmake D$:/ST/STM32CubeCLT_1.18.0/CMake/share/cmake-3.28/Modules/Compiler/GHS-DetermineCompiler.cmake D$:/ST/STM32CubeCLT_1.18.0/CMake/share/cmake-3.28/Modules/Compiler/GNU-ASM.cmake D$:/ST/STM32CubeCLT_1.18.0/CMake/share/cmake-3.28/Modules/Compiler/GNU-C-DetermineCompiler.cmake D$:/ST/STM32CubeCLT_1.18.0/CMake/share/cmake-3.28/Modules/Compiler/GNU-C.cmake D$:/ST/STM32CubeCLT_1.18.0/CMake/share/cmake-3.28/Modules/Compiler/GNU-CXX-DetermineCompiler.cmake D$:/ST/STM32CubeCLT_1.18.0/CMake/share/cmake-3.28/Modules/Compiler/GNU-CXX.cmake D$:/ST/STM32CubeCLT_1.18.0/CMake/share/cmake-3.28/Modules/Compiler/GNU-FindBinUtils.cmake D$:/ST/STM32CubeCLT_1.18.0/CMake/share/cmake-3.28/Modules/Compiler/GNU.cmake D$:/ST/STM32CubeCLT_1.18.0/CMake/share/cmake-3.28/Modules/Compiler/HP-C-DetermineCompiler.cmake D$:/ST/STM32CubeCLT_1.18.0/CMake/share/cmake-3.28/Modules/Compiler/HP-CXX-DetermineCompiler.cmake D$:/ST/STM32CubeCLT_1.18.0/CMake/share/cmake-3.28/Modules/Compiler/IAR-DetermineCompiler.cmake D$:/ST/STM32CubeCLT_1.18.0/CMake/share/cmake-3.28/Modules/Compiler/IBMCPP-C-DetermineVersionInternal.cmake D$:/ST/STM32CubeCLT_1.18.0/CMake/share/cmake-3.28/Modules/Compiler/IBMCPP-CXX-DetermineVersionInternal.cmake D$:/ST/STM32CubeCLT_1.18.0/CMake/share/cmake-3.28/Modules/Compiler/IBMClang-C-DetermineCompiler.cmake D$:/ST/STM32CubeCLT_1.18.0/CMake/share/cmake-3.28/Modules/Compiler/IBMClang-CXX-DetermineCompiler.cmake D$:/ST/STM32CubeCLT_1.18.0/CMake/share/cmake-3.28/Modules/Compiler/Intel-DetermineCompiler.cmake D$:/ST/STM32CubeCLT_1.18.0/CMake/share/cmake-3.28/Modules/Compiler/IntelLLVM-DetermineCompiler.cmake D$:/ST/STM32CubeCLT_1.18.0/CMake/share/cmake-3.28/Modules/Compiler/LCC-C-DetermineCompiler.cmake D$:/ST/STM32CubeCLT_1.18.0/CMake/share/cmake-3.28/Modules/Compiler/LCC-CXX-DetermineCompiler.cmake D$:/ST/STM32CubeCLT_1.18.0/CMake/share/cmake-3.28/Modules/Compiler/MSVC-DetermineCompiler.cmake D$:/ST/STM32CubeCLT_1.18.0/CMake/share/cmake-3.28/Modules/Compiler/NVHPC-DetermineCompiler.cmake D$:/ST/STM32CubeCLT_1.18.0/CMake/share/cmake-3.28/Modules/Compiler/NVIDIA-DetermineCompiler.cmake D$:/ST/STM32CubeCLT_1.18.0/CMake/share/cmake-3.28/Modules/Compiler/OpenWatcom-DetermineCompiler.cmake D$:/ST/STM32CubeCLT_1.18.0/CMake/share/cmake-3.28/Modules/Compiler/OrangeC-DetermineCompiler.cmake D$:/ST/STM32CubeCLT_1.18.0/CMake/share/cmake-3.28/Modules/Compiler/PGI-DetermineCompiler.cmake D$:/ST/STM32CubeCLT_1.18.0/CMake/share/cmake-3.28/Modules/Compiler/PathScale-DetermineCompiler.cmake D$:/ST/STM32CubeCLT_1.18.0/CMake/share/cmake-3.28/Modules/Compiler/SCO-DetermineCompiler.cmake D$:/ST/STM32CubeCLT_1.18.0/CMake/share/cmake-3.28/Modules/Compiler/SDCC-C-DetermineCompiler.cmake D$:/ST/STM32CubeCLT_1.18.0/CMake/share/cmake-3.28/Modules/Compiler/SunPro-C-DetermineCompiler.cmake D$:/ST/STM32CubeCLT_1.18.0/CMake/share/cmake-3.28/Modules/Compiler/SunPro-CXX-DetermineCompiler.cmake D$:/ST/STM32CubeCLT_1.18.0/CMake/share/cmake-3.28/Modules/Compiler/TI-DetermineCompiler.cmake D$:/ST/STM32CubeCLT_1.18.0/CMake/share/cmake-3.28/Modules/Compiler/Tasking-DetermineCompiler.cmake D$:/ST/STM32CubeCLT_1.18.0/CMake/share/cmake-3.28/Modules/Compiler/TinyCC-C-DetermineCompiler.cmake D$:/ST/STM32CubeCLT_1.18.0/CMake/share/cmake-3.28/Modules/Compiler/VisualAge-C-DetermineCompiler.cmake D$:/ST/STM32CubeCLT_1.18.0/CMake/share/cmake-3.28/Modules/Compiler/VisualAge-CXX-DetermineCompiler.cmake D$:/ST/STM32CubeCLT_1.18.0/CMake/share/cmake-3.28/Modules/Compiler/Watcom-DetermineCompiler.cmake D$:/ST/STM32CubeCLT_1.18.0/CMake/share/cmake-3.28/Modules/Compiler/XL-C-DetermineCompiler.cmake D$:/ST/STM32CubeCLT_1.18.0/CMake/share/cmake-3.28/Modules/Compiler/XL-CXX-DetermineCompiler.cmake D$:/ST/STM32CubeCLT_1.18.0/CMake/share/cmake-3.28/Modules/Compiler/XLClang-C-DetermineCompiler.cmake D$:/ST/STM32CubeCLT_1.18.0/CMake/share/cmake-3.28/Modules/Compiler/XLClang-CXX-DetermineCompiler.cmake D$:/ST/STM32CubeCLT_1.18.0/CMake/share/cmake-3.28/Modules/Compiler/zOS-C-DetermineCompiler.cmake D$:/ST/STM32CubeCLT_1.18.0/CMake/share/cmake-3.28/Modules/Compiler/zOS-CXX-DetermineCompiler.cmake D$:/ST/STM32CubeCLT_1.18.0/CMake/share/cmake-3.28/Modules/Internal/FeatureTesting.cmake D$:/ST/STM32CubeCLT_1.18.0/CMake/share/cmake-3.28/Modules/Platform/Generic.cmake E$:/Programming/ST/STelescope/CMakeLists.txt E$:/Programming/ST/STelescope/cmake/gcc-arm-none-eabi.cmake E$:/Programming/ST/STelescope/cmake/stm32cubemx/CMakeLists.txt
+build build.ninja: RERUN_CMAKE | CMakeCache.txt CMakeFiles/3.28.1/CMakeASMCompiler.cmake CMakeFiles/3.28.1/CMakeCCompiler.cmake CMakeFiles/3.28.1/CMakeCXXCompiler.cmake CMakeFiles/3.28.1/CMakeSystem.cmake D$:/ST/STM32CubeCLT_1.18.0/CMake/share/cmake-3.28/Modules/CMakeASMInformation.cmake D$:/ST/STM32CubeCLT_1.18.0/CMake/share/cmake-3.28/Modules/CMakeCInformation.cmake D$:/ST/STM32CubeCLT_1.18.0/CMake/share/cmake-3.28/Modules/CMakeCXXInformation.cmake D$:/ST/STM32CubeCLT_1.18.0/CMake/share/cmake-3.28/Modules/CMakeCommonLanguageInclude.cmake D$:/ST/STM32CubeCLT_1.18.0/CMake/share/cmake-3.28/Modules/CMakeGenericSystem.cmake D$:/ST/STM32CubeCLT_1.18.0/CMake/share/cmake-3.28/Modules/CMakeInitializeConfigs.cmake D$:/ST/STM32CubeCLT_1.18.0/CMake/share/cmake-3.28/Modules/CMakeLanguageInformation.cmake D$:/ST/STM32CubeCLT_1.18.0/CMake/share/cmake-3.28/Modules/CMakeSystemSpecificInformation.cmake D$:/ST/STM32CubeCLT_1.18.0/CMake/share/cmake-3.28/Modules/CMakeSystemSpecificInitialize.cmake D$:/ST/STM32CubeCLT_1.18.0/CMake/share/cmake-3.28/Modules/Compiler/CMakeCommonCompilerMacros.cmake D$:/ST/STM32CubeCLT_1.18.0/CMake/share/cmake-3.28/Modules/Compiler/GNU-ASM.cmake D$:/ST/STM32CubeCLT_1.18.0/CMake/share/cmake-3.28/Modules/Compiler/GNU-C.cmake D$:/ST/STM32CubeCLT_1.18.0/CMake/share/cmake-3.28/Modules/Compiler/GNU-CXX.cmake D$:/ST/STM32CubeCLT_1.18.0/CMake/share/cmake-3.28/Modules/Compiler/GNU.cmake D$:/ST/STM32CubeCLT_1.18.0/CMake/share/cmake-3.28/Modules/Platform/Generic.cmake E$:/Programming/ST/STelescope/CMakeLists.txt E$:/Programming/ST/STelescope/cmake/gcc-arm-none-eabi.cmake E$:/Programming/ST/STelescope/cmake/stm32cubemx/CMakeLists.txt
   pool = console
 
 
 #############################################
 # A missing CMake input file is not an error.
 
-build CMakeCache.txt CMakeFiles/3.28.1/CMakeASMCompiler.cmake CMakeFiles/3.28.1/CMakeCCompiler.cmake CMakeFiles/3.28.1/CMakeCXXCompiler.cmake CMakeFiles/3.28.1/CMakeSystem.cmake D$:/ST/STM32CubeCLT_1.18.0/CMake/share/cmake-3.28/Modules/CMakeASMCompiler.cmake.in D$:/ST/STM32CubeCLT_1.18.0/CMake/share/cmake-3.28/Modules/CMakeASMInformation.cmake D$:/ST/STM32CubeCLT_1.18.0/CMake/share/cmake-3.28/Modules/CMakeCCompiler.cmake.in D$:/ST/STM32CubeCLT_1.18.0/CMake/share/cmake-3.28/Modules/CMakeCCompilerABI.c D$:/ST/STM32CubeCLT_1.18.0/CMake/share/cmake-3.28/Modules/CMakeCInformation.cmake D$:/ST/STM32CubeCLT_1.18.0/CMake/share/cmake-3.28/Modules/CMakeCXXCompiler.cmake.in D$:/ST/STM32CubeCLT_1.18.0/CMake/share/cmake-3.28/Modules/CMakeCXXCompilerABI.cpp D$:/ST/STM32CubeCLT_1.18.0/CMake/share/cmake-3.28/Modules/CMakeCXXInformation.cmake D$:/ST/STM32CubeCLT_1.18.0/CMake/share/cmake-3.28/Modules/CMakeCommonLanguageInclude.cmake D$:/ST/STM32CubeCLT_1.18.0/CMake/share/cmake-3.28/Modules/CMakeCompilerIdDetection.cmake D$:/ST/STM32CubeCLT_1.18.0/CMake/share/cmake-3.28/Modules/CMakeDetermineASMCompiler.cmake D$:/ST/STM32CubeCLT_1.18.0/CMake/share/cmake-3.28/Modules/CMakeDetermineCCompiler.cmake D$:/ST/STM32CubeCLT_1.18.0/CMake/share/cmake-3.28/Modules/CMakeDetermineCXXCompiler.cmake D$:/ST/STM32CubeCLT_1.18.0/CMake/share/cmake-3.28/Modules/CMakeDetermineCompileFeatures.cmake D$:/ST/STM32CubeCLT_1.18.0/CMake/share/cmake-3.28/Modules/CMakeDetermineCompiler.cmake D$:/ST/STM32CubeCLT_1.18.0/CMake/share/cmake-3.28/Modules/CMakeDetermineCompilerABI.cmake D$:/ST/STM32CubeCLT_1.18.0/CMake/share/cmake-3.28/Modules/CMakeDetermineCompilerId.cmake D$:/ST/STM32CubeCLT_1.18.0/CMake/share/cmake-3.28/Modules/CMakeDetermineSystem.cmake D$:/ST/STM32CubeCLT_1.18.0/CMake/share/cmake-3.28/Modules/CMakeFindBinUtils.cmake D$:/ST/STM32CubeCLT_1.18.0/CMake/share/cmake-3.28/Modules/CMakeGenericSystem.cmake D$:/ST/STM32CubeCLT_1.18.0/CMake/share/cmake-3.28/Modules/CMakeInitializeConfigs.cmake D$:/ST/STM32CubeCLT_1.18.0/CMake/share/cmake-3.28/Modules/CMakeLanguageInformation.cmake D$:/ST/STM32CubeCLT_1.18.0/CMake/share/cmake-3.28/Modules/CMakeNinjaFindMake.cmake D$:/ST/STM32CubeCLT_1.18.0/CMake/share/cmake-3.28/Modules/CMakeParseImplicitIncludeInfo.cmake D$:/ST/STM32CubeCLT_1.18.0/CMake/share/cmake-3.28/Modules/CMakeParseImplicitLinkInfo.cmake D$:/ST/STM32CubeCLT_1.18.0/CMake/share/cmake-3.28/Modules/CMakeParseLibraryArchitecture.cmake D$:/ST/STM32CubeCLT_1.18.0/CMake/share/cmake-3.28/Modules/CMakeSystem.cmake.in D$:/ST/STM32CubeCLT_1.18.0/CMake/share/cmake-3.28/Modules/CMakeSystemSpecificInformation.cmake D$:/ST/STM32CubeCLT_1.18.0/CMake/share/cmake-3.28/Modules/CMakeSystemSpecificInitialize.cmake D$:/ST/STM32CubeCLT_1.18.0/CMake/share/cmake-3.28/Modules/CMakeTestASMCompiler.cmake D$:/ST/STM32CubeCLT_1.18.0/CMake/share/cmake-3.28/Modules/CMakeTestCCompiler.cmake D$:/ST/STM32CubeCLT_1.18.0/CMake/share/cmake-3.28/Modules/CMakeTestCXXCompiler.cmake D$:/ST/STM32CubeCLT_1.18.0/CMake/share/cmake-3.28/Modules/CMakeTestCompilerCommon.cmake D$:/ST/STM32CubeCLT_1.18.0/CMake/share/cmake-3.28/Modules/Compiler/ADSP-DetermineCompiler.cmake D$:/ST/STM32CubeCLT_1.18.0/CMake/share/cmake-3.28/Modules/Compiler/ARMCC-DetermineCompiler.cmake D$:/ST/STM32CubeCLT_1.18.0/CMake/share/cmake-3.28/Modules/Compiler/ARMClang-DetermineCompiler.cmake D$:/ST/STM32CubeCLT_1.18.0/CMake/share/cmake-3.28/Modules/Compiler/AppleClang-DetermineCompiler.cmake D$:/ST/STM32CubeCLT_1.18.0/CMake/share/cmake-3.28/Modules/Compiler/Borland-DetermineCompiler.cmake D$:/ST/STM32CubeCLT_1.18.0/CMake/share/cmake-3.28/Modules/Compiler/Bruce-C-DetermineCompiler.cmake D$:/ST/STM32CubeCLT_1.18.0/CMake/share/cmake-3.28/Modules/Compiler/CMakeCommonCompilerMacros.cmake D$:/ST/STM32CubeCLT_1.18.0/CMake/share/cmake-3.28/Modules/Compiler/Clang-DetermineCompiler.cmake D$:/ST/STM32CubeCLT_1.18.0/CMake/share/cmake-3.28/Modules/Compiler/Clang-DetermineCompilerInternal.cmake D$:/ST/STM32CubeCLT_1.18.0/CMake/share/cmake-3.28/Modules/Compiler/Comeau-CXX-DetermineCompiler.cmake D$:/ST/STM32CubeCLT_1.18.0/CMake/share/cmake-3.28/Modules/Compiler/Compaq-C-DetermineCompiler.cmake D$:/ST/STM32CubeCLT_1.18.0/CMake/share/cmake-3.28/Modules/Compiler/Compaq-CXX-DetermineCompiler.cmake D$:/ST/STM32CubeCLT_1.18.0/CMake/share/cmake-3.28/Modules/Compiler/Cray-DetermineCompiler.cmake D$:/ST/STM32CubeCLT_1.18.0/CMake/share/cmake-3.28/Modules/Compiler/CrayClang-DetermineCompiler.cmake D$:/ST/STM32CubeCLT_1.18.0/CMake/share/cmake-3.28/Modules/Compiler/Embarcadero-DetermineCompiler.cmake D$:/ST/STM32CubeCLT_1.18.0/CMake/share/cmake-3.28/Modules/Compiler/Fujitsu-DetermineCompiler.cmake D$:/ST/STM32CubeCLT_1.18.0/CMake/share/cmake-3.28/Modules/Compiler/FujitsuClang-DetermineCompiler.cmake D$:/ST/STM32CubeCLT_1.18.0/CMake/share/cmake-3.28/Modules/Compiler/GHS-DetermineCompiler.cmake D$:/ST/STM32CubeCLT_1.18.0/CMake/share/cmake-3.28/Modules/Compiler/GNU-ASM.cmake D$:/ST/STM32CubeCLT_1.18.0/CMake/share/cmake-3.28/Modules/Compiler/GNU-C-DetermineCompiler.cmake D$:/ST/STM32CubeCLT_1.18.0/CMake/share/cmake-3.28/Modules/Compiler/GNU-C.cmake D$:/ST/STM32CubeCLT_1.18.0/CMake/share/cmake-3.28/Modules/Compiler/GNU-CXX-DetermineCompiler.cmake D$:/ST/STM32CubeCLT_1.18.0/CMake/share/cmake-3.28/Modules/Compiler/GNU-CXX.cmake D$:/ST/STM32CubeCLT_1.18.0/CMake/share/cmake-3.28/Modules/Compiler/GNU-FindBinUtils.cmake D$:/ST/STM32CubeCLT_1.18.0/CMake/share/cmake-3.28/Modules/Compiler/GNU.cmake D$:/ST/STM32CubeCLT_1.18.0/CMake/share/cmake-3.28/Modules/Compiler/HP-C-DetermineCompiler.cmake D$:/ST/STM32CubeCLT_1.18.0/CMake/share/cmake-3.28/Modules/Compiler/HP-CXX-DetermineCompiler.cmake D$:/ST/STM32CubeCLT_1.18.0/CMake/share/cmake-3.28/Modules/Compiler/IAR-DetermineCompiler.cmake D$:/ST/STM32CubeCLT_1.18.0/CMake/share/cmake-3.28/Modules/Compiler/IBMCPP-C-DetermineVersionInternal.cmake D$:/ST/STM32CubeCLT_1.18.0/CMake/share/cmake-3.28/Modules/Compiler/IBMCPP-CXX-DetermineVersionInternal.cmake D$:/ST/STM32CubeCLT_1.18.0/CMake/share/cmake-3.28/Modules/Compiler/IBMClang-C-DetermineCompiler.cmake D$:/ST/STM32CubeCLT_1.18.0/CMake/share/cmake-3.28/Modules/Compiler/IBMClang-CXX-DetermineCompiler.cmake D$:/ST/STM32CubeCLT_1.18.0/CMake/share/cmake-3.28/Modules/Compiler/Intel-DetermineCompiler.cmake D$:/ST/STM32CubeCLT_1.18.0/CMake/share/cmake-3.28/Modules/Compiler/IntelLLVM-DetermineCompiler.cmake D$:/ST/STM32CubeCLT_1.18.0/CMake/share/cmake-3.28/Modules/Compiler/LCC-C-DetermineCompiler.cmake D$:/ST/STM32CubeCLT_1.18.0/CMake/share/cmake-3.28/Modules/Compiler/LCC-CXX-DetermineCompiler.cmake D$:/ST/STM32CubeCLT_1.18.0/CMake/share/cmake-3.28/Modules/Compiler/MSVC-DetermineCompiler.cmake D$:/ST/STM32CubeCLT_1.18.0/CMake/share/cmake-3.28/Modules/Compiler/NVHPC-DetermineCompiler.cmake D$:/ST/STM32CubeCLT_1.18.0/CMake/share/cmake-3.28/Modules/Compiler/NVIDIA-DetermineCompiler.cmake D$:/ST/STM32CubeCLT_1.18.0/CMake/share/cmake-3.28/Modules/Compiler/OpenWatcom-DetermineCompiler.cmake D$:/ST/STM32CubeCLT_1.18.0/CMake/share/cmake-3.28/Modules/Compiler/OrangeC-DetermineCompiler.cmake D$:/ST/STM32CubeCLT_1.18.0/CMake/share/cmake-3.28/Modules/Compiler/PGI-DetermineCompiler.cmake D$:/ST/STM32CubeCLT_1.18.0/CMake/share/cmake-3.28/Modules/Compiler/PathScale-DetermineCompiler.cmake D$:/ST/STM32CubeCLT_1.18.0/CMake/share/cmake-3.28/Modules/Compiler/SCO-DetermineCompiler.cmake D$:/ST/STM32CubeCLT_1.18.0/CMake/share/cmake-3.28/Modules/Compiler/SDCC-C-DetermineCompiler.cmake D$:/ST/STM32CubeCLT_1.18.0/CMake/share/cmake-3.28/Modules/Compiler/SunPro-C-DetermineCompiler.cmake D$:/ST/STM32CubeCLT_1.18.0/CMake/share/cmake-3.28/Modules/Compiler/SunPro-CXX-DetermineCompiler.cmake D$:/ST/STM32CubeCLT_1.18.0/CMake/share/cmake-3.28/Modules/Compiler/TI-DetermineCompiler.cmake D$:/ST/STM32CubeCLT_1.18.0/CMake/share/cmake-3.28/Modules/Compiler/Tasking-DetermineCompiler.cmake D$:/ST/STM32CubeCLT_1.18.0/CMake/share/cmake-3.28/Modules/Compiler/TinyCC-C-DetermineCompiler.cmake D$:/ST/STM32CubeCLT_1.18.0/CMake/share/cmake-3.28/Modules/Compiler/VisualAge-C-DetermineCompiler.cmake D$:/ST/STM32CubeCLT_1.18.0/CMake/share/cmake-3.28/Modules/Compiler/VisualAge-CXX-DetermineCompiler.cmake D$:/ST/STM32CubeCLT_1.18.0/CMake/share/cmake-3.28/Modules/Compiler/Watcom-DetermineCompiler.cmake D$:/ST/STM32CubeCLT_1.18.0/CMake/share/cmake-3.28/Modules/Compiler/XL-C-DetermineCompiler.cmake D$:/ST/STM32CubeCLT_1.18.0/CMake/share/cmake-3.28/Modules/Compiler/XL-CXX-DetermineCompiler.cmake D$:/ST/STM32CubeCLT_1.18.0/CMake/share/cmake-3.28/Modules/Compiler/XLClang-C-DetermineCompiler.cmake D$:/ST/STM32CubeCLT_1.18.0/CMake/share/cmake-3.28/Modules/Compiler/XLClang-CXX-DetermineCompiler.cmake D$:/ST/STM32CubeCLT_1.18.0/CMake/share/cmake-3.28/Modules/Compiler/zOS-C-DetermineCompiler.cmake D$:/ST/STM32CubeCLT_1.18.0/CMake/share/cmake-3.28/Modules/Compiler/zOS-CXX-DetermineCompiler.cmake D$:/ST/STM32CubeCLT_1.18.0/CMake/share/cmake-3.28/Modules/Internal/FeatureTesting.cmake D$:/ST/STM32CubeCLT_1.18.0/CMake/share/cmake-3.28/Modules/Platform/Generic.cmake E$:/Programming/ST/STelescope/CMakeLists.txt E$:/Programming/ST/STelescope/cmake/gcc-arm-none-eabi.cmake E$:/Programming/ST/STelescope/cmake/stm32cubemx/CMakeLists.txt: phony
+build CMakeCache.txt CMakeFiles/3.28.1/CMakeASMCompiler.cmake CMakeFiles/3.28.1/CMakeCCompiler.cmake CMakeFiles/3.28.1/CMakeCXXCompiler.cmake CMakeFiles/3.28.1/CMakeSystem.cmake D$:/ST/STM32CubeCLT_1.18.0/CMake/share/cmake-3.28/Modules/CMakeASMInformation.cmake D$:/ST/STM32CubeCLT_1.18.0/CMake/share/cmake-3.28/Modules/CMakeCInformation.cmake D$:/ST/STM32CubeCLT_1.18.0/CMake/share/cmake-3.28/Modules/CMakeCXXInformation.cmake D$:/ST/STM32CubeCLT_1.18.0/CMake/share/cmake-3.28/Modules/CMakeCommonLanguageInclude.cmake D$:/ST/STM32CubeCLT_1.18.0/CMake/share/cmake-3.28/Modules/CMakeGenericSystem.cmake D$:/ST/STM32CubeCLT_1.18.0/CMake/share/cmake-3.28/Modules/CMakeInitializeConfigs.cmake D$:/ST/STM32CubeCLT_1.18.0/CMake/share/cmake-3.28/Modules/CMakeLanguageInformation.cmake D$:/ST/STM32CubeCLT_1.18.0/CMake/share/cmake-3.28/Modules/CMakeSystemSpecificInformation.cmake D$:/ST/STM32CubeCLT_1.18.0/CMake/share/cmake-3.28/Modules/CMakeSystemSpecificInitialize.cmake D$:/ST/STM32CubeCLT_1.18.0/CMake/share/cmake-3.28/Modules/Compiler/CMakeCommonCompilerMacros.cmake D$:/ST/STM32CubeCLT_1.18.0/CMake/share/cmake-3.28/Modules/Compiler/GNU-ASM.cmake D$:/ST/STM32CubeCLT_1.18.0/CMake/share/cmake-3.28/Modules/Compiler/GNU-C.cmake D$:/ST/STM32CubeCLT_1.18.0/CMake/share/cmake-3.28/Modules/Compiler/GNU-CXX.cmake D$:/ST/STM32CubeCLT_1.18.0/CMake/share/cmake-3.28/Modules/Compiler/GNU.cmake D$:/ST/STM32CubeCLT_1.18.0/CMake/share/cmake-3.28/Modules/Platform/Generic.cmake E$:/Programming/ST/STelescope/CMakeLists.txt E$:/Programming/ST/STelescope/cmake/gcc-arm-none-eabi.cmake E$:/Programming/ST/STelescope/cmake/stm32cubemx/CMakeLists.txt: phony
 
 
 #############################################

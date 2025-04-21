@@ -50,7 +50,7 @@
   */
 /* Define size for the receive and transmit buffer over CDC */
 #define APP_RX_DATA_SIZE  1024
-#define APP_TX_DATA_SIZE  4096
+#define APP_TX_DATA_SIZE  1024
 /* USER CODE BEGIN EXPORTED_DEFINES */
 #define PACKET_METADATA_SIZE 4
 
@@ -75,18 +75,15 @@
 
 typedef enum
 {
-  CMD_R_PLUS, /* Move the rotation axis with a positive rate */
-  CMD_R_MINUS, /* Move the rotation axis with a negative rate */
-  CMD_R_STOP, /* Stop the rotation axis */
-  CMD_Y_PLUS, /* etc etc... */
-  CMD_Y_MINUS,
-  CMD_Y_STOP,
-  CMD_P_PLUS,
-  CMD_P_MINUS,
-  CMD_P_STOP,
+  CMD_SET_R_RATE,
+  CMD_SET_Y_RATE,
+  CMD_SET_P_RATE,
+  CMD_SET_R_POS,
+  CMD_SET_Y_POS,
+  CMD_SET_P_POS,
   CMD_SET_STATE,
-  CMD_SET_RATE,
   CMD_RESET_POS,
+  CMD_RESET_DES_POS,
   CMD_HOME, /* Deprecated */
   CMD_MICST_MODE, /* Change the microstep mode (mode given in info)*/
   CMD_CAPTURE,

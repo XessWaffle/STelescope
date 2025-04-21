@@ -68,8 +68,6 @@ uint32_t tim2_tick_sec;
 
 uint32_t tim3_counter_max;
 
-uint32_t rate;
-
 uint32_t last_ack;
 
 uint8_t capture_flag = FALSE;
@@ -191,11 +189,7 @@ int main(void)
   home(PITCH);
   home(ROLL);*/
 
-  rate = 60000;
-
   HAL_Delay(1000);
-  set_stepper_state(TRACKING);
-
   /* USER CODE END 2 */
 
   /* Infinite loop */
@@ -229,48 +223,46 @@ int main(void)
     }
 
     sensor_update();
-    camera_update();
+
+    if(get_stepper_state() == TRACKING)
+    {
+      camera_update();
+    }
 
     telescope_command_s *t_cmd;
     if((t_cmd = get_next_command()) == NULL)
       continue;
 
+    /* Unpack the data */
+    int32_t info = (t_cmd->info & 0x800000) ? (t_cmd->info | 0xFF000000) : t_cmd->info;
+
     switch (t_cmd->cmd) {
-      case CMD_R_PLUS: /* Move the rotation axis with a positive rate */
-        set_stepper_rate(ROLL, rate);
+      case CMD_SET_R_RATE:
+        set_stepper_rate(ROLL, info);
         break;
-      case CMD_R_MINUS: /* Move the rotation axis with a negative rate */
-        set_stepper_rate(ROLL, -rate);
+      case CMD_SET_Y_RATE:
+        set_stepper_rate(YAW, info);
         break;
-      case CMD_R_STOP: /* Stop the rotation axis */
-        set_stepper_rate(ROLL, 0);
+      case CMD_SET_P_RATE:
+        set_stepper_rate(PITCH, info);
         break;
-      case CMD_Y_PLUS: /* etc etc... */
-        set_stepper_rate(YAW, rate);
+      case CMD_SET_R_POS:
+        set_desired_stepper_position(ROLL, info);
         break;
-      case CMD_Y_MINUS:
-        set_stepper_rate(YAW, -rate);
-        break;                   
-      case CMD_Y_STOP:
-        set_stepper_rate(YAW, 0);
-        break;    
-      case CMD_P_PLUS:
-        set_stepper_rate(PITCH, rate);
+      case CMD_SET_Y_POS:
+        set_desired_stepper_position(YAW, info);
         break;
-      case CMD_P_MINUS:
-        set_stepper_rate(PITCH, -rate);
-        break;    
-      case CMD_P_STOP:
-        set_stepper_rate(PITCH, 0);
+      case CMD_SET_P_POS:
+        set_desired_stepper_position(PITCH, info);
         break;
       case CMD_SET_STATE:
-        set_stepper_state(t_cmd->info);
-        break;
-      case CMD_SET_RATE:
-        rate = t_cmd->info;
+        set_stepper_state(info);
         break;
       case CMD_RESET_POS:
-        set_stepper_position(t_cmd->info, 0);
+        set_stepper_position(info, 0);
+        break;
+      case CMD_RESET_DES_POS:
+        set_desired_stepper_position(info, MAX_POSITION);
         break;
       case CMD_HOME:
 #if 0
@@ -285,7 +277,7 @@ int main(void)
 #endif
         break;
       case CMD_MICST_MODE: /* Change the microstep mode (mode given in info)*/
-        set_microstep_mode(t_cmd->info);
+        set_microstep_mode(info);
         break;
       case CMD_CAPTURE:
         break;
@@ -616,7 +608,7 @@ static void MX_TIM4_Init(void)
 
   /* USER CODE END TIM4_Init 1 */
   htim4.Instance = TIM4;
-  htim4.Init.Prescaler = 359;
+  htim4.Init.Prescaler = 719;
   htim4.Init.CounterMode = TIM_COUNTERMODE_UP;
   htim4.Init.Period = 9999;
   htim4.Init.ClockDivision = TIM_CLOCKDIVISION_DIV1;

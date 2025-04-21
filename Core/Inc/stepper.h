@@ -19,6 +19,8 @@
 
 #define RAMP_DIVIDER 64
 
+#define MAX_POSITION 0x7FFFFFFF
+
 #define STEPPER(axis) stepper_state.stepper[axis]
 
 typedef enum
@@ -42,7 +44,7 @@ typedef enum
 typedef enum
 {
 	TRACKING,
-	ALIGNING,
+	SLEWING,
 	HOMING,
 	SLEEP
 } stepper_op_mode_e;
@@ -63,7 +65,7 @@ typedef struct
 	int32_t rate;
 	int32_t _prev_rate;
 
-	uint32_t _desired_steps;
+	int32_t _desired_position;
 
 	uint32_t _desired_arr_rate; 
 	uint32_t _current_arr_rate; 
@@ -104,7 +106,8 @@ uint32_t get_stepper_rate(axes_e axis);
 void set_update_freq(uint32_t freq_hz);
 void set_microstep_mode(microstep_e mode);
 void set_stepper_state(stepper_op_mode_e state);
-void set_stepper_position(axes_e axis, uint32_t position);
+void set_stepper_position(axes_e axis, int32_t position);
+void set_desired_stepper_position(axes_e axis, int32_t position);
 uint8_t set_stepper_rate(axes_e axis, int32_t rate);
 
 uint8_t increment_tick(axes_e axis);

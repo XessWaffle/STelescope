@@ -8,4 +8,5 @@ __version__ = "0.1.0"
 __author__ = "Your Name"
 
 # Add your module imports and initialization code here
-from .physical_telescope import PhysicalTelescope
+from .physical_telescope import PhysicalTelescope, DegMinSec
+from .virtual_telescope import VirtualTelescope

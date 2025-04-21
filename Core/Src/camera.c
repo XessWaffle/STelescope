@@ -291,7 +291,7 @@ uint8_t init_camera()
     write_i2c_regs(OV2640_JPEG);
     write_i2c_reg(OV2640_REG_SENSOR_RESET, 0x01);
     write_i2c_reg(OV2640_REG_COM10, 0x00);
-    write_i2c_regs(OV2640_1024x768_JPEG);
+    write_i2c_regs(OV2640_640x480_JPEG);
 
     return TRUE;
 }

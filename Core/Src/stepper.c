@@ -29,6 +29,7 @@ uint8_t init_stepper()
 
         stepper_state.stepper[i]._desired_arr_rate = tim2_tick_sec;
         stepper_state.stepper[i]._current_arr_rate = tim2_tick_sec;
+        stepper_state.stepper[i]._desired_position = MAX_POSITION;
         stepper_state.stepper[i]._flags |= (TRUE << INIT_DIRECTION_FLAG);
 
         switch (i)
@@ -95,14 +96,12 @@ inline void set_update_freq(uint32_t freq_hz)
 
 inline void set_microstep_mode(microstep_e mode)
 {
-    for (uint8_t i = 0; i < AXES; i++)
-    {
-        int shift = mode - stepper_state.step_mode;
-        if (shift != 0)
-            STEPPER(i).position = (shift > 0) ? (STEPPER(i).position << shift) : (STEPPER(i).position >> -shift);
-    }
-
     stepper_state.step_mode = mode;
+
+    for (int i = 0; i < AXES; i++)
+    {
+        STEPPER(i).position = (STEPPER(i).position + ((1 << (SIXTEENTH - mode)) - 1)) & ~((1 << (SIXTEENTH - mode)) - 1);
+    }
     
     switch (mode)
     {   
@@ -142,9 +141,14 @@ inline void set_stepper_state(stepper_op_mode_e state)
     stepper_state.state = state;
 }
 
-inline void set_stepper_position(axes_e axis, uint32_t position)
+inline void set_stepper_position(axes_e axis, int32_t position)
 {
     STEPPER(axis).position = position;
+}
+
+inline void set_desired_stepper_position(axes_e axis, int32_t position)
+{
+    STEPPER(axis)._desired_position = position;
 }
 
 inline uint8_t set_stepper_rate(axes_e axis, int32_t rate)
@@ -154,20 +158,22 @@ inline uint8_t set_stepper_rate(axes_e axis, int32_t rate)
         return 0;
     
     int32_t *prev_rate = &(STEPPER(axis)._prev_rate);
+    int32_t prev_rate_ass = rate;
     uint8_t *flags = get_stepper_flags(axis);
 
-    if(*flags & (TRUE << INIT_DIRECTION_FLAG))
+    if((*flags & (TRUE << INIT_DIRECTION_FLAG)) && rate != 0)
     {
         HAL_GPIO_WritePin(STEPPER(axis).dir_pin_port, STEPPER(axis).dir_pin, 
             rate < 0 ? GPIO_PIN_SET : GPIO_PIN_RESET);
         *flags &= ~(TRUE << INIT_DIRECTION_FLAG);
     }
-    else if(rate == 0)
+    
+    if(rate == 0)
     {
         *flags |= (TRUE << INIT_DIRECTION_FLAG);
     }
 
-    if(((*prev_rate > 0 && rate < 0) || (*prev_rate < 0 && rate >= 0)))
+    if(((*prev_rate > 0 && rate < 0) || (*prev_rate < 0 && rate > 0)))
     {   
         *flags = TRUE << DIRECTION_CHANGE_FLAG;
         STEPPER(axis)._dir_change_des_rate = rate;
@@ -183,19 +189,38 @@ inline uint8_t set_stepper_rate(axes_e axis, int32_t rate)
 
     uint32_t *desired_arr = &(STEPPER(axis)._desired_arr_rate);
     uint32_t *current_arr = &(STEPPER(axis)._current_arr_rate);
+    int32_t *desired_pos = &(STEPPER(axis)._desired_position);
+    int32_t *current_pos = &(STEPPER(axis).position);
     uint32_t *step_count = &(STEPPER(axis)._step_count);
 
     if(abs_rate > 0)
         *desired_arr = ((30 * stepper_state.update_freq) / abs_rate) - 1;
     else
+    {
         *desired_arr = stepper_state.update_freq;
-
-
-    if(*desired_arr < stepper_state.update_freq / (RAMP_DIVIDER * 2) &&  *current_arr > stepper_state.update_freq / RAMP_DIVIDER)
-        *current_arr = stepper_state.update_freq / RAMP_DIVIDER;
+        if(*desired_pos == *current_pos)
+        {
+            *current_arr = *desired_arr;
+        }
+    }
+    
+    switch(stepper_state.state)
+    {
+        case HOMING:
+        case SLEWING:
+            if(*desired_arr < stepper_state.update_freq / (RAMP_DIVIDER * 2) &&  *current_arr > stepper_state.update_freq / RAMP_DIVIDER)
+                *current_arr = stepper_state.update_freq / RAMP_DIVIDER;
+            break;
+        case TRACKING:
+            *current_arr = *desired_arr;
+            break;
+        case SLEEP:
+            *current_arr = stepper_state.update_freq;
+            break;
+    }
 
     *step_count = 0;
-    *prev_rate = rate;
+    *prev_rate = prev_rate_ass;
 
     return *flags;
 }
@@ -204,8 +229,10 @@ inline uint8_t increment_tick(axes_e axis)
 { 
     uint32_t *desired_arr = &(STEPPER(axis)._desired_arr_rate);
     uint32_t *current_arr = &(STEPPER(axis)._current_arr_rate);
+    int32_t *desired_pos = &(STEPPER(axis)._desired_position);
+    int32_t *current_pos = &(STEPPER(axis).position);
     uint8_t stop_condition = *desired_arr == stepper_state.update_freq;
-    uint8_t stopped_condition = *current_arr == stepper_state.update_freq && *desired_arr == stepper_state.update_freq;
+    uint8_t stopped_condition = (*current_arr == stepper_state.update_freq && *desired_arr == stepper_state.update_freq) || (*desired_pos == *current_pos);
 
     uint8_t *flags = get_stepper_flags(axis);
 
@@ -214,8 +241,7 @@ inline uint8_t increment_tick(axes_e axis)
         if(*flags & (TRUE << DIRECTION_CHANGE_FLAG))
         {
             *flags &= ~(TRUE << DIRECTION_CHANGE_FLAG);
-            HAL_GPIO_WritePin(STEPPER(axis).dir_pin_port, STEPPER(axis).dir_pin, 
-                STEPPER(axis)._dir_change_des_rate < 0 ? GPIO_PIN_SET : GPIO_PIN_RESET);
+            *flags |= (TRUE << INIT_DIRECTION_FLAG);
             set_stepper_rate(axis, STEPPER(axis)._dir_change_des_rate);
         }
 
@@ -224,6 +250,11 @@ inline uint8_t increment_tick(axes_e axis)
 
     STEPPER(axis)._tick++;
     
+    if(STEPPER(axis)._tick >= stepper_state.update_freq)
+    {
+        STEPPER(axis)._tick = 0;
+    }
+
     uint8_t step_condition = STEPPER(axis)._tick > *current_arr;
     uint32_t *step_count = &(STEPPER(axis)._step_count);
 
@@ -249,7 +280,6 @@ inline uint8_t increment_tick(axes_e axis)
                 *current_arr = *desired_arr;
         }
 
-
         if(stop_condition && *current_arr > stepper_state.update_freq / RAMP_DIVIDER)
             *current_arr = stepper_state.update_freq;
     }
@@ -270,7 +300,7 @@ inline void step_axis(axes_e axis)
     if(step_alt[axis] % 2 == 0)
     {
         if(STEPPER(axis).rate != 0)
-            step_direction[axis] = STEPPER(axis).rate < 0 ? -1 : 1;
+            step_direction[axis] = (STEPPER(axis).rate < 0 ? -1 : 1) << (SIXTEENTH - get_microstep_mode());
 
         STEPPER(axis).position += step_direction[axis];
     }

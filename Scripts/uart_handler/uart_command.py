@@ -1,25 +1,22 @@
 from enum import Enum
 
 class UARTCommands(Enum):
-    CMD_R_PLUS = 0x01  # Move the rotation axis with a positive rate
-    CMD_R_MINUS = 0x02  # Move the rotation axis with a negative rate
-    CMD_R_STOP = 0x03  # Stop the rotation axis
-    CMD_Y_PLUS = 0x04  # Move the yaw axis with a positive rate
-    CMD_Y_MINUS = 0x05  # Move the yaw axis with a negative rate
-    CMD_Y_STOP = 0x06  # Stop the yaw axis
-    CMD_P_PLUS = 0x07  # Move the pitch axis with a positive rate
-    CMD_P_MINUS = 0x08  # Move the pitch axis with a negative rate
-    CMD_P_STOP = 0x09  # Stop the pitch axis
-    CMD_SET_STATE = 0x0A  # Set the state
-    CMD_SET_RATE = 0x0B  # Set the rate
-    CMD_RESET_POS = 0x0C  # Reset the position
-    CMD_HOME = 0x0D  # Deprecated
-    CMD_MICST_MODE = 0x0E  # Change the microstep mode (mode given in info)
-    CMD_CAPTURE = 0x0F  # Capture
-    CMD_EM_STOP = 0x10  # Emergency stop
-    CMD_STOP = 0x11     # Regular stop
-    CMD_ACK = 0x12      # Acknowledge
-    CMD_INVALID = 0x13  # Invalid command
+    CMD_SET_R_RATE = 0x00
+    CMD_SET_Y_RATE = 0x01
+    CMD_SET_P_RATE = 0x02
+    CMD_SET_R_POS = 0x03
+    CMD_SET_Y_POS = 0x04
+    CMD_SET_P_POS = 0x05
+    CMD_SET_STATE = 0x06
+    CMD_RESET_POS = 0x07
+    CMD_RESET_DES_POS = 0x08
+    CMD_HOME = 0x09  # Deprecated
+    CMD_MICST_MODE = 0x0A  # Change the microstep mode (mode given in info)
+    CMD_CAPTURE = 0x0B
+    CMD_EM_STOP = 0x0C
+    CMD_STOP = 0x0D
+    CMD_ACK = 0x0E
+    CMD_INVALID = 0xFF
 
 
 class UARTCommand:
@@ -105,3 +102,19 @@ class UARTCommand:
         if len(byte_data) != 4:
             raise ValueError("Byte data must be exactly 4 bytes long.")
         return cls(command_byte=byte_data[0], info_bytes=list(byte_data[1:]))
+    
+
+    @staticmethod
+    def to_int24(value: int) -> list[int]:
+        """
+        Converts a signed integer into a 24-bit 2's complement representation.
+
+        :param value: The signed integer to convert. Must be in the range -8388608 to 8388607.
+        :return: A list of three bytes representing the 24-bit 2's complement value.
+        """
+        if not (-8388608 <= value <= 8388607):
+            raise ValueError("Value must be in the range -8388608 to 8388607 for 24-bit signed integers.")
+        
+        # Convert to 24-bit 2's complement
+        value &= 0xFFFFFF
+        return [(value >> 16) & 0xFF, (value >> 8) & 0xFF, value & 0xFF]

@@ -62,21 +62,21 @@
 				{
 					"directoryIndex" : 1,
 					"id" : "STM32_Drivers::@768a070a0fe75716b479",
-					"jsonFile" : "target-STM32_Drivers-MinSizeRel-53eeace7565f7e98cda5.json",
+					"jsonFile" : "target-STM32_Drivers-MinSizeRel-108235e6759f7ac4d8ed.json",
 					"name" : "STM32_Drivers",
 					"projectIndex" : 0
 				},
 				{
 					"directoryIndex" : 0,
 					"id" : "STelescope::@6890427a1f51a3e7e1df",
-					"jsonFile" : "target-STelescope-MinSizeRel-5a4eacba4ea45dc5254b.json",
+					"jsonFile" : "target-STelescope-MinSizeRel-2312a301432019bc9557.json",
 					"name" : "STelescope",
 					"projectIndex" : 0
 				},
 				{
 					"directoryIndex" : 1,
 					"id" : "USB_Device_Library::@768a070a0fe75716b479",
-					"jsonFile" : "target-USB_Device_Library-MinSizeRel-b536aa85f960ebca4ce2.json",
+					"jsonFile" : "target-USB_Device_Library-MinSizeRel-09b01993d9de0b712363.json",
 					"name" : "USB_Device_Library",
 					"projectIndex" : 0
 				}

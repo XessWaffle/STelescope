@@ -220,7 +220,8 @@ void EXTI2_IRQHandler(void)
   /* USER CODE BEGIN EXTI2_IRQn 1 */
 
   /* Reset counter to keep phase locked */
-  //__HAL_TIM_SetCounter(&htim4, 0);
+  __HAL_TIM_SetCounter(&htim4, 0);
+  __HAL_TIM_SetCounter(&htim2, 0);
   /* USER CODE END EXTI2_IRQn 1 */
 }
 
@@ -315,7 +316,7 @@ void TIM3_IRQHandler(void)
 void TIM4_IRQHandler(void)
 {
   /* USER CODE BEGIN TIM4_IRQn 0 */
-  static const uint8_t cam_interval = 5;
+  static const uint8_t cam_interval = 9;
   static uint8_t cam_step = 0;
   /* USER CODE END TIM4_IRQn 0 */
   HAL_TIM_IRQHandler(&htim4);

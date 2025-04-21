@@ -59,7 +59,7 @@
 			"compileCommandFragments" : 
 			[
 				{
-					"fragment" : " -mcpu=cortex-m3  -Wall -Wextra -Wpedantic -fdata-sections -ffunction-sections -mcpu=cortex-m3  -Wall -Wextra -Wpedantic -fdata-sections -ffunction-sections -mcpu=cortex-m3  -Wall -Wextra -Wpedantic -fdata-sections -ffunction-sections -Os -DNDEBUG -std=gnu11"
+					"fragment" : " -mcpu=cortex-m3  -Wall -Wextra -Wpedantic -fdata-sections -ffunction-sections -mcpu=cortex-m3  -Wall -Wextra -Wpedantic -fdata-sections -ffunction-sections -Os -DNDEBUG -std=gnu11"
 				}
 			],
 			"defines" : 
@@ -146,7 +146,7 @@
 			"compileCommandFragments" : 
 			[
 				{
-					"fragment" : " -mcpu=cortex-m3  -Wall -Wextra -Wpedantic -fdata-sections -ffunction-sections -mcpu=cortex-m3  -Wall -Wextra -Wpedantic -fdata-sections -ffunction-sections -mcpu=cortex-m3  -x assembler-with-cpp -MMD -MP -Os -DNDEBUG"
+					"fragment" : " -mcpu=cortex-m3  -Wall -Wextra -Wpedantic -fdata-sections -ffunction-sections -mcpu=cortex-m3  -x assembler-with-cpp -MMD -MP -Os -DNDEBUG"
 				}
 			],
 			"defines" : 
@@ -223,7 +223,7 @@
 		"commandFragments" : 
 		[
 			{
-				"fragment" : "-mcpu=cortex-m3  -Wall -Wextra -Wpedantic -fdata-sections -ffunction-sections -mcpu=cortex-m3  -Wall -Wextra -Wpedantic -fdata-sections -ffunction-sections -mcpu=cortex-m3  -Wall -Wextra -Wpedantic -fdata-sections -ffunction-sections -Os -DNDEBUG",
+				"fragment" : "-mcpu=cortex-m3  -Wall -Wextra -Wpedantic -fdata-sections -ffunction-sections -mcpu=cortex-m3  -Wall -Wextra -Wpedantic -fdata-sections -ffunction-sections -Os -DNDEBUG",
 				"role" : "flags"
 			},
 			{
